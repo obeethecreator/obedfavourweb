@@ -1,0 +1,4 @@
+baseURL = 'https://obeethecreator.github.io/'
+languageCode = 'en-us'
+title = 'Obed Favour'
+theme = 'blowfish'
