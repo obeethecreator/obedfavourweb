@@ -1,4 +1,9 @@
 baseURL = 'https://www.obedfavour.com/'
-languageCode = 'en-us'
+locale = 'en'
 title = 'Obed Favour'
 theme = 'blowfish'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
