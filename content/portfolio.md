@@ -287,6 +287,13 @@ main { max-width: 100% !important; }
   font-size: 0.95rem;
 }
 
+.cta-btn-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .cta-btn {
   display: inline-block;
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
@@ -303,13 +310,38 @@ main { max-width: 100% !important; }
   opacity: 0.9;
   transform: translateY(-2px);
 }
+
+.cta-btn-ghost {
+  display: inline-block;
+  background: transparent;
+  color: inherit !important;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none !important;
+  font-size: 0.95rem;
+  border: 1px solid rgba(59,130,246,0.4);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn-ghost:hover {
+  border-color: rgba(59,130,246,0.8);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .portfolio-wrap { padding: 0 1rem; }
+  .brand-card { padding: 1.5rem 2rem; min-width: 140px; }
+  .case-header { flex-direction: column; }
+  .cta-btn-row { flex-direction: column; align-items: center; }
+}
 </style>
 
 <div class="portfolio-wrap">
 
 <div class="port-hero">
   <h1>Results That Speak<br>For Themselves</h1>
-  <p>Real campaigns. Real growth. Real revenue. Here's what happens when strategy meets execution.</p>
+  <p>Not case studies. Proof. Every number below came from real campaigns, real budgets, and real brands that needed to grow.</p>
 </div>
 
 <div class="stats-banner">
@@ -331,7 +363,7 @@ main { max-width: 100% !important; }
   </div>
   <div class="stat-item">
     <span class="stat-number">60K+</span>
-    <div class="stat-label">Subscribers</div>
+    <div class="stat-label">Subscribers Built</div>
   </div>
 </div>
 
@@ -339,11 +371,11 @@ main { max-width: 100% !important; }
 
 <div class="brand-grid">
   <div class="brand-card">
-    <img src="/greatgrace-logo.png" alt="Great Grace Miami">
+    <img src="/greatgrace-logo.png" alt="Great Grace Miami logo">
     <span>Great Grace Miami</span>
   </div>
   <div class="brand-card">
-    <img src="/ayoken-logo.jpg" alt="Ayoken">
+    <img src="/ayoken-logo.jpg" alt="Ayoken NFT Marketplace logo">
     <span>Ayoken NFT</span>
   </div>
 </div>
@@ -354,14 +386,14 @@ main { max-width: 100% !important; }
 <div class="case-card">
   <div class="case-header">
     <div>
-      <div class="case-subtitle">Social Media Growth · Content Strategy</div>
+      <div class="case-subtitle">Social Media Growth · Content Strategy · Paid Social</div>
       <div class="case-title">Great Grace Miami</div>
     </div>
     <div class="case-badge">2021 – Present</div>
   </div>
 
   <p class="case-desc">
-    Great Grace Miami needed to grow their digital presence and convert online audiences into real-world attendees and community members. I engineered a full-funnel content acquisition system — using short-form video for discovery, long-form YouTube for trust-building, and event campaigns for conversion. The result was one of the most efficient organic growth stories in the faith-based media space.
+    Great Grace Miami had a message worth hearing — but almost no one was hearing it. With no paid ad budget and a starting audience of 3,000 YouTube subscribers, I built a full-funnel content acquisition system from scratch. Short-form video drove discovery. Long-form YouTube built trust and community. Event campaigns turned viewers into room-fillers. The result: one of the most efficient organic growth stories in faith-based media — 1,900% subscriber growth and 3.5M+ views without spending a cent on reach.
   </p>
 
   <div class="results-grid">
@@ -379,7 +411,7 @@ main { max-width: 100% !important; }
     </div>
     <div class="result-chip">
       <span class="result-value">3,000+</span>
-      <div class="result-desc">In-person attendees</div>
+      <div class="result-desc">In-person event attendees</div>
     </div>
     <div class="result-chip">
       <span class="result-value">60%</span>
@@ -387,7 +419,7 @@ main { max-width: 100% !important; }
     </div>
     <div class="result-chip">
       <span class="result-value">$0.01</span>
-      <div class="result-desc">CPC on Meta Ads</div>
+      <div class="result-desc">CPC on Meta Ads campaigns</div>
     </div>
   </div>
 
@@ -407,20 +439,20 @@ main { max-width: 100% !important; }
 <div class="case-card">
   <div class="case-header">
     <div>
-      <div class="case-subtitle">Community Growth · Web3 · Fundraising</div>
+      <div class="case-subtitle">Community Growth · Web3 Marketing · Fundraising</div>
       <div class="case-title">Ayoken NFT Marketplace</div>
     </div>
     <div class="case-badge">2021 – 2022 · London</div>
   </div>
 
   <p class="case-desc">
-    Ayoken was a music NFT marketplace launching in the competitive Web3 space. As Growth & Community Lead, I built their entire community infrastructure from scratch across Discord, Telegram, Twitter, and Instagram — creating the audience and trust that directly contributed to the company's $1.4M pre-seed fundraise. I also produced educational content that simplified NFTs for newcomers and converted crypto-curious audiences into active platform users.
+    Ayoken was a music NFT marketplace entering one of the most crowded and noisy spaces in tech. They needed an audience, a community, and credibility — fast. As Growth & Community Lead, I built their entire community infrastructure from zero across Discord, Telegram, Twitter, and Instagram. I created educational content that made NFTs accessible to newcomers, ran AMA campaigns that built trust with crypto-native audiences, and engineered the community momentum that gave investors the confidence to write cheques. The $1.4M pre-seed raise didn't happen despite the community — it happened because of it.
   </p>
 
   <div class="results-grid">
     <div class="result-chip">
       <span class="result-value">$1.4M</span>
-      <div class="result-desc">Pre-seed fundraise contributed</div>
+      <div class="result-desc">Pre-seed fundraise supported</div>
     </div>
     <div class="result-chip">
       <span class="result-value">50%</span>
@@ -432,7 +464,7 @@ main { max-width: 100% !important; }
     </div>
     <div class="result-chip">
       <span class="result-value">40%</span>
-      <div class="result-desc">Engagement uplift during KiDi NFT drop</div>
+      <div class="result-desc">Engagement uplift — KiDi NFT drop</div>
     </div>
   </div>
 
@@ -448,9 +480,12 @@ main { max-width: 100% !important; }
 </div>
 
 <div class="cta-section">
-  <h3>Want Results Like These?</h3>
-  <p>Let's build a growth system tailored to your brand. I'm currently taking on new clients.</p>
-  <a href="/services" class="cta-btn">Work With Me 🚀</a>
+  <h3>Your brand could be the next case study.</h3>
+  <p>I'm currently taking on new clients. Let's spend 30 minutes figuring out exactly what your brand needs to grow.</p>
+  <div class="cta-btn-row">
+    <a href="https://calendly.com/obeethecreator/30min" target="_blank" class="cta-btn">Book a Free Strategy Call 🚀</a>
+    <a href="/services" class="cta-btn-ghost">View Services →</a>
+  </div>
 </div>
 
 </div>
