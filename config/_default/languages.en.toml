@@ -13,8 +13,8 @@ title = "Obed Favour"
 [params.author]
   name = "Obed Favour Chukwuemeka"
   image = "avatar.jpg"
-  headline = "Turning Ideas into Systems that Scale"
-  bio = "I help brands grow through data-driven marketing, AI automation, and content strategy. Building systems that work while you sleep."
+  headline = "Your brand is ready to grow. Your systems aren't."
+  bio = "I help ambitious brands and founders build the marketing engine that runs without them — AI automation, content strategy, and paid social that converts."
   links = [
     { github = "https://github.com/obeethecreator" },
     { instagram = "https://instagram.com/obeethecre8or" },
