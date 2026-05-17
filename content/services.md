@@ -4,6 +4,11 @@ date = '2026-05-16T14:09:16+01:00'
 draft = false
 +++
 
+<div style="text-align:center;margin:1rem 0 2.5rem;">
+  <a href="https://calendly.com/obeethecreator/30min" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a Free Strategy Call →</a>
+  <div style="font-size:12px;opacity:0.5;margin-top:12px;">30 min · No obligation · Real advice</div>
+</div>
+
 ## What I Can Do For Your Brand
 
 I help founders, startups, and growing businesses build marketing systems that attract audiences, convert customers, and scale revenue — without burning out or burning budget.
@@ -85,7 +90,12 @@ Build an audience that shows up, engages, and buys. I grow and manage online com
 
 ## Let's Work Together
 
-Ready to grow your brand? Fill out the form below and I'll get back to you within 24 hours.
+Ready to grow your brand? Book a free 30-minute strategy call or fill out the form below.
+
+<div style="text-align:center;margin:1rem 0 2rem;">
+  <a href="https://calendly.com/obeethecreator/30min" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a Free Strategy Call →</a>
+  <div style="font-size:12px;opacity:0.5;margin-top:12px;">30 min · No obligation · Real advice</div>
+</div>
 
 <form action="https://formspree.io/f/mjglnqqv" method="POST" style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; max-width: 600px;">
   <label style="font-weight: bold;">Your Name
