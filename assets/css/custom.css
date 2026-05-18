@@ -3,54 +3,87 @@ article { max-width: 100% !important; }
 .max-w-prose { max-width: 100% !important; }
 .content { max-width: 100% !important; }
 
-@media (max-width: 640px) {
+/* Blog post figures and images */
+figure {
+  margin: 2rem 0 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
 
+figure img {
+  width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 12px !important;
+  display: block !important;
+  transition: transform 0.4s ease !important;
+}
+
+figure img:hover {
+  transform: scale(1.02) !important;
+}
+
+figcaption {
+  font-size: 0.78rem !important;
+  opacity: 0.5 !important;
+  text-align: center !important;
+  margin-top: 8px !important;
+  font-style: italic !important;
+}
+
+.prose img {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 8px !important;
+  margin: 1.5rem 0 !important;
+  display: block !important;
+}
+
+@media (max-width: 640px) {
   /* Homepage stats grid — stack to 2 columns on mobile */
   .prose div[style*="grid-template-columns:repeat(4"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
-
   /* Portfolio and services grids — stack to single column */
   .prose div[style*="grid-template-columns:repeat(2"] {
     grid-template-columns: 1fr !important;
   }
-
   /* Case study rows — stack vertically */
   .prose div[style*="display:flex"] {
     flex-direction: column !important;
   }
-
   /* Stat numbers — slightly smaller on mobile */
   .prose div[style*="font-size:32px"] {
     font-size: 24px !important;
   }
-
   /* CTA button — full width on mobile */
   .prose a[style*="background:#2E75B6"] {
     display: block !important;
     text-align: center !important;
     padding: 16px 20px !important;
   }
-
   /* Services page form — full width inputs */
   input, textarea, select {
     width: 100% !important;
     box-sizing: border-box !important;
   }
-
   /* Portfolio result chips — wrap properly */
   .prose span[style*="display:inline-block"] {
     margin-bottom: 6px !important;
   }
-
   /* General padding fix for custom HTML sections */
   .prose div[style*="padding:28px"] {
     padding: 20px 14px !important;
   }
-
   /* Portfolio case study stat numbers */
   .prose div[style*="font-size:48px"] {
     font-size: 32px !important;
   }
 
+  /* Blog figures on mobile */
+  figure img {
+    height: 160px !important;
+  }
 }
