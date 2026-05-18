@@ -3,6 +3,8 @@ locale = 'en'
 title = 'Obed Favour'
 theme = 'blowfish'
 
+googleAnalytics = "G-KMPF4JH5CX"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
