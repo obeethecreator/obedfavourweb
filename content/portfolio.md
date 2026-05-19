@@ -119,13 +119,16 @@ main { max-width: 100% !important; }
   background: rgba(59,130,246,0.05);
   border: 1px solid rgba(59,130,246,0.2);
   border-radius: 16px;
-  padding: 2rem 3rem;
+  padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   transition: transform 0.3s ease, border-color 0.3s ease;
-  min-width: 200px;
+  min-width: 180px;
+  max-width: 220px;
+  width: 100%;
 }
 
 .brand-card:hover {
@@ -134,9 +137,12 @@ main { max-width: 100% !important; }
 }
 
 .brand-card img {
-  height: 80px;
-  width: auto;
+  height: 50px;
+  width: 140px;
   object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .brand-card span {
@@ -145,6 +151,7 @@ main { max-width: 100% !important; }
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 500;
+  text-align: center;
 }
 
 .case-card {
@@ -331,7 +338,8 @@ main { max-width: 100% !important; }
 
 @media (max-width: 640px) {
   .portfolio-wrap { padding: 0 1rem; }
-  .brand-card { padding: 1.5rem 2rem; min-width: 140px; }
+  .brand-card { padding: 1.2rem 1.5rem; min-width: 140px; max-width: 160px; }
+  .brand-card img { height: 40px; width: 110px; }
   .case-header { flex-direction: column; }
   .cta-btn-row { flex-direction: column; align-items: center; }
 }
