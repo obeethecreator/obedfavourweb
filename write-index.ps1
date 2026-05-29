@@ -1,4 +1,5 @@
-﻿---
+$content = @"
+---
 title: "Obed Favour"
 description: "Growth Marketer & AI Automation Expert helping brands scale through AI automation, content strategy and paid social."
 ---
@@ -12,11 +13,11 @@ description: "Growth Marketer & AI Automation Expert helping brands scale throug
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Organic views generated</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;">$0.01</div>
+    <div style="font-size:32px;font-weight:600;color:inherit;">`$0.01</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">CPC via Meta Ads</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;">$1.4M</div>
+    <div style="font-size:32px;font-weight:600;color:inherit;">`$1.4M</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Pre-seed fundraise supported</div>
   </div>
 </div>
@@ -34,3 +35,6 @@ description: "Growth Marketer & AI Automation Expert helping brands scale throug
 <p style="color:#4A7A9B;font-size:0.8rem;margin-top:1rem;">No spam. No fluff. Unsubscribe anytime.</p>
 </div>
 </div>
+"@
+[System.IO.File]::WriteAllText("$PWD\content\_index.md", $content, [System.Text.Encoding]::UTF8)
+Write-Host "Done"
