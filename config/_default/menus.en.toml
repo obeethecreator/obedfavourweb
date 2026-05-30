@@ -42,3 +42,8 @@
   name = "Contact"
   pageRef = "services"
   weight = 30
+
+[[main]]
+  name = "Free Audit"
+  pageRef = "audit"
+  weight = 45
