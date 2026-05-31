@@ -342,7 +342,7 @@ async function runAudit(){
   const sl=Object.entries(alab).map(([q,l])=>{const s=v[parseInt(q)];const lv=s===0?'Critical gap':s===1?'Needs work':s===2?'Getting there':'Strong';return '- '+bl[parseInt(q)]+': '+l+' ('+lv+', '+s+'/3)';}).join('\n');
   const prompt='You are Obed Favour, a growth marketer and AI automation expert based in Lagos Nigeria. A founder or business owner just completed a 12-question growth audit on your website.\n\nWrite them a personalised growth audit report. Be specific, direct, and genuinely useful. Write as if speaking directly to them - warm, expert, honest. Do not be generic. Reference their specific answers.\n\nStructure:\n1. A 2-3 sentence personalised summary of their overall situation based on their specific combination of answers\n2. Their 3 biggest gaps - explained specifically with one concrete action each\n3. One thing they are doing well - always find something positive\n4. A warm closing that naturally leads them to book a strategy call\n\nUnder 400 words. Plain paragraphs only - no bullet points, no headers, no markdown. Warm, direct, expert tone.\n\nResults:\nSocial score: '+ss+'%\nRevenue health: '+rh+'% ('+rl+'% leaking)\n\nAnswers:\n'+sl;
   try{
-    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,stream:true,messages:[{role:'user',content:prompt}]})});
+    const res=await fetch('https://obed-audit-proxy.obeethecreator.workers.dev',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:prompt})});
     document.getElementById('loading-wrap').style.display='none';
     document.getElementById('r-content').classList.add('show');
     document.getElementById('ss').textContent=ss+'%';
@@ -353,8 +353,8 @@ async function runAudit(){
     bEl.innerHTML=v.map((x,i)=>{const p=Math.round((x/3)*100);const c=p>=67?'#86EFAC':p>=34?'#E8A84A':'#F87171';return '<div class="b-row"><div class="b-label">'+bl[i]+'</div><div class="b-track"><div class="b-fill" style="width:0%;background:'+c+';" data-w="'+p+'%"></div></div><div class="b-val" style="color:'+c+';">'+p+'%</div></div>';}).join('');
     setTimeout(()=>{bEl.querySelectorAll('.b-fill').forEach(b=>b.style.width=b.dataset.w);},200);
     const aiEl=document.getElementById('ai-text');
-    const reader=res.body.getReader();const dec=new TextDecoder();let txt='';
-    while(true){const{done,value}=await reader.read();if(done)break;const chunk=dec.decode(value);for(const line of chunk.split('\n').filter(l=>l.startsWith('data: '))){const d=line.slice(6);if(d==='[DONE]')break;try{const p=JSON.parse(d);if(p.type==='content_block_delta'&&p.delta?.text){txt+=p.delta.text;aiEl.textContent=txt;}}catch(e){}}}
+    const data=await res.json();const txt=data.text||'Analysis unavailable.';
+    aiEl.textContent=txt;
   }catch(err){
     document.getElementById('loading-wrap').style.display='none';
     document.getElementById('r-content').classList.add('show');
