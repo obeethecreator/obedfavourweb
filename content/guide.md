@@ -13,7 +13,7 @@ description = "Free guide: Build your professional website this weekend. No deve
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
 *{box-sizing:border-box;margin:0;padding:0;}
-.lp-wrap{font-family:'DM Sans',sans-serif;background:#0a1628;color:#f0ede8;min-height:100vh;width:100vw;position:fixed;top:0;left:0;z-index:9999;overflow-y:auto;}
+.lp-wrap{font-family:'DM Sans',sans-serif;background:#0a1628;color:#f0ede8;min-height:100vh;width:100%;display:block;}
 .lp-inner{max-width:580px;margin:0 auto;padding:60px 24px;}
 .lp-badge{display:inline-block;background:rgba(46,117,182,0.18);border:1px solid rgba(46,117,182,0.4);color:#7eb8f0;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:24px;}
 .lp-h1{font-family:'Playfair Display',serif;font-size:clamp(26px,5vw,42px);font-weight:700;line-height:1.2;color:#f0ede8;margin-bottom:18px;}
