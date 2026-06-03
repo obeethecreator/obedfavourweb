@@ -80,7 +80,36 @@ description = "Free AI-powered growth audit. Find out exactly where your brand i
 .cta-btn:hover{background:#1A5EA8;}
 .cta-note{font-size:12px;color:rgba(255,255,255,0.25);margin-top:10px;}
 .err-box{background:rgba(226,75,74,0.1);border:1px solid rgba(226,75,74,0.2);border-radius:10px;padding:1rem 1.25rem;font-size:14px;color:#F87171;margin-bottom:1.5rem;}
-@media(max-width:600px){.a-q{font-size:20px;}.scores{grid-template-columns:1fr;}.b-label{width:100px;}.audit-inner{padding:2rem 0 4rem;}}
+@media(max-width:600px){
+  .audit-inner{padding:2rem 0 4rem;width:95%;}
+  .a-q{font-size:19px;line-height:1.3;}
+  .a-sub{font-size:13px;}
+  .a-opt{font-size:14px;padding:13px 14px;}
+  .a-tag{display:none;}
+  .a-next{padding:12px 22px;font-size:14px;}
+  .a-back{font-size:13px;padding:10px 14px;}
+  .scores{grid-template-columns:1fr;}
+  .s-card{padding:1.2rem;}
+  .s-num{font-size:42px;}
+  .bars-section{padding:1.5rem;}
+  .b-row{flex-wrap:wrap;gap:6px;}
+  .b-label{width:100%;font-size:12px;margin-bottom:2px;}
+  .b-track{width:100%;}
+  .b-val{font-size:12px;}
+  .ai-section{padding:1.5rem;}
+  .ai-text{font-size:14px;line-height:1.7;}
+  .cta-wrap{padding:1.5rem;}
+  .cta-title{font-size:20px;}
+  .cta-sub{font-size:14px;}
+  .cta-btn{font-size:15px;padding:14px 24px;width:100%;}
+  .cta-meta{font-size:12px;}
+  .r-head{font-size:16px;}
+  .email-step input{font-size:15px;padding:13px 14px;}
+  .email-step .a-next{width:100%;}
+  .a-prog-labels{display:none;}
+  .loading-title{font-size:16px;}
+  .loading-sub{font-size:13px;}
+}
 .audit-wrap *{text-decoration:none !important;}
 .audit-wrap a{text-decoration:none !important;}
 .audit-wrap button{text-decoration:none !important;}
