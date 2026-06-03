@@ -25,7 +25,7 @@ article,main,.prose,.max-w-prose,.content{max-width:100%!important;padding:0!imp
 .lp-stats{display:flex;gap:28px;margin:0 0 48px;flex-wrap:wrap;}
 .lp-stat-n{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#5b9bd5;display:block;}
 .lp-stat-l{font-size:11px;color:rgba(240,237,232,0.4);letter-spacing:1px;text-transform:uppercase;}
-.lp-box{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px 28px;margin:0 0 52px;}
+.lp-box{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px 28px;margin:0 0 52px;overflow:hidden;width:100%;}
 .lp-box-t{font-family:'Playfair Display',serif;font-size:20px;color:#f0ede8;margin:0 0 6px;}
 .lp-box-s{font-size:13px;color:rgba(240,237,232,0.4);margin:0 0 22px;}
 .lp input[type=text],.lp input[type=email]{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:13px 15px;font-family:'DM Sans',sans-serif;font-size:15px;color:#f0ede8;margin:0 0 11px;outline:none;display:block;}
@@ -33,9 +33,9 @@ article,main,.prose,.max-w-prose,.content{max-width:100%!important;padding:0!imp
 .lp input[type=text]:focus,.lp input[type=email]:focus{border-color:rgba(91,155,213,0.5);}
 .lp-btn{width:100%;background:#2e75b6;border:none;border-radius:10px;padding:14px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;color:#fff;cursor:pointer;margin:0 0 14px;display:block;}
 .lp-btn:hover{background:#3a85c8;}
-.lp-gdpr{display:flex;gap:10px;align-items:flex-start;}
-.lp-gdpr input{margin-top:3px;flex-shrink:0;accent-color:#2e75b6;width:15px;height:15px;cursor:pointer;}
-.lp-gdpr label{font-size:12px;color:rgba(240,237,232,0.35);line-height:1.6;cursor:pointer;}
+.lp-gdpr{display:flex;gap:10px;align-items:flex-start;width:100%;overflow:hidden;}
+.lp-gdpr input{margin-top:3px;flex-shrink:0;accent-color:#2e75b6;width:15px;height:15px;min-width:15px;cursor:pointer;}
+.lp-gdpr label{font-size:12px;color:rgba(240,237,232,0.35);line-height:1.6;cursor:pointer;flex:1;min-width:0;word-wrap:break-word;overflow-wrap:break-word;}
 .lp-gdpr a{color:rgba(91,155,213,0.6);text-decoration:none;}
 .lp-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#5b9bd5;margin:0 0 14px;display:block;}
 .lp-stitle{font-family:'Playfair Display',serif;font-size:22px;color:#f0ede8;margin:0 0 24px;}
