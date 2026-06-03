@@ -100,9 +100,9 @@ article,main,.prose,.max-w-prose,.content{max-width:100%!important;padding:0!imp
     <input type="text" id="lp-name" placeholder="Your first name" />
     <input type="email" id="lp-email" placeholder="Your email address" />
     <button class="lp-btn" onclick="lpGo()">Send me the guide</button>
-    <div class="lp-gdpr">
-      <input type="checkbox" id="lp-ok" />
-      <label for="lp-ok">I agree to receive the guide and occasional insights from Obed Favour. No spam. Unsubscribe anytime. <a href="/privacy">Privacy Policy</a>.</label>
+    <div style="display:flex;gap:10px;align-items:flex-start;width:100%;margin-top:4px;">
+      <input type="checkbox" id="lp-ok" style="width:18px;height:18px;min-width:18px;margin-top:2px;flex-shrink:0;accent-color:#2E75B6;cursor:pointer;" />
+      <label for="lp-ok" style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6;cursor:pointer;flex:1;min-width:0;word-break:break-word;">I agree to receive the guide and occasional insights from Obed Favour. No spam. Unsubscribe anytime. <a href="/privacy" style="color:#5B9BD5;text-decoration:none;">Privacy Policy</a>.</label>
     </div>
   </div>
   <div class="lp-ok" id="lp-done">
