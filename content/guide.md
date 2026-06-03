@@ -101,8 +101,9 @@ article,main,.prose,.max-w-prose,.content{max-width:100%!important;padding:0!imp
     <input type="email" id="lp-email" placeholder="Your email address" />
     <button class="lp-btn" onclick="lpGo()">Send me the guide</button>
     <div style="display:flex;gap:10px;align-items:flex-start;width:100%;margin-top:4px;">
-      <input type="checkbox" id="lp-ok" style="width:18px;height:18px;min-width:18px;margin-top:2px;flex-shrink:0;accent-color:#2E75B6;cursor:pointer;" />
-      <label for="lp-ok" style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6;cursor:pointer;flex:1;min-width:0;word-break:break-word;">I agree to receive the guide and occasional insights from Obed Favour. No spam. Unsubscribe anytime. <a href="/privacy" style="color:#5B9BD5;text-decoration:none;">Privacy Policy</a>.</label>
+      <div onclick="toggleConsent()" id="lp-box" style="width:18px;height:18px;min-width:18px;max-width:18px;border:2px solid rgba(91,155,213,0.5);border-radius:4px;background:transparent;cursor:pointer;flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;" ></div>
+      <input type="checkbox" id="lp-ok" style="display:none;" />
+      <label onclick="toggleConsent()" style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6;cursor:pointer;flex:1;min-width:0;word-break:break-word;">I agree to receive the guide and occasional insights from Obed Favour. No spam. Unsubscribe anytime. <a href="/privacy" style="color:#5B9BD5;text-decoration:none;">Privacy Policy</a>.</label>
     </div>
   </div>
   <div class="lp-ok" id="lp-done">
@@ -155,6 +156,13 @@ article,main,.prose,.max-w-prose,.content{max-width:100%!important;padding:0!imp
 </div>
 
 <script>
+var lpConsent=false;
+function toggleConsent(){
+  lpConsent=!lpConsent;
+  document.getElementById('lp-ok').checked=lpConsent;
+  document.getElementById('lp-box').style.background=lpConsent?'#2E75B6':'transparent';
+  document.getElementById('lp-box').innerHTML=lpConsent?'<svg width="12" height="12" viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/></svg>':'';
+}
 function lpGo(){
   var n=document.getElementById('lp-name').value.trim();
   var e=document.getElementById('lp-email').value.trim();
