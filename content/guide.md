@@ -8,6 +8,7 @@ showReadingTime = false
 showAuthor = false
 showBreadcrumbs = false
 showTitle = false
+showWordCount = false
 description = "Free guide: Build your professional website this weekend. No developer. No code. Complete step-by-step."
 +++
 
@@ -15,7 +16,7 @@ description = "Free guide: Build your professional website this weekend. No deve
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
 *{box-sizing:border-box;}
 article,main,.prose,.max-w-prose,.content{max-width:100%!important;padding:0!important;}
-.lp{font-family:'DM Sans',sans-serif;background:#0a1628;color:#f0ede8;width:100%;padding:60px 20px 40px;}
+.lp{font-family:'DM Sans',sans-serif;background:#0a1628;color:#f0ede8;position:fixed;top:0;left:0;width:100vw;height:100vh;overflow-y:auto;z-index:9998;padding:60px 20px 40px;}
 .lp-c{max-width:560px;margin:0 auto;}
 .lp-badge{display:inline-block;background:rgba(46,117,182,0.18);border:1px solid rgba(46,117,182,0.4);color:#7eb8f0;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:24px;}
 .lp h1{font-family:'Playfair Display',serif;font-size:clamp(28px,6vw,44px);font-weight:700;line-height:1.2;color:#f0ede8;margin:0 0 18px;}
