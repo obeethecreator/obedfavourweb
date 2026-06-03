@@ -14,7 +14,7 @@ description = "Free guide: Build your professional website this weekend. No deve
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
 article,main,.prose,.max-w-prose,.content,#single-content{max-width:100%!important;width:100%!important;padding:0!important;margin:0!important;}
 *{box-sizing:border-box;}
-.lp-wrap{font-family:'DM Sans',sans-serif;background:#0a1628;color:#f0ede8;width:100%;display:block;padding:0;margin:0;}
+.lp-wrap{font-family:'DM Sans',sans-serif;background:#0a1628;color:#f0ede8;width:100vw;display:block;padding:0;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;}
 .lp-inner{max-width:600px;margin:0 auto;padding:60px 24px 40px;}
 .lp-badge{display:inline-block;background:rgba(46,117,182,0.18);border:1px solid rgba(46,117,182,0.4);color:#7eb8f0;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:24px;}
 .lp-h1{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,44px);font-weight:700;line-height:1.2;color:#f0ede8;margin:0 0 18px;}
