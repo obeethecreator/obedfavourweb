@@ -58,6 +58,25 @@ article,main,.prose,.max-w-prose,.content{max-width:100%!important;padding:0!imp
 .lp-ok-i{font-size:36px;margin:0 0 12px;}
 .lp-ok-t{font-family:'Playfair Display',serif;font-size:20px;color:#f0ede8;margin:0 0 8px;}
 .lp-ok-s{font-size:13px;color:rgba(240,237,232,0.45);line-height:1.6;margin:0;}
+@media(max-width:600px){
+  .lp{padding:40px 16px 40px;}
+  .lp-c{width:100%;}
+  .lp h1{font-size:28px;}
+  .lp-sub{font-size:15px;}
+  .lp-stats{gap:16px;}
+  .lp-stat-n{font-size:22px;}
+  .lp-box{padding:24px 18px;}
+  .lp input[type=text],.lp input[type=email]{font-size:16px;padding:13px 14px;}
+  .lp-btn{font-size:15px;padding:14px;}
+  .lp-gdpr{flex-direction:row;gap:10px;align-items:flex-start;}
+  .lp-gdpr input{width:18px;height:18px;margin-top:2px;flex-shrink:0;}
+  .lp-gdpr label{font-size:12px;width:calc(100% - 28px);display:block;}
+  .lp-grid{grid-template-columns:1fr;}
+  .lp-for-list li{font-size:13px;}
+  .lp-about{flex-direction:row;gap:14px;}
+  .lp-ab{font-size:13px;}
+  .lp-section-title{font-size:20px;}
+}
 </style>
 
 <div class="lp">
