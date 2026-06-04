@@ -1,6 +1,6 @@
 ﻿---
 title: "Obed Favour"
-description: "Growth Marketer & AI Automation Expert helping brands scale through AI automation, content strategy and paid social."
+description: "I grew a YouTube channel 1,900% (3K to 60K+ subscribers) and 8M+ organic views. I build YouTube growth systems that turn views into revenue for founders, creators, and brands."
 ---
 <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:2rem 0;">
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
@@ -8,7 +8,7 @@ description: "Growth Marketer & AI Automation Expert helping brands scale throug
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">YouTube subscriber growth</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;">3.5M+</div>
+    <div style="font-size:32px;font-weight:600;color:inherit;">8M+</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Organic views generated</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
@@ -38,3 +38,4 @@ description: "Growth Marketer & AI Automation Expert helping brands scale throug
     <p style="color:#4A7A9B;font-size:0.75rem;margin-top:1rem;">No spam. No fluff. Unsubscribe anytime.</p>
   </div>
 </div>
+
