@@ -11,7 +11,7 @@ title = "Obed Favour"
   description = "YouTube Growth Strategist for founders, creators & brands"
 
 [params.author]
-  name = "Obed Favour Chukwuemeka"
+  name = "Obed Favour"
   image = "avatar.jpg"
   headline = "I grew a YouTube channel 1,900% - from 3K to 60K subscribers"
   bio = "I build YouTube growth systems that turn views into subscribers, and subscribers into revenue - for founders, creators, and brands. 1,900% growth, 8M+ views, $1.4M raised."
@@ -23,5 +23,6 @@ title = "Obed Favour"
     { tiktok = "https://tiktok.com/@obeethecreator" },
     { youtube = "https://youtube.com/@obeethecreator" },
   ]
+
 
 
