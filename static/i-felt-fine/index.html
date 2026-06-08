@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>I Felt Fine — How I discovered my cholesterol was dangerous at 27</title>
+<meta name="description" content="A true story and practical Nigerian guide: the one-hour-a-day routine, food guide, meal plans and trackers that changed my numbers — no gym, no extremes." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<!-- Paystack Inline -->
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<style>
+  :root{
+    --ink:#1A2238;
+    --ink-soft:#2A3350;
+    --paper:#FAF8F3;
+    --paper-2:#F1EFE8;
+    --gold:#C9A227;
+    --green:#2E7D5B;
+    --green-bg:#EAF3EE;
+    --accent:#C0392B;
+    --soft:#6B7280;
+    --line:#E4DFD2;
+    --shadow: 0 18px 50px -20px rgba(26,34,56,.35);
+    --maxw: 1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Spline Sans',system-ui,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;letter-spacing:-.01em}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--gold)}
+  a{color:inherit}
+
+  /* ---------- top bar ---------- */
+  .promobar{background:var(--accent);color:#fff;text-align:center;font-size:.86rem;padding:8px 16px;font-weight:500;letter-spacing:.01em}
+  .promobar b{font-weight:700}
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(26,34,56,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(255,255,255,.08)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{font-family:'Fraunces',serif;font-weight:700;color:#fff;font-size:1.15rem;letter-spacing:.02em}
+  .brand span{color:var(--gold)}
+  .nav-cta{background:var(--gold);color:var(--ink);border:none;padding:10px 18px;border-radius:999px;
+    font-family:'Spline Sans';font-weight:600;font-size:.9rem;cursor:pointer;transition:transform .15s ease, box-shadow .2s}
+  .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(201,162,39,.7)}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;background:
+      radial-gradient(1200px 500px at 80% -10%, rgba(201,162,39,.12), transparent 60%),
+      linear-gradient(180deg,#1A2238 0%, #20294a 100%);
+    color:#fff;padding:84px 0 96px;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;
+    background-image:radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size:22px 22px;mask-image:linear-gradient(180deg,transparent,#000 40%,transparent);opacity:.5}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .hero h1{font-size:clamp(2.4rem,5vw,3.9rem);color:#fff;margin:18px 0 0}
+  .hero h1 .li{color:var(--gold);font-style:italic;font-weight:500}
+  .hero .sub{margin-top:20px;font-size:1.12rem;color:#D9DCE6;max-width:34ch}
+  .hero .pts{margin-top:26px;display:flex;flex-direction:column;gap:10px}
+  .hero .pts li{list-style:none;display:flex;gap:11px;align-items:flex-start;color:#E8EAF1;font-size:1rem}
+  .tick{flex:0 0 auto;width:20px;height:20px;border-radius:50%;background:var(--green);
+    display:grid;place-items:center;margin-top:2px}
+  .tick svg{width:11px;height:11px}
+  .hero-cta-row{margin-top:32px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .btn-primary{background:var(--gold);color:var(--ink);border:none;padding:16px 30px;border-radius:999px;
+    font-family:'Spline Sans';font-weight:600;font-size:1.05rem;cursor:pointer;display:inline-flex;align-items:center;gap:10px;
+    transition:transform .15s ease, box-shadow .25s;box-shadow:0 12px 30px -12px rgba(201,162,39,.8)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 40px -14px rgba(201,162,39,.9)}
+  .price-tag{color:#fff;font-size:.98rem}
+  .price-tag .amt{font-family:'Fraunces',serif;font-weight:700;font-size:1.5rem;color:#fff}
+  .price-tag .old{color:#9aa0b4;text-decoration:line-through;margin-left:8px;font-size:1rem}
+
+  /* book mock */
+  .book-mock{position:relative;justify-self:center;perspective:1400px}
+  .book{width:264px;aspect-ratio:1/1.42;border-radius:6px 12px 12px 6px;position:relative;
+    background:linear-gradient(160deg,#20294a,#161d33);box-shadow:var(--shadow), -2px 0 0 rgba(0,0,0,.4) inset;
+    transform:rotateY(-18deg) rotateX(4deg);transition:transform .6s cubic-bezier(.2,.7,.2,1);
+    border:1px solid rgba(255,255,255,.06);padding:30px 26px;display:flex;flex-direction:column}
+  .book:hover{transform:rotateY(-8deg) rotateX(2deg)}
+  .book::before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;border-radius:6px 0 0 6px;
+    background:linear-gradient(90deg,rgba(0,0,0,.45),rgba(255,255,255,.05))}
+  .book .b-top{height:6px;width:46px;background:var(--gold);margin-bottom:auto}
+  .book .b-kick{color:var(--gold);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+  .book .b-title{font-family:'Fraunces',serif;color:#fff;font-size:2.3rem;line-height:.98;font-weight:700;margin:8px 0 14px}
+  .book .b-rule{width:42px;height:3px;background:var(--gold);margin-bottom:14px}
+  .book .b-sub{color:#cfd3e0;font-size:.74rem;line-height:1.45}
+  .book .b-bottom{margin-top:auto;color:#aeb3c4;font-size:.64rem;border-top:1px solid rgba(255,255,255,.1);padding-top:10px}
+
+  /* ---------- trust strip ---------- */
+  .trust{background:var(--ink-soft);color:#dfe2ec;padding:14px 0}
+  .trust .wrap{display:flex;gap:40px;justify-content:center;flex-wrap:wrap;font-size:.92rem}
+  .trust b{color:var(--gold)}
+
+  /* ---------- sections ---------- */
+  section.block{padding:84px 0}
+  .section-head{max-width:620px;margin-bottom:44px}
+  .section-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem)}
+  .section-head p{margin-top:14px;color:var(--soft);font-size:1.08rem}
+
+  /* story numbers */
+  .numbers{display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:center;
+    background:#fff;border:1px solid var(--line);border-radius:18px;padding:40px;box-shadow:var(--shadow)}
+  .numbers .n{ text-align:center}
+  .numbers .lab{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+  .numbers .lab.before{color:var(--accent)} .numbers .lab.after{color:var(--green)}
+  .numbers .big{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(3rem,8vw,5rem);color:var(--ink);line-height:1}
+  .numbers .small{color:var(--soft);font-size:.9rem;margin-top:4px}
+  .numbers .arrow{font-size:2.2rem;color:var(--gold)}
+  .numbers .note{grid-column:1/-1;text-align:center;color:var(--soft);font-size:.86rem;margin-top:6px;font-style:italic}
+
+  /* inside grid */
+  .inside-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+
+  /* stakes */
+  .stakes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .stake{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:26px}
+  .stake .se{font-size:1.9rem;margin-bottom:12px}
+  .stake h4{font-family:'Fraunces',serif;font-weight:600;color:#fff;font-size:1.18rem;margin-bottom:8px;line-height:1.2}
+  .stake p{color:#bfc4d4;font-size:.96rem}
+
+  /* ignore-vs-act paths */
+  .paths{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px}
+  .path{border-radius:16px;padding:24px 26px}
+  .path-bad{background:rgba(192,57,43,.12);border:1px solid rgba(192,57,43,.35)}
+  .path-good{background:rgba(46,125,91,.14);border:1px solid rgba(46,125,91,.4)}
+  .path-head{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:#fff;margin-bottom:12px}
+  .path ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .path li{color:#dfe2ec;font-size:.95rem;padding-left:18px;position:relative}
+  .path-bad li::before{content:"✕";position:absolute;left:0;color:#e8867b;font-weight:700}
+  .path-good li::before{content:"✓";position:absolute;left:0;color:#7FB59B;font-weight:700}
+
+  /* why listen */
+  .why-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}
+  .why-text h2{font-size:clamp(1.8rem,3.2vw,2.5rem);margin-bottom:14px}
+  .why-text p{color:var(--ink-soft);font-size:1.05rem;margin-bottom:12px}
+  .why-side{background:var(--ink);border-radius:20px;padding:30px;color:#fff;box-shadow:var(--shadow)}
+  .why-stat{text-align:center;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:18px}
+  .ws-big{display:block;font-family:'Fraunces',serif;font-weight:700;font-size:2.4rem;color:var(--gold)}
+  .ws-lab{color:#aeb3c4;font-size:.85rem}
+  .why-list{display:flex;flex-direction:column;gap:13px}
+  .wl{display:flex;gap:11px;align-items:center;color:#e6e8f0;font-size:.96rem}
+  .wl-ic{font-size:1.2rem}
+
+  /* 30-day results */
+  .results-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .result{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px;align-items:flex-start}
+  .result .rnum{flex:0 0 auto;width:32px;height:32px;border-radius:50%;background:var(--green);color:#fff;
+    font-family:'Fraunces',serif;font-weight:700;display:grid;place-items:center;font-size:1.05rem}
+  .result b{display:block;margin-bottom:3px;font-size:1.04rem}
+  .result p{color:var(--soft);font-size:.93rem}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;transition:transform .2s ease, box-shadow .25s}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .card .ic{width:42px;height:42px;border-radius:11px;background:var(--green-bg);display:grid;place-items:center;margin-bottom:16px}
+  .card .ic svg{width:22px;height:22px;stroke:var(--green)}
+  .card h3{font-size:1.18rem;margin-bottom:8px}
+  .card p{color:var(--soft);font-size:.96rem}
+
+  /* contents list */
+  .contents{background:var(--ink);color:#fff;border-radius:22px;padding:48px;display:grid;
+    grid-template-columns:1fr 1fr;gap:14px 48px}
+  .contents .ct-head{grid-column:1/-1;margin-bottom:6px}
+  .contents .ct-head h2{color:#fff;font-size:1.9rem}
+  .contents .ct-head p{color:#aeb3c4;margin-top:8px}
+  .contents .ci{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.08);align-items:baseline}
+  .contents .ci .num{font-family:'Fraunces',serif;color:var(--gold);font-weight:600;min-width:26px}
+  .contents .ci span.t{color:#e6e8f0;font-size:.98rem}
+
+  /* who for */
+  .whofor{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .who{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center}
+  .who .e{font-size:1.6rem}
+  .who h4{font-family:'Spline Sans';font-weight:600;margin:8px 0 4px;font-size:1rem}
+  .who p{color:var(--soft);font-size:.86rem}
+
+  /* offer / pricing */
+  .offer{background:linear-gradient(165deg,#20294a,#1A2238);color:#fff;border-radius:24px;padding:54px;
+    display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start;box-shadow:var(--shadow)}
+  .offer h2{color:#fff;font-size:2.2rem}
+  .offer .incl{margin-top:18px;display:flex;flex-direction:column;gap:11px}
+  .offer .incl li{list-style:none;display:flex;gap:11px;color:#dfe2ec;font-size:1rem}
+  .offer .incl .tick{background:var(--green)} .offer .incl .tick svg{stroke:#fff}
+  .offer .incl .tick.gold{background:var(--gold)} .offer .incl .tick.gold svg{stroke:var(--ink)}
+  .bonus-stack{margin-top:24px;background:rgba(201,162,39,.08);border:1px dashed rgba(201,162,39,.5);
+    border-radius:14px;padding:18px 20px}
+  .bonus-head{font-family:'Fraunces',serif;font-weight:600;color:#fff;font-size:1.02rem;margin-bottom:6px}
+  .bonus-head span{color:var(--gold);font-weight:700;letter-spacing:.04em}
+  .bonus-list{margin-top:8px !important;gap:8px !important}
+  .bonus-list li{font-size:.95rem !important;color:#e8eaf1 !important}
+
+  .buybox{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:32px;text-align:center;position:relative}
+  .save-badge{position:absolute;top:-14px;right:-12px;background:var(--accent);color:#fff;font-weight:700;
+    font-size:.82rem;padding:8px 14px;border-radius:999px;box-shadow:0 8px 20px -8px rgba(192,57,43,.8);transform:rotate(4deg)}
+  .anchor-line{display:flex;flex-direction:column;gap:2px;align-items:center}
+  .anchor-label{color:#9aa0b4;font-size:.78rem;letter-spacing:.04em}
+  .buybox .price{font-family:'Fraunces',serif;font-weight:700;font-size:3.6rem;color:#fff;line-height:1;margin-top:2px}
+  .buybox .cur{font-size:1.6rem;vertical-align:super;color:var(--gold)}
+  .buybox .old{color:#9aa0b4;text-decoration:line-through;font-size:1.15rem}
+  .countdown-wrap{margin-top:14px;background:rgba(192,57,43,.14);border:1px solid rgba(192,57,43,.4);
+    border-radius:10px;padding:9px 12px;display:flex;flex-direction:column;gap:1px}
+  .cd-label{color:#e8b3ac;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+  .cd{font-family:'Fraunces',serif;font-weight:700;color:#fff;font-size:1.15rem;letter-spacing:.02em}
+  .buybox .btn-primary{width:100%;justify-content:center;margin-top:18px}
+  .buybox .micro{color:#9aa0b4;font-size:.8rem;margin-top:14px;display:flex;gap:6px;justify-content:center;align-items:center}
+  .value-note{color:#aeb3c4;font-size:.82rem;margin-top:10px;line-height:1.45}
+  .secure-row{display:flex;gap:14px;justify-content:center;margin-top:14px;color:#aeb3c4;font-size:.78rem;align-items:center;flex-wrap:wrap}
+
+  /* faq */
+  .faq{max-width:760px;margin:0 auto}
+  .qa{border-bottom:1px solid var(--line)}
+  .qa button{width:100%;background:none;border:none;text-align:left;padding:22px 0;font-family:'Fraunces',serif;
+    font-size:1.18rem;font-weight:600;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center}
+  .qa .ans{max-height:0;overflow:hidden;transition:max-height .3s ease;color:var(--soft)}
+  .qa .ans p{padding-bottom:20px}
+  .qa.open .ans{max-height:240px}
+  .qa .chev{transition:transform .3s;flex:0 0 auto;color:var(--gold);font-size:1.3rem}
+  .qa.open .chev{transform:rotate(45deg)}
+
+  /* disclaimer + footer */
+  .disclaimer{background:var(--paper-2);border-left:3px solid var(--accent);border-radius:10px;padding:22px 24px;color:var(--soft);font-size:.86rem;max-width:820px;margin:0 auto}
+  footer{background:var(--ink);color:#aeb3c4;padding:46px 0;text-align:center;font-size:.86rem}
+  footer .brand{display:inline-block;margin-bottom:12px}
+  footer a{color:var(--gold);text-decoration:none}
+
+  /* reveal animation */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* responsive */
+  @media(max-width:880px){
+    .hero .wrap{grid-template-columns:1fr;gap:40px}
+    .book-mock{order:-1}
+    .inside-grid{grid-template-columns:1fr 1fr}
+    .stakes-grid{grid-template-columns:1fr}
+    .paths{grid-template-columns:1fr}
+    .why-wrap{grid-template-columns:1fr;gap:28px}
+    .results-grid{grid-template-columns:1fr}
+    .contents{grid-template-columns:1fr;padding:34px}
+    .whofor{grid-template-columns:1fr 1fr}
+    .offer{grid-template-columns:1fr;padding:36px}
+  }
+  @media(max-width:560px){
+    .inside-grid{grid-template-columns:1fr}
+    .whofor{grid-template-columns:1fr 1fr}
+    .numbers{padding:26px}
+    section.block{padding:60px 0}
+    .trust .wrap{gap:18px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ PROMO BAR ============ -->
+<div class="promobar" data-promo-only>
+  🔥 Intro price live — <b data-save-pct>OFF</b> &nbsp;·&nbsp; ends in <b data-countdown>—</b>
+</div>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">I Felt <span>Fine</span></div>
+    <button class="nav-cta" onclick="scrollToBuy()">Get the book</button>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">A true story every Nigerian needs to read</p>
+      <h1>I felt <span class="li">fine.</span><br/>Inside, something was quietly killing me.</h1>
+      <p class="sub">I was 27. No pain. No sign. I looked healthy. Then one test showed my cholesterol was more than <b>double</b> the danger line — and I never felt a thing. It could be the same for you right now.</p>
+      <ul class="pts">
+        <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Find out if the silent danger is hiding in you — before it's too late</li>
+        <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> The simple 1-hour-a-day habit that turned my health around</li>
+        <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Eat your jollof, your soups, your swallow — and still get healthy</li>
+      </ul>
+      <div class="hero-cta-row">
+        <button class="btn-primary" onclick="payWithPaystack()">
+          Protect yourself today
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10 4l5 5-5 5" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="price-tag">
+          <span class="old" data-old-display></span>
+          <span class="amt" data-price-display>₦—</span><br/>
+          <span style="color:#9aa0b4;font-size:.82rem"><span data-promo-only><b data-save-pct style="color:#fff"></b> intro price · </span>instant download</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- book mock -->
+    <div class="book-mock">
+      <div class="book">
+        <div class="b-top"></div>
+        <div class="b-kick">A true story &amp; practical guide</div>
+        <div class="b-title">I Felt<br/>Fine</div>
+        <div class="b-rule"></div>
+        <div class="b-sub">How I discovered my cholesterol was dangerous at 27 — and exactly what I did about it.</div>
+        <div class="b-bottom">The 1-hour routine · Nigerian food guide · meal plans &amp; trackers</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust">
+  <div class="wrap">
+    <div>😨 <b>No symptoms.</b> Until it's too late.</div>
+    <div>📉 My number: <b>435 → 172</b></div>
+    <div>🚶 <b>No gym.</b> No wahala.</div>
+    <div>🇳🇬 Made for <b>your</b> food &amp; life</div>
+  </div>
+</div>
+
+<!-- ============ STORY / NUMBERS ============ -->
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">It started on a normal Sunday</p>
+      <h2>I was in church when the room started to spin.</h2>
+      <p>That dizziness scared me into doing one small thing: a blood test. What came back changed my life. My cholesterol was more than double the safe limit — slowly clogging me from the inside — and I had felt <b>nothing</b>. No pain. No warning. Just a young man who thought he was fine. Ask yourself one honest question: when did <i>you</i> last check yours?</p>
+    </div>
+    <div class="numbers reveal">
+      <div class="n">
+        <div class="lab before">Before</div>
+        <div class="big">435</div>
+        <div class="small">Total cholesterol</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="n">
+        <div class="lab after">After</div>
+        <div class="big">172</div>
+        <div class="small">In under a year</div>
+      </div>
+      <div class="note">Same me. Different inside. Done with a simple daily routine and food changes, alongside my doctor's care.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY LISTEN ============ -->
+<section class="block" id="why" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="why-wrap reveal">
+      <div class="why-text">
+        <p class="eyebrow">Why you should listen to me</p>
+        <h2>I'm not a doctor. That's exactly the point.</h2>
+        <p>I'm not a doctor. I'm not a fitness coach. I had no special knowledge and no head start.</p>
+        <p>I was just an ordinary Nigerian who <b>thought he was perfectly healthy</b> — until a test came back at <b>435</b> and shook my whole world.</p>
+        <p>So I did what you'd do. I panicked. Then I started researching everything, testing what worked, walking, changing my food, and working closely with my doctor — month after month — until my number came all the way down to <b>172</b>.</p>
+        <p>This book is simply <b>everything I wish someone had handed me on day one</b> — written for a normal person, by a normal person who lived it.</p>
+      </div>
+      <div class="why-side reveal">
+        <div class="why-stat"><span class="ws-big">435 → 172</span><span class="ws-lab">My real before &amp; after</span></div>
+        <div class="why-list">
+          <div class="wl"><span class="wl-ic">🙋🏾‍♂️</span> An ordinary Nigerian — not a doctor</div>
+          <div class="wl"><span class="wl-ic">🔬</span> Months of real trial and error</div>
+          <div class="wl"><span class="wl-ic">🩺</span> Done alongside my own doctor</div>
+          <div class="wl"><span class="wl-ic">📖</span> Written for normal people, in plain words</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAKES / PAIN ============ -->
+<section class="block" id="stakes" style="background:var(--ink);color:#fff">
+  <div class="wrap">
+    <div class="section-head reveal" style="max-width:680px">
+      <p class="eyebrow" style="color:var(--gold)">Read this part slowly</p>
+      <h2 style="color:#fff">What happens if you ignore this?</h2>
+    </div>
+    <div class="stakes-grid">
+      <div class="stake reveal">
+        <div class="se">🏥</div>
+        <h4>The hospital bill you pray you never see</h4>
+        <p>Heart treatment and surgery in Nigeria can run into millions of naira — money most families simply don't have lying around. This book costs less than a night out. Which one would hurt more?</p>
+      </div>
+      <div class="stake reveal">
+        <div class="se">⏳</div>
+        <h4>It's building up right now</h4>
+        <p>Every day you don't know your number is another day it can quietly get worse. You can't feel it happening. By the time your body finally "tells" you, it's often already an emergency.</p>
+      </div>
+      <div class="stake reveal">
+        <div class="se">👨‍👩‍👧</div>
+        <h4>The people who can't lose you</h4>
+        <p>Your parents. Your partner. Your children. The people who depend on you being around. Knowing your number today is one of the kindest things you can do for them.</p>
+      </div>
+    </div>
+
+    <div class="paths reveal">
+      <div class="path path-bad">
+        <div class="path-head">😟 If you keep ignoring it</div>
+        <ul>
+          <li>You stay in the dark, hoping you're fine</li>
+          <li>The silent damage continues, year after year</li>
+          <li>You find out the hard way — in a hospital</li>
+          <li>Your family inherits the fear and the bills</li>
+        </ul>
+      </div>
+      <div class="path path-good">
+        <div class="path-head">🙂 If you act today</div>
+        <ul>
+          <li>You finally know your real number</li>
+          <li>You have a simple daily plan you can follow</li>
+          <li>You take control before it becomes a crisis</li>
+          <li>You buy yourself years — and peace of mind</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="reveal" style="text-align:center;color:#cfd3e0;margin-top:34px;font-size:1.08rem;max-width:640px;margin-left:auto;margin-right:auto">
+      I'm not here to scare you. I'm here because nobody warned me — and I got lucky.
+      <b style="color:#fff">You don't have to rely on luck.</b>
+    </p>
+    <div style="text-align:center;margin-top:26px" class="reveal">
+      <button class="btn-primary" onclick="scrollToBuy()">Show me what to do →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT'S INSIDE ============ -->
+<section class="block" id="inside" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Here's how it saves you</p>
+      <h2>You don't need a doctor's brain. You need a simple plan.</h2>
+      <p>Everything is explained so plainly a child could follow it. By the last page you'll know what to eat, how to move, and what to do first — starting tomorrow morning.</p>
+    </div>
+    <div class="inside-grid">
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 19V5M4 19h16M8 16v-5M13 16V8M18 16v-3" stroke-linecap="round"/></svg></div><h3>Know if you're in danger</h3><p>Cholesterol made dead simple — like a story about trucks on a road. Finally understand what's happening inside you.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 12l4 4L19 6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>One easy daily habit</h3><p>No gym. No suffering. The simple 1-hour-a-day routine — that you can split up — that helped turn my health around.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 4v8l5 3" stroke-linecap="round"/></svg></div><h3>Keep your Nigerian food</h3><p>Jollof, swallow, soups, palm oil — what to enjoy, what to go easy on, and clever swaps. No painful foreign diet.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5" stroke-linecap="round"/></svg></div><h3>Never wonder "what do I eat?"</h3><p>A done-for-you 7-day Nigerian meal plan and a one-glance balanced-plate picture. Just follow it.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 2v4M6 22v-7M6 11a3 3 0 100-6 3 3 0 000 6zM18 2v7M18 22v-4M18 15a3 3 0 100-6 3 3 0 000 6z" stroke-linecap="round"/></svg></div><h3>Eat well on any budget</h3><p>Lean, balanced and premium market baskets. Getting healthy doesn't have to cost more — often it costs less.</p></div>
+      <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 11l3 3L22 4" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke-linecap="round"/></svg></div><h3>A plan you can't get lost in</h3><p>A simple 30-day, week-by-week plan plus fill-in trackers. You always know your next step.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 30-DAY OUTCOMES ============ -->
+<section class="block" id="results">
+  <div class="wrap">
+    <div class="section-head reveal" style="max-width:640px">
+      <p class="eyebrow">Your first 30 days</p>
+      <h2>Where you'll be one month from today.</h2>
+      <p>This isn't theory you'll forget by next week. Follow the plan and here's what you'll actually have done:</p>
+    </div>
+    <div class="results-grid reveal">
+      <div class="result"><span class="rnum">1</span><div><b>Understand your blood test</b><p>Read every cholesterol number on your results and know what each one means for you.</p></div></div>
+      <div class="result"><span class="rnum">2</span><div><b>Know exactly what to buy</b><p>Walk into any Nigerian market with a clear list of what helps and what to avoid.</p></div></div>
+      <div class="result"><span class="rnum">3</span><div><b>Eat a plan that fits your life</b><p>Follow a 7-day Nigerian meal plan — your food, made heart-friendlier.</p></div></div>
+      <div class="result"><span class="rnum">4</span><div><b>Build a daily walking habit</b><p>Go from "I don't exercise" to a simple routine that fits around your work.</p></div></div>
+      <div class="result"><span class="rnum">5</span><div><b>Have your own action plan</b><p>A personal, written 30-day plan and trackers — so you always know your next step.</p></div></div>
+      <div class="result"><span class="rnum">6</span><div><b>Feel in control again</b><p>Trade fear and confusion for a clear, calm plan you can actually stick to.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTENTS ============ -->
+<section class="block" id="contents" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="contents reveal">
+      <div class="ct-head">
+        <p class="eyebrow" style="color:var(--gold)">Everything you get</p>
+        <h2>14 chapters. One clear path.</h2>
+        <p>Story → understanding → action → a plan you can actually follow.</p>
+      </div>
+      <div class="ci"><span class="num">01</span><span class="t">The silent danger &amp; why young Nigerians should care</span></div>
+      <div class="ci"><span class="num">02</span><span class="t">My story — and what I wish I knew earlier</span></div>
+      <div class="ci"><span class="num">03</span><span class="t">Cholesterol explained simply (with diagrams)</span></div>
+      <div class="ci"><span class="num">04</span><span class="t">The most important step: getting tested in Nigeria</span></div>
+      <div class="ci"><span class="num">05</span><span class="t">My journey — what the change really felt like</span></div>
+      <div class="ci"><span class="num">06</span><span class="t">The walking system, done properly</span></div>
+      <div class="ci"><span class="num">07</span><span class="t">My daily routine, morning to evening</span></div>
+      <div class="ci"><span class="num">08</span><span class="t">Nigerian food without the confusion</span></div>
+      <div class="ci"><span class="num">09</span><span class="t">7-day meal guide &amp; balanced plate</span></div>
+      <div class="ci"><span class="num">10</span><span class="t">Weekly shopping list &amp; budget baskets</span></div>
+      <div class="ci"><span class="num">11</span><span class="t">Eating healthy when you're busy</span></div>
+      <div class="ci"><span class="num">12</span><span class="t">Your 30-day action plan</span></div>
+      <div class="ci"><span class="num">13</span><span class="t">Frequently asked questions</span></div>
+      <div class="ci"><span class="num">14</span><span class="t">Bonus: lessons, health checklist &amp; trackers</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHO FOR ============ -->
+<section class="block" id="whofor" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">This is for you if…</p>
+      <h2>Does this sound like your life?</h2>
+    </div>
+    <div class="whofor">
+      <div class="who reveal"><div class="e">💻</div><h4>You sit all day</h4><p>Laptop to bed, barely moving — but you "feel fine."</p></div>
+      <div class="who reveal"><div class="e">🎯</div><h4>You think you're too young</h4><p>In your 20s or 30s, sure this can't be you. I thought so too.</p></div>
+      <div class="who reveal"><div class="e">🩺</div><h4>You just got scary results</h4><p>Heart racing, googling at 1am, no idea what to do next.</p></div>
+      <div class="who reveal"><div class="e">🍚</div><h4>You love your food</h4><p>You refuse to give up jollof and soups — and you shouldn't have to.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFER / BUY ============ -->
+<section class="block" id="buy">
+  <div class="wrap">
+    <div class="offer reveal">
+      <div>
+        <p class="eyebrow" style="color:var(--gold)">Your move</p>
+        <h2>One small decision today. Your heart will thank you for life.</h2>
+        <p style="color:#dfe2ec;margin-top:14px">Here's everything you get the moment you join:</p>
+        <ul class="incl">
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> The full guide that helped me go from 435 to 172</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Cholesterol explained so simply a child could follow it</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> The full 1-hour-a-day walking system</li>
+        </ul>
+        <div class="bonus-stack">
+          <div class="bonus-head">🎁 Plus these bonuses — included <span>FREE</span> inside</div>
+          <ul class="incl bonus-list">
+            <li><span class="tick gold"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Done-for-you 7-day Nigerian meal plan</li>
+            <li><span class="tick gold"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Budget market baskets (lean · balanced · premium)</li>
+            <li><span class="tick gold"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> 30-day action plan + fill-in tracker pack</li>
+            <li><span class="tick gold"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Health checklist &amp; my hardest-won lessons</li>
+          </ul>
+        </div>
+      </div>
+      <div class="buybox">
+        <div class="save-badge" data-promo-only data-save-pct>OFF</div>
+        <div class="anchor-line">
+          <span class="anchor-label">Regular price</span>
+          <span class="old" data-old-display></span>
+        </div>
+        <div style="color:var(--gold);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin:8px 0 0" data-promo-only>Intro price — today only</div>
+        <div class="price"><span class="cur">₦</span><span data-price-number>—</span></div>
+        <div class="countdown-wrap" data-promo-only>
+          <span class="cd-label">Intro price ends in</span>
+          <span class="cd" data-countdown>—</span>
+        </div>
+        <button class="btn-primary" onclick="payWithPaystack()">
+          Yes — protect my health
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10 4l5 5-5 5" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="micro">🔒 Secure checkout · instant download</div>
+        <div class="value-note">Costs less than one lab test or doctor's visit — and far less than what a sick heart costs.</div>
+        <div class="secure-row">
+          <span>Card</span>·<span>Transfer</span>·<span>USSD</span>·<span>Opay</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="block" id="faq" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin:0 auto 40px;text-align:center">
+      <p class="eyebrow">Questions</p>
+      <h2>Frequently asked</h2>
+    </div>
+    <div class="faq">
+      <div class="qa"><button>I feel completely fine — do I really need this?<span class="chev">+</span></button><div class="ans"><p>That's exactly the trap. I felt 100% fine too. High cholesterol has no symptoms — it gives no warning until it becomes an emergency. Feeling fine is not the same as being fine. This book shows you how to actually know.</p></div></div>
+      <div class="qa"><button>Is it hard to understand?<span class="chev">+</span></button><div class="ans"><p>Not at all. Everything is explained in the simplest possible way — like a story you'd tell a child. No big medical words. If you can read this page, you can follow the whole book.</p></div></div>
+      <div class="qa"><button>Do I need a gym or to give up my food?<span class="chev">+</span></button><div class="ans"><p>No and no. What worked for me was a simple daily walk and small food changes. You keep your jollof, your soups and your swallow — you just learn the smart way to enjoy them.</p></div></div>
+      <div class="qa"><button>How do I get it after I pay?<span class="chev">+</span></button><div class="ans"><p>Instantly. The moment your payment is confirmed you get a secure download link on screen. Read it on any phone, tablet or laptop, in minutes.</p></div></div>
+      <div class="qa"><button>Is this medical advice?<span class="chev">+</span></button><div class="ans"><p>No. It's my true story plus general information from published research — not a replacement for a doctor. Always talk to a qualified doctor about your own numbers and treatment. The book says this clearly throughout.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="block" id="final" style="background:linear-gradient(165deg,#20294a,#1A2238);color:#fff;text-align:center">
+  <div class="wrap" style="max-width:680px">
+    <p class="eyebrow reveal" style="color:var(--gold)">One last thing</p>
+    <h2 class="reveal" style="color:#fff;font-size:clamp(1.9rem,4vw,2.7rem);margin-top:10px">The danger doesn't wait. Please don't either.</h2>
+    <p class="reveal" style="color:#cfd3e0;font-size:1.1rem;margin-top:18px">I got my warning by accident, and I was lucky. Most people never get one. You're reading this for a reason — let it be the moment you decided to know, instead of the moment you wished you had.</p>
+    <div class="reveal" style="margin-top:30px">
+      <button class="btn-primary" onclick="payWithPaystack()">
+        Get the book now — ₦<span data-price-number>—</span>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10 4l5 5-5 5" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div style="color:#9aa0b4;font-size:.85rem;margin-top:14px">🔒 Secure Paystack checkout · instant download · read it today</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCLAIMER ============ -->
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="disclaimer reveal">
+      <strong style="color:var(--accent)">Important:</strong> This book is a personal account combined with general health and nutrition information. It is <strong>not medical advice</strong> and not a substitute for professional diagnosis or treatment. Cholesterol medications are safe and life-saving for many people. Never start, stop or change any medication based on this book. Always consult a qualified doctor about your own situation. Results described are one person's experience and are not a promise of results for anyone else.
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="brand" style="color:#fff">I Felt <span style="color:var(--gold)">Fine</span></div>
+    <p>© 2026 · All rights reserved.</p>
+    <p style="margin-top:8px"><a href="#buy">Get the book</a> · <a href="#faq">FAQ</a></p>
+  </div>
+</footer>
+
+<script>
+  /* ====================================================================
+     CONFIG — edit these values, that's it.
+     ==================================================================== */
+  const CONFIG = {
+    paystackPublicKey: "pk_test_4a0258a8a67b55f1166da1d16162c7fe1278813f", // your Paystack PUBLIC key (swap to pk_live_... when going live)
+
+    // --- HONEST PROMO PRICING ---
+    // regularPriceNaira is the REAL price you charge once the promo ends.
+    // promoPriceNaira is the live intro price while the promo is on.
+    // When the deadline passes, the page automatically switches to the
+    // regular price AND you should set EXPECTED_AMOUNT_KOBO on the server
+    // to match whatever you're currently charging.
+    regularPriceNaira: 5000,     // the genuine "normal" price (shown struck through)
+    promoPriceNaira:   1567,     // the live intro price right now
+    promoEndsISO:      "2026-06-30T23:59:59+01:00", // REAL deadline (WAT). After this, regular price shows.
+
+    // Where to send the customer right after a successful charge.
+    // This is your Cloudflare Worker (verify + watermark + deliver).
+    verifyRedirectBase: "https://obed-ifeltfine.obeethecreator.workers.dev/verify"
+  };
+
+  /* ---------- pricing engine (honest promo + real deadline) ---------- */
+  const PROMO_LIVE = Date.now() < new Date(CONFIG.promoEndsISO).getTime();
+  // The price actually charged. Falls back to regular price once promo ends.
+  const ACTIVE_PRICE = PROMO_LIVE ? CONFIG.promoPriceNaira : CONFIG.regularPriceNaira;
+
+  (function renderPrice(){
+    const fmt = n => "₦" + Number(n).toLocaleString("en-NG");
+    const num = n => Number(n).toLocaleString("en-NG");
+    document.querySelectorAll("[data-price-display]").forEach(el=>el.textContent=fmt(ACTIVE_PRICE));
+    document.querySelectorAll("[data-price-number]").forEach(el=>el.textContent=num(ACTIVE_PRICE));
+    // strike-through regular price only while the promo is genuinely live
+    document.querySelectorAll("[data-old-display]").forEach(el=>{
+      if(PROMO_LIVE){ el.textContent=fmt(CONFIG.regularPriceNaira); el.style.display="block"; }
+      else { el.style.display="none"; }
+    });
+    // show/hide promo-only elements
+    document.querySelectorAll("[data-promo-only]").forEach(el=>{ el.style.display = PROMO_LIVE ? "" : "none"; });
+    // savings %
+    if(PROMO_LIVE){
+      const pct = Math.round((1 - CONFIG.promoPriceNaira/CONFIG.regularPriceNaira)*100);
+      document.querySelectorAll("[data-save-pct]").forEach(el=>el.textContent=pct+"% OFF");
+    }
+  })();
+
+  /* ---------- real countdown to the fixed deadline ---------- */
+  (function countdown(){
+    const els = document.querySelectorAll("[data-countdown]");
+    if(!els.length || !PROMO_LIVE) return;
+    const end = new Date(CONFIG.promoEndsISO).getTime();
+    function tick(){
+      const diff = end - Date.now();
+      if(diff <= 0){ els.forEach(e=>e.textContent="Promo ended"); return; }
+      const d = Math.floor(diff/86400000);
+      const h = Math.floor(diff%86400000/3600000);
+      const m = Math.floor(diff%3600000/60000);
+      const s = Math.floor(diff%60000/1000);
+      const txt = (d>0? d+"d ":"") + String(h).padStart(2,"0")+"h "+String(m).padStart(2,"0")+"m "+String(s).padStart(2,"0")+"s";
+      els.forEach(e=>e.textContent=txt);
+    }
+    tick(); setInterval(tick,1000);
+  })();
+
+  function scrollToBuy(){ document.getElementById("buy").scrollIntoView({behavior:"smooth"}); }
+
+  /* ====================================================================
+     PAYSTACK CHECKOUT (client side)
+     This opens the Paystack popup. On success it sends the customer to
+     your backend verify endpoint. NOTHING is unlocked on the client —
+     the backend must verify with your SECRET key before delivering.
+     ==================================================================== */
+  function payWithPaystack(){
+    if(CONFIG.paystackPublicKey.includes("REPLACE")){
+      alert("Setup needed: add your Paystack PUBLIC key in the CONFIG block of index.html.");
+      return;
+    }
+    // Optionally collect the email with a prompt; better: a small form/modal.
+    const email = window.prompt("Enter your email to receive the book:");
+    if(!email){ return; }
+
+    const handler = PaystackPop.setup({
+      key: CONFIG.paystackPublicKey,
+      email: email,
+      amount: ACTIVE_PRICE * 100, // Paystack uses kobo; ACTIVE_PRICE auto-switches when promo ends
+      currency: "NGN",
+      metadata: {
+        product: "i-felt-fine-ebook",
+        custom_fields: [{ display_name: "Product", variable_name: "product", value: "I Felt Fine ebook" }]
+      },
+      callback: function(response){
+        // response.reference is the transaction reference.
+        // Send the user to your backend to verify + deliver.
+        window.location.href = CONFIG.verifyRedirectBase + "?reference=" + encodeURIComponent(response.reference);
+      },
+      onClose: function(){ /* user closed the popup */ }
+    });
+    handler.openIframe();
+  }
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll(".qa button").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      const qa = btn.parentElement;
+      const open = qa.classList.contains("open");
+      document.querySelectorAll(".qa").forEach(x=>x.classList.remove("open"));
+      if(!open) qa.classList.add("open");
+    });
+  });
+
+  /* ---------- scroll reveal ---------- */
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll(".reveal").forEach((el,i)=>{ el.style.transitionDelay=(i%3*0.08)+"s"; io.observe(el); });
+</script>
+</body>
+</html>
