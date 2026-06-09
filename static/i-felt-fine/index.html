@@ -210,6 +210,12 @@
   .buybox .btn-primary{width:100%;justify-content:center;margin-top:18px}
   .buybox .micro{color:#9aa0b4;font-size:.8rem;margin-top:14px;display:flex;gap:6px;justify-content:center;align-items:center}
   .value-note{color:#aeb3c4;font-size:.82rem;margin-top:10px;line-height:1.45}
+  @keyframes ctaPulse{
+    0%{transform:scale(1);box-shadow:0 12px 30px -12px rgba(201,162,39,.8)}
+    50%{transform:scale(1.05);box-shadow:0 0 0 8px rgba(201,162,39,.35)}
+    100%{transform:scale(1);box-shadow:0 12px 30px -12px rgba(201,162,39,.8)}
+  }
+  .btn-primary.pulse{animation:ctaPulse .8s ease 2}
   .secure-row{display:flex;gap:14px;justify-content:center;margin-top:14px;color:#aeb3c4;font-size:.78rem;align-items:center;flex-wrap:wrap}
 
   /* faq */
@@ -266,7 +272,7 @@
 <div class="topbar">
   <div class="wrap">
     <div class="brand">I Felt <span>Fine</span></div>
-    <button class="nav-cta" onclick="scrollToBuy()">Get the book</button>
+    <button class="nav-cta" onclick="scrollToBuy()">Get the system</button>
   </div>
 </div>
 
@@ -274,23 +280,23 @@
 <header class="hero">
   <div class="wrap">
     <div>
-      <p class="eyebrow">A true story every Nigerian needs to read</p>
-      <h1>I felt <span class="li">fine.</span><br/>Inside, something was quietly killing me.</h1>
-      <p class="sub">I was 27. No pain. No sign. I looked healthy. Then one test showed my cholesterol was more than <b>double</b> the danger line — and I never felt a thing. It could be the same for you right now.</p>
+      <p class="eyebrow">The Nigerian Heart-Health System</p>
+      <h1>I felt <span class="li">fine.</span></h1>
+      <p class="sub">Then one routine test revealed my cholesterol was more than <b>double the recommended level</b>. I was 27. No pain, no warning — I felt completely healthy. Over the months that followed, I took back control with simple changes to my food, movement and daily habits. This is the system I built.</p>
       <ul class="pts">
         <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Find out if the silent danger is hiding in you — before it's too late</li>
-        <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> The simple 1-hour-a-day habit that turned my health around</li>
+        <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> A simple food, movement &amp; habits system — built for Nigerian life</li>
         <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Eat your jollof, your soups, your swallow — and still get healthy</li>
       </ul>
       <div class="hero-cta-row">
-        <button class="btn-primary" onclick="payWithPaystack()">
-          Protect yourself today
+        <button class="btn-primary" onclick="scrollToBuy()">
+          Get the system today
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10 4l5 5-5 5" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="price-tag">
           <span class="old" data-old-display></span>
           <span class="amt" data-price-display>₦—</span><br/>
-          <span style="color:#9aa0b4;font-size:.82rem"><span data-promo-only><b data-save-pct style="color:#fff"></b> intro price · </span>instant download</span>
+          <span style="color:#9aa0b4;font-size:.82rem"><span data-promo-only><b data-save-pct style="color:#fff"></b> launch price · </span>instant download</span>
         </div>
       </div>
     </div>
@@ -299,11 +305,11 @@
     <div class="book-mock">
       <div class="book">
         <div class="b-top"></div>
-        <div class="b-kick">A true story &amp; practical guide</div>
+        <div class="b-kick">The Nigerian Heart-Health System</div>
         <div class="b-title">I Felt<br/>Fine</div>
         <div class="b-rule"></div>
-        <div class="b-sub">How I discovered my cholesterol was dangerous at 27 — and exactly what I did about it.</div>
-        <div class="b-bottom">The 1-hour routine · Nigerian food guide · meal plans &amp; trackers</div>
+        <div class="b-sub">The Nigerian Heart-Health System That Helped Me Take Control Of My Health</div>
+        <div class="b-bottom">Food · movement · habits · meal plans &amp; trackers</div>
       </div>
     </div>
   </div>
@@ -313,7 +319,7 @@
 <div class="trust">
   <div class="wrap">
     <div>😨 <b>No symptoms.</b> Until it's too late.</div>
-    <div>📉 My number: <b>435 → 172</b></div>
+    <div>📉 More than <b>2× the recommended level</b></div>
     <div>🚶 <b>No gym.</b> No wahala.</div>
     <div>🇳🇬 Made for <b>your</b> food &amp; life</div>
   </div>
@@ -325,21 +331,21 @@
     <div class="section-head reveal">
       <p class="eyebrow">It started on a normal Sunday</p>
       <h2>I was in church when the room started to spin.</h2>
-      <p>That dizziness scared me into doing one small thing: a blood test. What came back changed my life. My cholesterol was more than double the safe limit — slowly clogging me from the inside — and I had felt <b>nothing</b>. No pain. No warning. Just a young man who thought he was fine. Ask yourself one honest question: when did <i>you</i> last check yours?</p>
+      <p>That dizziness scared me into doing one small thing: a blood test. What came back changed my life. My cholesterol was more than double the recommended level — slowly clogging me from the inside — and I had felt <b>nothing</b>. No pain. No warning. Just a young man who thought he was fine. Ask yourself one honest question: when did <i>you</i> last check yours?</p>
     </div>
     <div class="numbers reveal">
       <div class="n">
-        <div class="lab before">Before</div>
+        <div class="lab before">My result</div>
         <div class="big">435</div>
         <div class="small">Total cholesterol</div>
       </div>
       <div class="arrow">→</div>
       <div class="n">
-        <div class="lab after">After</div>
-        <div class="big">172</div>
-        <div class="small">In under a year</div>
+        <div class="lab after">Recommended</div>
+        <div class="big" style="color:var(--green)">&lt;200</div>
+        <div class="small">The general guideline</div>
       </div>
-      <div class="note">Same me. Different inside. Done with a simple daily routine and food changes, alongside my doctor's care.</div>
+      <div class="note">Mine was more than double the recommended level — and I felt perfectly fine. Over the following months, with simple changes to my food, movement and habits (alongside my doctor's care), I brought it back under control.</div>
     </div>
   </div>
 </section>
@@ -354,7 +360,7 @@
         <p>I'm not a doctor. I'm not a fitness coach. I had no special knowledge and no head start.</p>
         <p>I was just an ordinary Nigerian who <b>thought he was perfectly healthy</b> — until a test came back at <b>435</b> and shook my whole world.</p>
         <p>So I did what you'd do. I panicked. Then I started researching everything, testing what worked, walking, changing my food, and working closely with my doctor — month after month — until my number came all the way down to <b>172</b>.</p>
-        <p>This book is simply <b>everything I wish someone had handed me on day one</b> — written for a normal person, by a normal person who lived it.</p>
+        <p>This system is simply <b>everything I wish someone had handed me on day one</b> — written for a normal person, by a normal person who lived it.</p>
       </div>
       <div class="why-side reveal">
         <div class="why-stat"><span class="ws-big">435 → 172</span><span class="ws-lab">My real before &amp; after</span></div>
@@ -511,25 +517,27 @@
   <div class="wrap">
     <div class="offer reveal">
       <div>
-        <p class="eyebrow" style="color:var(--gold)">Your move</p>
-        <h2>One small decision today. Your heart will thank you for life.</h2>
-        <p style="color:#dfe2ec;margin-top:14px">Here's everything you get the moment you join:</p>
+        <p class="eyebrow" style="color:var(--gold)">What you get</p>
+        <h2>The complete Nigerian Heart-Health System.</h2>
+        <p style="color:#dfe2ec;margin-top:14px">Not just a book — a full system with everything you need to take control:</p>
         <ul class="incl">
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> The full guide that helped me go from 435 to 172</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Cholesterol explained so simply a child could follow it</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> The full 1-hour-a-day walking system</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> The main guide — my full story &amp; the system</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> The Nigerian Food Blueprint (what to eat &amp; avoid)</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> 7-day Nigerian meal plan</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Budget shopping baskets (lean · balanced · premium)</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> 30-day action plan (week-by-week)</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Progress tracker + health checklist</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Doctor-visit checklist (what to ask)</li>
         </ul>
         <div class="bonus-stack">
-          <div class="bonus-head">🎁 Plus these bonuses — included <span>FREE</span> inside</div>
+          <div class="bonus-head">🎁 Everything above — one simple price</div>
           <ul class="incl bonus-list">
-            <li><span class="tick gold"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Done-for-you 7-day Nigerian meal plan</li>
-            <li><span class="tick gold"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Budget market baskets (lean · balanced · premium)</li>
-            <li><span class="tick gold"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> 30-day action plan + fill-in tracker pack</li>
-            <li><span class="tick gold"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Health checklist &amp; my hardest-won lessons</li>
+            <li><span class="tick gold"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Instant download · read on any phone or laptop</li>
+            <li><span class="tick gold"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6.5L4.5 9L10 3" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Yours to keep — start today</li>
           </ul>
         </div>
       </div>
-      <div class="buybox">
+      <div class="buybox" id="buybox">
         <div class="save-badge" data-promo-only data-save-pct>OFF</div>
         <div class="anchor-line">
           <span class="anchor-label">Regular price</span>
@@ -541,7 +549,7 @@
           <span class="cd-label">Intro price ends in</span>
           <span class="cd" data-countdown>—</span>
         </div>
-        <button class="btn-primary" onclick="payWithPaystack()">
+        <button class="btn-primary" id="buyBtn" onclick="payWithPaystack()">
           Yes — protect my health
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10 4l5 5-5 5" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
@@ -579,8 +587,8 @@
     <h2 class="reveal" style="color:#fff;font-size:clamp(1.9rem,4vw,2.7rem);margin-top:10px">The danger doesn't wait. Please don't either.</h2>
     <p class="reveal" style="color:#cfd3e0;font-size:1.1rem;margin-top:18px">I got my warning by accident, and I was lucky. Most people never get one. You're reading this for a reason — let it be the moment you decided to know, instead of the moment you wished you had.</p>
     <div class="reveal" style="margin-top:30px">
-      <button class="btn-primary" onclick="payWithPaystack()">
-        Get the book now — ₦<span data-price-number>—</span>
+      <button class="btn-primary" onclick="scrollToBuy()">
+        Get the system now — ₦<span data-price-number>—</span>
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10 4l5 5-5 5" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <div style="color:#9aa0b4;font-size:.85rem;margin-top:14px">🔒 Secure Paystack checkout · instant download · read it today</div>
@@ -619,8 +627,8 @@
     // When the deadline passes, the page automatically switches to the
     // regular price AND you should set EXPECTED_AMOUNT_KOBO on the server
     // to match whatever you're currently charging.
-    regularPriceNaira: 5000,     // the genuine "normal" price (shown struck through)
-    promoPriceNaira:   1567,     // the live intro price right now
+    regularPriceNaira: 7500,     // the genuine "normal" price (shown struck through)
+    promoPriceNaira:   2997,     // the live intro price right now
     promoEndsISO:      "2026-06-30T23:59:59+01:00", // REAL deadline (WAT). After this, regular price shows.
 
     // Where to send the customer right after a successful charge.
@@ -670,7 +678,18 @@
     tick(); setInterval(tick,1000);
   })();
 
-  function scrollToBuy(){ document.getElementById("buy").scrollIntoView({behavior:"smooth"}); }
+  function scrollToBuy(){
+    var box = document.getElementById("buybox") || document.getElementById("buy");
+    var btn = document.getElementById("buyBtn");
+    box.scrollIntoView({behavior:"smooth", block:"center"});
+    if(btn){
+      // brief highlight so the eye lands on the "Yes — protect my health" button
+      setTimeout(function(){
+        btn.classList.add("pulse");
+        setTimeout(function(){ btn.classList.remove("pulse"); }, 1600);
+      }, 500);
+    }
+  }
 
   /* ====================================================================
      PAYSTACK CHECKOUT (client side)
