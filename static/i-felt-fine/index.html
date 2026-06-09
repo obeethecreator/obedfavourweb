@@ -210,6 +210,14 @@
   .buybox .btn-primary{width:100%;justify-content:center;margin-top:18px}
   .buybox .micro{color:#9aa0b4;font-size:.8rem;margin-top:14px;display:flex;gap:6px;justify-content:center;align-items:center}
   .value-note{color:#aeb3c4;font-size:.82rem;margin-top:10px;line-height:1.45}
+  .email-input{width:100%;margin-top:16px;padding:13px 15px;border-radius:10px;border:1px solid rgba(255,255,255,.25);
+    background:rgba(255,255,255,.06);color:#fff;font-family:'Spline Sans',sans-serif;font-size:1rem;outline:none}
+  .email-input::placeholder{color:#9aa0b4}
+  .email-input:focus{border-color:var(--gold);background:rgba(255,255,255,.1)}
+  .email-input.invalid{border-color:var(--accent)}
+  .email-error{display:none;color:#e8867b;font-size:.8rem;margin-top:7px;text-align:left}
+  .email-error.show{display:block}
+  .disclosure{color:#9aa0b4;font-size:.78rem;margin-top:10px;line-height:1.45}
   @keyframes ctaPulse{
     0%{transform:scale(1);box-shadow:0 12px 30px -12px rgba(201,162,39,.8)}
     50%{transform:scale(1.05);box-shadow:0 0 0 8px rgba(201,162,39,.35)}
@@ -549,11 +557,14 @@
           <span class="cd-label">Intro price ends in</span>
           <span class="cd" data-countdown>—</span>
         </div>
+        <input type="email" id="buyerEmail" class="email-input" placeholder="Enter your email" autocomplete="email" inputmode="email" />
+        <div class="email-error" id="emailError">Please enter a valid email so we can send your copy.</div>
         <button class="btn-primary" id="buyBtn" onclick="payWithPaystack()">
           Yes — protect my health
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10 4l5 5-5 5" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="micro">🔒 Secure checkout · instant download</div>
+        <div class="disclosure">We'll email your download link plus occasional health tips. Unsubscribe anytime.</div>
         <div class="value-note">Costs less than one lab test or doctor's visit — and far less than what a sick heart costs.</div>
         <div class="secure-row">
           <span>Card</span>·<span>Transfer</span>·<span>USSD</span>·<span>Opay</span>
@@ -681,30 +692,50 @@
   function scrollToBuy(){
     var box = document.getElementById("buybox") || document.getElementById("buy");
     var btn = document.getElementById("buyBtn");
+    var field = document.getElementById("buyerEmail");
     box.scrollIntoView({behavior:"smooth", block:"center"});
     if(btn){
-      // brief highlight so the eye lands on the "Yes — protect my health" button
       setTimeout(function(){
         btn.classList.add("pulse");
         setTimeout(function(){ btn.classList.remove("pulse"); }, 1600);
+        if(field) field.focus({preventScroll:true});
       }, 500);
     }
   }
 
+  function isValidEmail(e){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+
+  (function(){
+    var f = document.getElementById("buyerEmail");
+    if(f){ f.addEventListener("input", function(){
+      f.classList.remove("invalid");
+      var er = document.getElementById("emailError"); if(er) er.classList.remove("show");
+    }); }
+  })();
+
   /* ====================================================================
      PAYSTACK CHECKOUT (client side)
-     This opens the Paystack popup. On success it sends the customer to
-     your backend verify endpoint. NOTHING is unlocked on the client —
-     the backend must verify with your SECRET key before delivering.
+     Reads the email from the inline field. On success it sends the
+     customer to the backend verify endpoint. NOTHING is unlocked on the
+     client — the backend verifies with the SECRET key before delivering.
      ==================================================================== */
   function payWithPaystack(){
     if(CONFIG.paystackPublicKey.includes("REPLACE")){
       alert("Setup needed: add your Paystack PUBLIC key in the CONFIG block of index.html.");
       return;
     }
-    // Optionally collect the email with a prompt; better: a small form/modal.
-    const email = window.prompt("Enter your email to receive the book:");
-    if(!email){ return; }
+    const field = document.getElementById("buyerEmail");
+    const errEl = document.getElementById("emailError");
+    const email = field ? field.value.trim() : "";
+    if(!isValidEmail(email)){
+      if(field){ field.classList.add("invalid"); field.focus(); }
+      if(errEl){ errEl.classList.add("show"); }
+      // make sure the field is in view if they triggered from elsewhere
+      if(field){ field.scrollIntoView({behavior:"smooth", block:"center"}); }
+      return;
+    }
+    if(field){ field.classList.remove("invalid"); }
+    if(errEl){ errEl.classList.remove("show"); }
 
     const handler = PaystackPop.setup({
       key: CONFIG.paystackPublicKey,
