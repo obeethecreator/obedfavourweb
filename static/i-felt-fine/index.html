@@ -557,8 +557,9 @@
           <span class="cd-label">Intro price ends in</span>
           <span class="cd" data-countdown>—</span>
         </div>
+        <input type="text" id="buyerName" class="email-input" placeholder="Your first name" autocomplete="given-name" />
         <input type="email" id="buyerEmail" class="email-input" placeholder="Enter your email" autocomplete="email" inputmode="email" />
-        <div class="email-error" id="emailError">Please enter a valid email so we can send your copy.</div>
+        <div class="email-error" id="emailError">Please enter your name and a valid email so we can send your copy.</div>
         <button class="btn-primary" id="buyBtn" onclick="payWithPaystack()">
           Yes — protect my health
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10 4l5 5-5 5" stroke="#1A2238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -707,10 +708,12 @@
 
   (function(){
     var f = document.getElementById("buyerEmail");
-    if(f){ f.addEventListener("input", function(){
-      f.classList.remove("invalid");
+    var n = document.getElementById("buyerName");
+    function clearErr(){
       var er = document.getElementById("emailError"); if(er) er.classList.remove("show");
-    }); }
+    }
+    if(f){ f.addEventListener("input", function(){ f.classList.remove("invalid"); clearErr(); }); }
+    if(n){ n.addEventListener("input", function(){ n.classList.remove("invalid"); clearErr(); }); }
   })();
 
   /* ====================================================================
@@ -725,26 +728,35 @@
       return;
     }
     const field = document.getElementById("buyerEmail");
+    const nameField = document.getElementById("buyerName");
     const errEl = document.getElementById("emailError");
     const email = field ? field.value.trim() : "";
-    if(!isValidEmail(email)){
-      if(field){ field.classList.add("invalid"); field.focus(); }
+    const firstName = nameField ? nameField.value.trim() : "";
+    if(!firstName || !isValidEmail(email)){
+      if(!firstName && nameField){ nameField.classList.add("invalid"); }
+      if(!isValidEmail(email) && field){ field.classList.add("invalid"); }
       if(errEl){ errEl.classList.add("show"); }
-      // make sure the field is in view if they triggered from elsewhere
-      if(field){ field.scrollIntoView({behavior:"smooth", block:"center"}); }
+      var firstBad = (!firstName && nameField) ? nameField : field;
+      if(firstBad){ firstBad.focus(); firstBad.scrollIntoView({behavior:"smooth", block:"center"}); }
       return;
     }
     if(field){ field.classList.remove("invalid"); }
+    if(nameField){ nameField.classList.remove("invalid"); }
     if(errEl){ errEl.classList.remove("show"); }
 
     const handler = PaystackPop.setup({
       key: CONFIG.paystackPublicKey,
       email: email,
+      firstName: firstName,
       amount: ACTIVE_PRICE * 100, // Paystack uses kobo; ACTIVE_PRICE auto-switches when promo ends
       currency: "NGN",
       metadata: {
         product: "i-felt-fine-ebook",
-        custom_fields: [{ display_name: "Product", variable_name: "product", value: "I Felt Fine ebook" }]
+        first_name: firstName,
+        custom_fields: [
+          { display_name: "Product", variable_name: "product", value: "I Felt Fine ebook" },
+          { display_name: "First Name", variable_name: "first_name", value: firstName }
+        ]
       },
       callback: function(response){
         // response.reference is the transaction reference.
