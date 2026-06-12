@@ -1,23 +1,27 @@
-﻿---
-title: "Obed Favour"
-description: "I grew a YouTube channel 1,900% (3K to 60K+ subscribers) and 8M+ organic views. I build YouTube growth systems that turn views into revenue for founders, creators, and brands."
 ---
+title: "Obed Favour"
+description: "I help founders turn YouTube into a customer acquisition channel. 10M+ views grown, 67K+ subscribers built, $1.4M community-backed raise supported."
+---
+<div style="text-align:center;margin:2.5rem 0 1.5rem;">
+  <h1 style="font-size:2.6rem;font-weight:700;line-height:1.15;margin-bottom:1rem;">Turn Your YouTube Channel Into a Customer Acquisition Engine.</h1>
+  <p style="font-size:1.1rem;line-height:1.6;opacity:0.75;max-width:620px;margin:0 auto;">I help founders turn YouTube into a predictable customer acquisition channel - content systems that grow views, build trust, and convert viewers into customers. Not vanity metrics. Revenue.</p>
+</div>
 <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:2rem 0;">
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;">1,900%</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">YouTube subscriber growth</div>
+    <div style="font-size:32px;font-weight:600;color:inherit;">10M+</div>
+    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Views grown</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;">8M+</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Organic views generated</div>
+    <div style="font-size:32px;font-weight:600;color:inherit;">67K+</div>
+    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Subscribers built</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;">$0.01</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">CPC via Meta Ads</div>
+    <div style="font-size:32px;font-weight:600;color:inherit;">73M+</div>
+    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Impressions engineered</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
     <div style="font-size:32px;font-weight:600;color:inherit;">$1.4M</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Pre-seed fundraise supported</div>
+    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Community-backed raise</div>
   </div>
 </div>
 <div style="text-align:center;margin:2rem 0 1rem;">
@@ -38,4 +42,3 @@ description: "I grew a YouTube channel 1,900% (3K to 60K+ subscribers) and 8M+ o
     <p style="color:#4A7A9B;font-size:0.75rem;margin-top:1rem;">No spam. No fluff. Unsubscribe anytime.</p>
   </div>
 </div>
-

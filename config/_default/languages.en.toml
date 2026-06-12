@@ -13,8 +13,8 @@ title = "Obed Favour"
 [params.author]
   name = "Obed Favour"
   image = "avatar.jpg"
-  headline = "I grew a YouTube channel 1,900% - from 3K to 60K subscribers"
-  bio = "I build YouTube growth systems that turn views into subscribers, and subscribers into revenue - for founders, creators, and brands. 1,900% growth, 8M+ views, $1.4M raised."
+  headline = "For founders who want viewers to become customers - not just numbers"
+  bio = "I help founders turn YouTube into a predictable customer acquisition channel - content systems that grow views, build trust, and convert viewers into customers. 10M+ views, 67K+ subscribers, $1.4M raised."
   links = [
     { github = "https://github.com/obeethecreator" },
     { instagram = "https://instagram.com/obeethecre8or" },
