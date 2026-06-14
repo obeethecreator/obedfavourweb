@@ -1,0 +1,51 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // ---- Scroll fade-in ----
+  var blocks = document.querySelectorAll(".prose > div, .prose > h2, .prose > table, .prose > blockquote, .prose > ul");
+  if (!reduce && "IntersectionObserver" in window) {
+    blocks.forEach(function (el) { el.classList.add("reveal"); });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    blocks.forEach(function (el) { io.observe(el); });
+  }
+
+  // ---- Count-up on stat numbers ----
+  function animateCount(el) {
+    var raw = el.getAttribute("data-target");
+    var num = parseFloat(raw.replace(/[^0-9.]/g, ""));
+    var prefix = (raw.match(/^[^0-9.]+/) || [""])[0];
+    var suffix = (raw.match(/[^0-9.]+$/) || [""])[0];
+    if (isNaN(num)) { el.textContent = raw; return; }
+    var dur = 1400, start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var ease = 1 - Math.pow(1 - p, 3);
+      var val = num * ease;
+      var out = (num % 1 !== 0) ? val.toFixed(1) : Math.round(val).toLocaleString();
+      el.textContent = prefix + out + suffix;
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = raw;
+    }
+    requestAnimationFrame(step);
+  }
+  var stats = document.querySelectorAll("[data-target]");
+  if (stats.length) {
+    if (reduce || !("IntersectionObserver" in window)) {
+      stats.forEach(function (el) { el.textContent = el.getAttribute("data-target"); });
+    } else {
+      var so = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.textContent = "0"; animateCount(e.target); so.unobserve(e.target); }
+        });
+      }, { threshold: 0.5 });
+      stats.forEach(function (el) { el.textContent = el.getAttribute("data-target"); so.observe(el); });
+    }
+  }
+});
+</script>

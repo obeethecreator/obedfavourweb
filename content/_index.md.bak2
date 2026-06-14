@@ -8,19 +8,19 @@ description: "I help founders turn YouTube into a customer acquisition channel. 
 </div>
 <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:2rem 0;">
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="10M+">0</div>
+    <div style="font-size:32px;font-weight:600;color:inherit;">10M+</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Views grown</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="67K+">0</div>
+    <div style="font-size:32px;font-weight:600;color:inherit;">67K+</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Subscribers built</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="73M+">0</div>
+    <div style="font-size:32px;font-weight:600;color:inherit;">73M+</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Impressions engineered</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$1.4M">0</div>
+    <div style="font-size:32px;font-weight:600;color:inherit;">$1.4M</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Community-backed raise</div>
   </div>
 </div>

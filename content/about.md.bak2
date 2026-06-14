@@ -49,30 +49,13 @@ I don't do smoke and mirrors. I don't chase trends for the sake of it. I build s
 
 ## Proof it works
 
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:1.5rem 0;">
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="10M+">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Views grown across multiple channels</div>
-  </div>
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="67K+">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Subscribers built from scratch</div>
-  </div>
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="73M+">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Impressions engineered through packaging & SEO</div>
-  </div>
-</div>
-<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:1.5rem 0;">
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$1.4M">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Pre-seed raise supported through community growth</div>
-  </div>
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$0.01">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">CPC achieved on a $1,000 Meta Ads budget</div>
-  </div>
-</div>
+| | |
+|---|---|
+| **10M+** | Views grown across multiple channels |
+| **67K+** | Subscribers built from scratch |
+| **73M+** | Impressions engineered through packaging & SEO |
+| **$1.4M** | Pre-seed raise supported through community growth |
+| **$0.01** | CPC achieved on a $1,000 Meta Ads budget |
 
 Beyond YouTube, I've run high-ROI Meta Ads, built communities that backed a $1.4M raise, and set up AI automation that saves clients 10+ hours a week. Different levers — same job: building systems that compound.
 
