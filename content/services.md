@@ -13,7 +13,7 @@ draft = false
 
 You already know YouTube is where attention lives. The problem isn't effort — it's the system. Most channels stall because nobody engineered the views-to-subscribers-to-revenue pipeline behind them.
 
-I have. I grew a channel **1,900% — from 3,000 to 60,000+ subscribers** — and generated **8M+ organic views** with zero ad spend. Not luck. A repeatable system. And it's the same system I'll build for you.
+I have. I grew a channel **2,100% — from 3,000 to 67,000+ subscribers** — and generated **10M+ organic views** with zero ad spend. Not luck. A repeatable system. And it's the same system I'll build for you.
 
 ## YouTube Growth — Choose Your Level
 
@@ -81,7 +81,7 @@ Turn your social media into a real acquisition channel. I build content systems 
 - Content repurposing frameworks
 - Platform-specific distribution strategy
 
-**Result:** Grew a YouTube channel from 3,000 → 60,000+ subscribers (1,900%) and Instagram from 3,000 → 28,000+ followers with zero ad spend.
+**Result:** Grew a YouTube channel from 3,000 → 67,000+ subscribers (2,100%) and Instagram from 3,000 → 28,000+ followers with zero ad spend.
 
 ### 📊 Full-Funnel Content Strategy
 

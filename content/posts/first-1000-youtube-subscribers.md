@@ -14,7 +14,7 @@ And the number barely moved.
 
 If you're a founder, coach, or creator staring at 87 subscribers wondering what everyone else figured out that you didn't — this is for you. The good news: getting your first 1,000 YouTube subscribers has almost nothing to do with talent, luck, or going viral. It's a system. A boring, repeatable one that most people quit three weeks before it starts working.
 
-Here's the exact playbook — the same approach that's driven over 8 million organic views and a 1,900% channel growth rate for the people I work with. No daily posting. No dancing. No selling your soul to the algorithm.
+Here's the exact playbook — the same approach that's driven over 10 million organic views and a 2,100% channel growth rate for the people I work with. No daily posting. No dancing. No selling your soul to the algorithm.
 
 Let's get you past 1,000.
 
