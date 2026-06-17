@@ -163,7 +163,7 @@
 <body>
 
 <!-- ============ TOP BAR ============ -->
-<div class="topbar">New: the founder's guide to customer acquisition on YouTube &nbsp;&#183;&nbsp; <a href="#buy">Get it for $47 &#8594;</a></div>
+<div class="topbar">New: the founder's guide to customer acquisition on YouTube &nbsp;&#183;&nbsp; <a href="#buy">Get it now &#8594;</a></div>
 
 <!-- ============ HERO ============ -->
 <header class="hero">
@@ -174,7 +174,7 @@
       <p class="sub">How founders use YouTube to acquire customers, without relying on paid ads.</p>
       <p class="hero-emot">You shipped the product. You refreshed Stripe again today. Still zero customers. You don't have a product problem, you have a distribution problem, and it's fixable.</p>
       <button class="hero-cta" onclick="document.getElementById('buy').scrollIntoView()">
-        Get the guide &#8212; <span class="price-x">$97</span> $47
+        Get the guide &#8212; <span class="price-x">&#8358;25,000</span> &#8358;18,000
       </button>
       <div class="hero-trust">Instant download &#183; PDF &#183; Read it in an evening, apply it this week</div>
     </div>
@@ -307,25 +307,17 @@
         <p class="tag">The AQCE System, in one fill-in-as-you-go guide.</p>
 
         <div class="price-row">
-          <span class="price-old">$97</span>
-          <span class="price-cur">$</span><span class="price-now">47</span>
+          <span class="price-old">&#8358;25,000</span>
+          <span class="price-cur">&#8358;</span><span class="price-now">18,000</span>
         </div>
         <p class="price-note" id="priceNote">One-time payment &#183; lifetime access &#183; free updates</p>
 
-        <div class="field">
-          <label for="fn">First name</label>
-          <input type="text" id="fn" placeholder="Your first name" autocomplete="given-name">
-        </div>
-        <div class="field">
-          <label for="em">Email (where we send the guide)</label>
-          <input type="email" id="em" placeholder="you@email.com" autocomplete="email">
-        </div>
+        
 
         <!-- PRIMARY: Selar (Nigerian + international). Replace href with the live Selar product URL. -->
-        <button class="buy-btn" id="buyBtn" onclick="goBuy()">Get instant access &#8594; $47</button>
+        <a href="https://selar.com/z31557bpnz" class="buy-btn" style="display:block;text-align:center;text-decoration:none;">Get instant access &#8594; &#8358;18,000</a>
 
-        <!-- SECONDARY: Gumroad escape hatch for card/PayPal buyers. Replace with live Gumroad URL. -->
-        <p class="buy-alt">Prefer to pay by card or PayPal? <a href="[GUMROAD_PRODUCT_URL]" id="gumroadLink">Buy on Gumroad &#8594;</a></p>
+        
 
         <div class="buy-trust">
           <span>&#128274; Secure checkout</span>
@@ -364,7 +356,7 @@
   <div class="wrap">
     <h2>You're one system away from making YouTube your best salesperson.</h2>
     <p>You've already done the hard part. Don't let the product you built sit unseen. Get the system that turns attention into customers, and start this week.</p>
-    <button class="hero-cta" onclick="document.getElementById('buy').scrollIntoView()">Get the guide &#8212; <span class="price-x">$97</span> $47</button>
+    <button class="hero-cta" onclick="document.getElementById('buy').scrollIntoView()">Get the guide &#8212; <span class="price-x">&#8358;25,000</span> &#8358;18,000</button>
   </div>
 </section>
 
@@ -380,7 +372,7 @@
      Replace SELAR_PRODUCT_URL with your live Selar product link.
      Selar collects name + email at its own checkout, so we just hand off.
      We pass first name / email as URL params in case you want to prefill.        */
-  var SELAR_PRODUCT_URL = "[SELAR_PRODUCT_URL]";
+  var SELAR_PRODUCT_URL = "https://selar.com/z31557bpnz";
 
   function goBuy(){
     var fn = document.getElementById('fn').value.trim();
