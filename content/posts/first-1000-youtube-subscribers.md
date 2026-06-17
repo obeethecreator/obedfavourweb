@@ -70,9 +70,9 @@ This is how you shortcut the cold-start problem — and it's exactly the kind of
 
 You don't need a bigger camera, a better personality, or permission. You need a system you'll actually follow.
 
-I put the whole thing — the title formulas, the retention framework, the cadence I use with clients — into a free guide called **From Zero to Live**. It's the same playbook behind 8M+ organic views, and it's yours, no strings.
+Getting subscribers is only half the game. The other half is turning those views into actual customers. I put the full system — how to attract the right buyers, qualify them, and convert attention into revenue — into a guide built for founders: **Built the Product. Now Get Customers.** It's the same playbook behind 10M+ organic views.
 
-**[Get the free guide →](/guide)**
+**[Get the guide →](/youtube-customers/)**
 
 Your first 1,000 subscribers are closer than the analytics make them feel. Let's go get them.
 
