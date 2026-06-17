@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Built the Product. Now Get Customers. | Obed Favour</title>
+<meta name="description" content="The founder's guide to turning YouTube into a customer-acquisition channel, without paid ads. Get the AQCE System and start converting views into customers.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Built the Product. Now Get Customers.">
+<meta property="og:description" content="How founders use YouTube to acquire customers, without relying on paid ads. The AQCE System, in one guide.">
+<meta property="og:type" content="product">
+<meta property="og:url" content="https://www.obedfavour.com/youtube-customers/">
+
+<style>
+  /* ----------  CONFIG-DRIVEN PRICE (edit these two lines only)  ---------- */
+  :root{
+    --navy:#0A1628; --navy2:#0F2138; --ink:#10243C; --body:#33414F;
+    --slate:#64748B; --accent:#FF4D2E; --accent2:#FFB020; --line:#E2E8F0;
+    --panel:#F4F7FA; --paneled:#E9F0F6; --white:#ffffff; --gold:#FFB020;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--body); background:var(--white); line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+  h1,h2,h3{color:var(--ink); line-height:1.15; letter-spacing:-0.01em}
+  a{color:var(--accent); text-decoration:none}
+  .accent{color:var(--accent)}
+  .gold{color:var(--accent2)}
+
+  /* top bar */
+  .topbar{background:var(--navy); color:#fff; font-size:13px; text-align:center; padding:9px 16px; font-weight:600}
+  .topbar a{color:var(--accent2); text-decoration:underline}
+
+  /* HERO */
+  .hero{background:var(--navy); color:#fff; position:relative; overflow:hidden; padding:70px 0 64px}
+  .hero:before{content:""; position:absolute; top:0; left:0; right:0; height:5px; background:var(--accent)}
+  .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center}
+  .eyebrow{display:inline-block; font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--accent2); margin-bottom:18px}
+  .hero h1{font-size:46px; font-weight:800; color:#fff; margin-bottom:6px}
+  .hero h1 .ln2{color:var(--accent)}
+  .hero .sub{font-size:18px; color:#B9C7D6; margin:18px 0 26px; max-width:30ch}
+  .hero-emot{font-size:15px; color:#90A2B5; border-left:3px solid var(--accent); padding-left:14px; margin-bottom:28px; max-width:46ch}
+  .hero-cta{display:inline-flex; align-items:center; gap:10px; background:var(--accent); color:#fff; font-weight:800; font-size:17px; padding:16px 30px; border-radius:10px; border:none; cursor:pointer; transition:transform .15s, box-shadow .15s; box-shadow:0 8px 26px rgba(255,77,46,.35)}
+  .hero-cta:hover{transform:translateY(-2px); box-shadow:0 12px 32px rgba(255,77,46,.45)}
+  .hero-cta .price-x{opacity:.7; text-decoration:line-through; font-weight:600; font-size:14px}
+  .hero-trust{margin-top:16px; font-size:13px; color:#8195A8}
+
+  /* AQCE signature card in hero */
+  .aqce-card{background:linear-gradient(160deg,#11314F,#0A1628); border:1px solid #22384e; border-radius:16px; padding:26px}
+  .aqce-card .ttl{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent2); font-weight:800; margin-bottom:16px; text-align:center}
+  .aqce-row{display:flex; align-items:center; gap:14px; padding:11px 0; border-bottom:1px solid rgba(255,255,255,.07)}
+  .aqce-row:last-child{border-bottom:none}
+  .aqce-badge{flex:0 0 auto; width:38px; height:38px; border-radius:9px; background:var(--accent); color:#fff; font-weight:800; font-size:19px; display:flex; align-items:center; justify-content:center}
+  .aqce-badge.q{background:#11406b} .aqce-badge.c{background:#11406b} .aqce-badge.e{background:#11406b}
+  .aqce-row .nm{color:#fff; font-weight:700; font-size:14px}
+  .aqce-row .ds{color:#9FB0C2; font-size:12.5px; line-height:1.45}
+
+  /* generic section */
+  section{padding:64px 0}
+  .lbl{font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin-bottom:10px}
+  h2.sec{font-size:32px; font-weight:800; margin-bottom:8px; max-width:20ch}
+  .lead{font-size:18px; color:var(--ink); max-width:60ch; margin-bottom:8px}
+
+  /* agitation */
+  .agit{background:var(--panel)}
+  .agit-list{display:grid; grid-template-columns:1fr 1fr; gap:16px 36px; margin-top:28px}
+  .agit-item{display:flex; gap:12px; font-size:15.5px}
+  .agit-item .x{flex:0 0 auto; color:var(--accent); font-weight:800; font-size:18px; line-height:1.4}
+  @media(max-width:720px){.agit-list{grid-template-columns:1fr}}
+
+  /* proof */
+  .proof-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:30px}
+  .proof-fig{background:var(--navy); border-radius:12px; padding:10px; border:1px solid #1d2f42}
+  .proof-fig img{width:100%; display:block; border-radius:7px}
+  .proof-fig .cap{color:#9FB0C2; font-size:12.5px; padding:10px 6px 4px; line-height:1.4}
+  .proof-small{grid-template-columns:1fr 1fr}
+  @media(max-width:720px){.proof-grid{grid-template-columns:1fr}}
+
+  /* whats inside */
+  .inside{background:var(--navy2); color:#fff}
+  .inside h2.sec, .inside .lead{color:#fff}
+  .inside .lead{color:#B9C7D6}
+  .inside-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:30px}
+  .inside-card{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:22px}
+  .inside-card .k{display:inline-flex; width:34px; height:34px; border-radius:8px; background:var(--accent); color:#fff; font-weight:800; align-items:center; justify-content:center; font-size:16px; margin-bottom:12px}
+  .inside-card h3{color:#fff; font-size:17px; margin-bottom:6px}
+  .inside-card p{color:#A9BACC; font-size:14px; line-height:1.5}
+  @media(max-width:720px){.inside-grid{grid-template-columns:1fr}}
+
+  /* who its for */
+  .for-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:26px}
+  .for-col h3{font-size:17px; margin-bottom:14px; display:flex; align-items:center; gap:8px}
+  .for-col ul{list-style:none}
+  .for-col li{padding:7px 0 7px 26px; position:relative; font-size:15px}
+  .for-col.yes li:before{content:"\2713"; position:absolute; left:0; color:#16a34a; font-weight:800}
+  .for-col.no li:before{content:"\2717"; position:absolute; left:0; color:#cbd5e1; font-weight:800}
+  .for-col.no li{color:var(--slate)}
+  @media(max-width:720px){.for-grid{grid-template-columns:1fr}}
+
+  /* author */
+  .author{background:var(--panel)}
+  .author-grid{display:grid; grid-template-columns:auto 1fr; gap:26px; align-items:center}
+  .author-badge{width:120px; height:120px; border-radius:50%; background:var(--navy); color:#fff; display:flex; align-items:center; justify-content:center; font-size:40px; font-weight:800}
+  @media(max-width:560px){.author-grid{grid-template-columns:1fr; text-align:center} .author-badge{margin:0 auto}}
+
+  /* BUYBOX */
+  .buybox-sec{background:var(--navy); color:#fff}
+  .buybox{max-width:560px; margin:0 auto; background:#fff; color:var(--body); border-radius:18px; overflow:hidden; box-shadow:0 30px 70px rgba(0,0,0,.4)}
+  .buybox-top{background:var(--accent); color:#fff; text-align:center; padding:14px; font-weight:800; font-size:14px; letter-spacing:.04em}
+  .buybox-body{padding:34px 30px}
+  .buybox h3{font-size:24px; text-align:center; margin-bottom:6px}
+  .buybox .tag{text-align:center; color:var(--slate); font-size:14px; margin-bottom:22px}
+  .price-row{text-align:center; margin:18px 0 8px}
+  .price-old{color:var(--slate); text-decoration:line-through; font-size:22px; font-weight:600; margin-right:10px}
+  .price-now{color:var(--ink); font-size:46px; font-weight:800}
+  .price-cur{font-size:24px; vertical-align:super; font-weight:700}
+  .price-note{text-align:center; color:var(--accent); font-size:13px; font-weight:700; margin-bottom:22px}
+  .field{margin-bottom:14px}
+  .field label{display:block; font-size:13px; font-weight:700; color:var(--ink); margin-bottom:5px}
+  .field input{width:100%; padding:13px 14px; border:1.5px solid var(--line); border-radius:9px; font-size:15px; font-family:inherit}
+  .field input:focus{outline:none; border-color:var(--accent)}
+  .buy-btn{width:100%; background:var(--accent); color:#fff; border:none; border-radius:10px; padding:17px; font-size:18px; font-weight:800; cursor:pointer; margin-top:6px; transition:transform .15s, box-shadow .15s; box-shadow:0 8px 24px rgba(255,77,46,.3)}
+  .buy-btn:hover{transform:translateY(-2px); box-shadow:0 12px 30px rgba(255,77,46,.42)}
+  .buy-alt{text-align:center; margin-top:14px; font-size:13.5px; color:var(--slate)}
+  .buy-alt a{font-weight:700; text-decoration:underline}
+  .buy-trust{text-align:center; margin-top:16px; font-size:12.5px; color:var(--slate); display:flex; gap:14px; justify-content:center; flex-wrap:wrap}
+  .buy-trust span{display:inline-flex; align-items:center; gap:5px}
+
+  /* guarantee */
+  .guarantee{max-width:620px; margin:36px auto 0; background:rgba(255,255,255,.06); border:1px solid rgba(255,176,32,.4); border-radius:14px; padding:24px 26px; text-align:center}
+  .guarantee h3{color:var(--accent2); font-size:18px; margin-bottom:8px}
+  .guarantee p{color:#CBD8E4; font-size:14.5px}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid var(--line); padding:20px 0}
+  .faq-q{font-size:17px; font-weight:700; color:var(--ink); cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:16px}
+  .faq-q .tog{flex:0 0 auto; color:var(--accent); font-size:22px; font-weight:400; transition:transform .2s}
+  .faq-a{font-size:15px; color:var(--body); max-height:0; overflow:hidden; transition:max-height .25s ease; }
+  .faq-item.open .faq-a{max-height:320px; padding-top:12px}
+  .faq-item.open .tog{transform:rotate(45deg)}
+
+  /* final cta */
+  .final{background:var(--navy); color:#fff; text-align:center; padding:72px 0}
+  .final h2{color:#fff; font-size:34px; margin-bottom:14px; max-width:24ch; margin-left:auto; margin-right:auto}
+  .final p{color:#B9C7D6; font-size:17px; max-width:50ch; margin:0 auto 28px}
+
+  footer{background:#06101d; color:#6c7d8f; text-align:center; padding:30px 16px; font-size:13px}
+  footer a{color:#9FB0C2}
+
+  @media(max-width:820px){
+    .hero-grid{grid-template-columns:1fr; gap:34px}
+    .hero h1{font-size:36px}
+    .hero .sub{max-width:none}
+    h2.sec{font-size:26px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">New: the founder's guide to customer acquisition on YouTube &nbsp;&#183;&nbsp; <a href="#buy">Get it for $47 &#8594;</a></div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">The Founder's Customer-Acquisition Playbook</span>
+      <h1>Built the Product.<br><span class="ln2">Now Get Customers.</span></h1>
+      <p class="sub">How founders use YouTube to acquire customers, without relying on paid ads.</p>
+      <p class="hero-emot">You shipped the product. You refreshed Stripe again today. Still zero customers. You don't have a product problem, you have a distribution problem, and it's fixable.</p>
+      <button class="hero-cta" onclick="document.getElementById('buy').scrollIntoView()">
+        Get the guide &#8212; <span class="price-x">$97</span> $47
+      </button>
+      <div class="hero-trust">Instant download &#183; PDF &#183; Read it in an evening, apply it this week</div>
+    </div>
+    <div class="aqce-card">
+      <div class="ttl">The AQCE System inside</div>
+      <div class="aqce-row"><div class="aqce-badge">A</div><div><div class="nm">Attract</div><div class="ds">Reach the right buyers on purpose, not by luck.</div></div></div>
+      <div class="aqce-row"><div class="aqce-badge q">Q</div><div><div class="nm">Qualify</div><div class="ds">Separate buyers from browsers, before you waste time.</div></div></div>
+      <div class="aqce-row"><div class="aqce-badge c">C</div><div><div class="nm">Convert</div><div class="ds">Turn qualified attention into paying customers.</div></div></div>
+      <div class="aqce-row"><div class="aqce-badge e">E</div><div><div class="nm">Engine</div><div class="ds">Make it repeatable so sales compound, month after month.</div></div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ AGITATION ============ -->
+<section class="agit">
+  <div class="wrap">
+    <div class="lbl">If you're a founder, you know this feeling</div>
+    <h2 class="sec">Views were never the goal. Customers were.</h2>
+    <p class="lead">You can do everything "right" on YouTube and still not make a sale. Here's where it actually breaks down:</p>
+    <div class="agit-list">
+      <div class="agit-item"><span class="x">&#10007;</span><span>You make videos about your product, but buyers search for their problems, not your features.</span></div>
+      <div class="agit-item"><span class="x">&#10007;</span><span>You get views, but they're the wrong people, an audience, not a pipeline.</span></div>
+      <div class="agit-item"><span class="x">&#10007;</span><span>You chase subscribers, a number that feels like progress and pays no bills.</span></div>
+      <div class="agit-item"><span class="x">&#10007;</span><span>People watch, then vanish, because there's no clear path from watching to buying.</span></div>
+      <div class="agit-item"><span class="x">&#10007;</span><span>You've thought about ads, but the second your card stops, the customers stop too.</span></div>
+      <div class="agit-item"><span class="x">&#10007;</span><span>You're doing it all alone, with no system telling you what to make next.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
+<section>
+  <div class="wrap">
+    <div class="lbl">The receipts</div>
+    <h2 class="sec">This isn't theory. It's a tested engine.</h2>
+    <p class="lead">Before you trust a word of it: proof the attention engine behind this system is real, at scale, and repeatable. Not ad payouts. Reach, the raw material every customer is made from.</p>
+    <div class="proof-grid">
+      <div class="proof-fig">
+        <img src="img/GGM_proof_1.png" alt="YouTube analytics showing 10.3M lifetime views and 67,000+ subscribers on a channel grown organically">
+        <div class="cap">Flagship channel: 10.3M views and 67,000+ subscribers, grown organically. The top of a customer funnel, not a vanity metric.</div>
+      </div>
+      <div class="proof-fig">
+        <img src="img/GGM_proof_2.png" alt="YouTube analytics showing 73.7M impressions, 4.8M views from impressions and 6.6% click-through rate">
+        <div class="cap">73.7M impressions and a 6.6% click-through rate, demand manufactured on purpose, ready to be aimed at an offer.</div>
+      </div>
+    </div>
+    <div class="proof-grid proof-small" style="margin-top:18px">
+      <div class="proof-fig">
+        <img src="img/proof_3_crop.png" alt="YouTube analytics showing 724,000 views and 6,700 subscribers on a separate channel">
+        <div class="cap">A separate channel: 724K+ views, 6,700+ subscribers. Same system, different niche.</div>
+      </div>
+      <div class="proof-fig">
+        <img src="img/proof_5_crop.png" alt="YouTube analytics showing 21,000 views and 1,300 subscribers built in a single year from scratch">
+        <div class="cap">From scratch: 21K+ views and 1,300+ subscribers in year one. The system works from zero.</div>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:24px; font-weight:600; color:var(--ink)">One result is luck. This many, across this many channels, is a system, and that system is what's inside the guide.</p>
+  </div>
+</section>
+
+<!-- ============ WHAT'S INSIDE ============ -->
+<section class="inside">
+  <div class="wrap">
+    <div class="lbl">What you're getting</div>
+    <h2 class="sec">The AQCE System, start to finish</h2>
+    <p class="lead">A complete, fill-in-as-you-go playbook that turns YouTube into a customer-acquisition channel. Every stage maps to your own channel and your own offer.</p>
+    <div class="inside-grid">
+      <div class="inside-card"><span class="k">A</span><h3>Attract the right buyers</h3><p>Ride rising trends in your niche, borrow attention from outside it, and use reaction videos to reach the people who can actually pay, on purpose, not by luck.</p></div>
+      <div class="inside-card"><span class="k">Q</span><h3>Qualify your audience</h3><p>The stage every other guide skips. Build a filter into your content that pulls buyers forward and lets browsers drift away, so your time goes to real prospects.</p></div>
+      <div class="inside-card"><span class="k">C</span><h3>Convert views into revenue</h3><p>The exact path from watching to buying, on-platform CTAs, the off-platform handoff that protects your pipeline, and a one-click route to the sale.</p></div>
+      <div class="inside-card"><span class="k">E</span><h3>Build a repeatable engine</h3><p>Read the metrics that predict customers, not vanity numbers, so every video is sharper than the last and your sales compound over time.</p></div>
+    </div>
+    <div class="inside-grid" style="margin-top:18px">
+      <div class="inside-card"><span class="k" style="background:var(--accent2);color:#0A1628">+</span><h3>5 founder mistakes that keep you invisible</h3><p>The habits carried over from building the product that quietly kill your reach, and how to spot them on your own channel.</p></div>
+      <div class="inside-card"><span class="k" style="background:var(--accent2);color:#0A1628">+</span><h3>Fill-in tools &amp; a 30-day plan</h3><p>Every stage ends with a worksheet, and the guide closes with a week-by-week plan so you finish with a system mapped to your business, not just notes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHO IT'S FOR ============ -->
+<section>
+  <div class="wrap">
+    <div class="lbl">Honest fit check</div>
+    <h2 class="sec">Who this is for</h2>
+    <div class="for-grid">
+      <div class="for-col yes">
+        <h3 class="gold">This is for you if&#8230;</h3>
+        <ul>
+          <li>You've already built a product or service and need customers, not applause.</li>
+          <li>You're a founder, solopreneur, or creator who can't or won't pour money into ads.</li>
+          <li>You've tried posting on YouTube and gotten views that never turned into revenue.</li>
+          <li>You want a system you can run yourself, not a vague "post consistently" pep talk.</li>
+        </ul>
+      </div>
+      <div class="for-col no">
+        <h3>This isn't for you if&#8230;</h3>
+        <ul>
+          <li>You haven't built anything to sell yet, get the offer right first.</li>
+          <li>You want overnight virality with no work. This is a system, not a lottery ticket.</li>
+          <li>You're only after ad-revenue/AdSense income. This is about customers, not payouts.</li>
+          <li>You won't apply it. A playbook you don't run changes nothing.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUTHOR ============ -->
+<section class="author">
+  <div class="wrap author-grid">
+    <div class="author-badge">OF</div>
+    <div>
+      <div class="lbl">Who's behind this</div>
+      <h2 class="sec" style="font-size:24px; max-width:none">Obed Favour, YouTube Growth Strategist</h2>
+      <p style="font-size:15.5px; max-width:62ch">I build organic customer-acquisition systems for founders and brands. The systems I've built have generated millions of organic impressions, tens of thousands of subscribers, and helped a startup raise over $1.4M through community-led growth, all without paid ads. This guide is the same engine, written so you can point it at your own customers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUYBOX ============ -->
+<section class="buybox-sec" id="buy">
+  <div class="wrap">
+    <div class="lbl" style="color:var(--accent2); text-align:center">Get the guide</div>
+    <h2 class="sec" style="color:#fff; text-align:center; margin:0 auto 28px; max-width:24ch">Start turning views into customers today</h2>
+
+    <div class="buybox">
+      <div class="buybox-top">INSTANT DOWNLOAD &#183; PDF</div>
+      <div class="buybox-body">
+        <h3>Built the Product. Now Get Customers.</h3>
+        <p class="tag">The AQCE System, in one fill-in-as-you-go guide.</p>
+
+        <div class="price-row">
+          <span class="price-old">$97</span>
+          <span class="price-cur">$</span><span class="price-now">47</span>
+        </div>
+        <p class="price-note" id="priceNote">One-time payment &#183; lifetime access &#183; free updates</p>
+
+        <div class="field">
+          <label for="fn">First name</label>
+          <input type="text" id="fn" placeholder="Your first name" autocomplete="given-name">
+        </div>
+        <div class="field">
+          <label for="em">Email (where we send the guide)</label>
+          <input type="email" id="em" placeholder="you@email.com" autocomplete="email">
+        </div>
+
+        <!-- PRIMARY: Selar (Nigerian + international). Replace href with the live Selar product URL. -->
+        <button class="buy-btn" id="buyBtn" onclick="goBuy()">Get instant access &#8594; $47</button>
+
+        <!-- SECONDARY: Gumroad escape hatch for card/PayPal buyers. Replace with live Gumroad URL. -->
+        <p class="buy-alt">Prefer to pay by card or PayPal? <a href="[GUMROAD_PRODUCT_URL]" id="gumroadLink">Buy on Gumroad &#8594;</a></p>
+
+        <div class="buy-trust">
+          <span>&#128274; Secure checkout</span>
+          <span>&#9889; Instant delivery</span>
+          <span>&#128176; 14-day guarantee</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- GUARANTEE (honest, specific) -->
+    <div class="guarantee">
+      <h3>The "Actually Apply It" Guarantee</h3>
+      <p>Read the guide, fill in the worksheets, and put the 30-day plan to work. If you do the work and it doesn't give you a clearer path to customers than you had before, email <strong>hello@obedfavour.com</strong> within 14 days and I'll refund you in full. You keep the guide. The only risk is not using it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap" style="max-width:780px">
+    <div class="lbl">Before you buy</div>
+    <h2 class="sec">Questions founders ask</h2>
+    <div style="margin-top:24px">
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do I need a big channel or any audience to start? <span class="tog">+</span></div><div class="faq-a">No. The system is built for founders starting from zero or close to it, one of the proof channels grew from scratch in a single year. You need a product to sell and the willingness to publish, not an existing audience.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Will this work for my niche / type of business? <span class="tog">+</span></div><div class="faq-a">The AQCE System is a framework, not a niche-specific trick. The guide includes illustrative examples for different founder types (SaaS, software, services) so you can see how each stage maps to your world. If you have a product and customers exist somewhere on YouTube, it applies.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is this just "post consistently" advice I could Google? <span class="tog">+</span></div><div class="faq-a">No. The whole point is the Qualify and Convert stages, turning attention into actual customers, which almost no free advice covers. You get fill-in worksheets and a 30-day plan, not platitudes.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do I need to spend money on ads? <span class="tog">+</span></div><div class="faq-a">No. The entire system is organic by design, that's the point. The only tools you need are a phone, a free editor, an email tool, and a checkout link, most with free tiers.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What if it's not for me? <span class="tog">+</span></div><div class="faq-a">Apply it, and if it doesn't give you a clearer path to customers within 14 days, email hello@obedfavour.com for a full refund and keep the guide. See the guarantee above.</div></div>
+      <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How do I get it after paying? <span class="tog">+</span></div><div class="faq-a">Instantly. After checkout you get an immediate download plus an email with your copy. It's a PDF you can read on any device and keep forever.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="wrap">
+    <h2>You're one system away from making YouTube your best salesperson.</h2>
+    <p>You've already done the hard part. Don't let the product you built sit unseen. Get the system that turns attention into customers, and start this week.</p>
+    <button class="hero-cta" onclick="document.getElementById('buy').scrollIntoView()">Get the guide &#8212; <span class="price-x">$97</span> $47</button>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; <span id="yr"></span> Obed Favour &#183; YouTube Growth Strategist &#183; <a href="https://www.obedfavour.com">obedfavour.com</a></p>
+  <p style="margin-top:8px; opacity:.7">Questions? <a href="mailto:hello@obedfavour.com">hello@obedfavour.com</a></p>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ---- BUY HANDLER ----
+     Replace SELAR_PRODUCT_URL with your live Selar product link.
+     Selar collects name + email at its own checkout, so we just hand off.
+     We pass first name / email as URL params in case you want to prefill.        */
+  var SELAR_PRODUCT_URL = "[SELAR_PRODUCT_URL]";
+
+  function goBuy(){
+    var fn = document.getElementById('fn').value.trim();
+    var em = document.getElementById('em').value.trim();
+    // light validation so we don't lose the buyer's details
+    if(!em || em.indexOf('@') === -1){
+      document.getElementById('em').focus();
+      document.getElementById('em').style.borderColor = '#FF4D2E';
+      return;
+    }
+    var url = SELAR_PRODUCT_URL;
+    // Optional prefill if your Selar link supports query params:
+    // url += (url.indexOf('?')>-1?'&':'?') + 'email=' + encodeURIComponent(em);
+    window.location.href = url;
+  }
+</script>
+</body>
+</html>
