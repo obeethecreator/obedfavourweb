@@ -11,7 +11,7 @@ description: "I help founders turn YouTube into a customer acquisition channel. 
     <div style="flex:1;min-width:240px;">
       <p style="color:#FFB020;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;margin-bottom:0.4rem;">New &middot; The Founder's Guide</p>
       <p style="color:#ffffff;font-size:1.18rem;font-weight:700;line-height:1.35;margin:0;">Built the product but stuck with no customers?</p>
-      <p style="color:#9FB0C2;font-size:0.92rem;line-height:1.5;margin:0.35rem 0 0;">Get the YouTube system that turns views into paying customers, no ad spend. Just $47.</p>
+      <p style="color:#9FB0C2;font-size:0.92rem;line-height:1.5;margin:0.35rem 0 0;">Get the YouTube system that turns views into paying customers, without paid ads.</p>
     </div>
     <span style="flex:0 0 auto;background:#FF4D2E;color:#fff;padding:13px 26px;border-radius:8px;font-size:0.95rem;font-weight:700;white-space:nowrap;box-shadow:0 6px 18px rgba(255,77,46,0.35);">Get the guide &#8594;</span>
   </div>
