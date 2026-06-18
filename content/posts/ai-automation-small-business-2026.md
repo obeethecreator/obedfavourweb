@@ -151,7 +151,7 @@ If you want a clear, personalised picture of which automations would save you th
 I'll map out exactly where you're losing time and which tools and systems to implement first.
 
 <div style="text-align:center;margin:2rem 0;">
-  <a href="https://calendly.com/obeethecreator/30min" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a Free Strategy Call &rarr;</a>
+  <a href="/youtube-customers/" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Get the Guide &rarr;</a>
   <div style="font-size:12px;opacity:0.5;margin-top:12px;">30 min &middot; No obligation &middot; Real advice</div>
 </div>
 

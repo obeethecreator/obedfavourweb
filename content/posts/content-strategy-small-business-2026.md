@@ -156,7 +156,7 @@ I offer free 30-minute strategy calls to founders, marketers, and business owner
 No pitch. No fluff. Just clarity.
 
 <div style="text-align:center;margin:2rem 0;">
-  <a href="https://calendly.com/obeethecreator/30min" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a Free Strategy Call &rarr;</a>
+  <a href="/youtube-customers/" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Get the Guide &rarr;</a>
   <div style="font-size:12px;opacity:0.5;margin-top:12px;">30 min &middot; No obligation &middot; Real advice</div>
 </div>
 

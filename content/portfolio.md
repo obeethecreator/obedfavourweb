@@ -61,5 +61,5 @@ Growth isn't only YouTube. At Ayoken (Web3 NFT marketplace), I built Discord and
 <div style="background:linear-gradient(135deg,#0F1C2E 0%,#1A3A5C 100%);border-radius:12px;padding:2.5rem 2rem;margin:3rem 0;text-align:center;">
   <h2 style="color:#fff;font-size:1.6rem;font-weight:700;margin-bottom:0.5rem;">Different niches. Same system.</h2>
   <p style="color:#a8c4e8;font-size:1rem;line-height:1.6;max-width:440px;margin:0 auto 1.5rem;">One result is luck. This many, across this many niches, is a system. Imagine what it does for yours.</p>
-  <a href="https://calendly.com/obeethecreator/30min" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;">Book a Free Strategy Call</a>
+  <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;">Book a 1-on-1 Call</a>
 </div>

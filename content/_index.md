@@ -35,6 +35,6 @@ description: "I help founders turn YouTube into a customer acquisition channel. 
   </div>
 </div>
 <div style="text-align:center;margin:2rem 0 1rem;">
-  <a href="https://calendly.com/obeethecreator/30min" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a Free Strategy Call</a>
+  <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a 1-on-1 Call</a>
   <div style="font-size:12px;opacity:0.5;margin-top:12px;">30 min - No obligation - Real advice</div>
 </div>

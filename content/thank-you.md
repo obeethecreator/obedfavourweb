@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "Thank You"
 date = '2026-05-29T10:00:00+01:00'
 draft = false
@@ -61,7 +61,7 @@ showTitle = false
     <div class="ty-links">
       <a href="/posts">Read the blog</a>
       <a href="/services">See my services</a>
-      <a href="https://calendly.com/obeethecreator/30min">Book a free strategy call</a>
+      <a href="https://selar.com/74i4823703">Book a 1-on-1 Call</a>
     </div>
   </div>
 </div>
