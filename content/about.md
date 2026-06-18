@@ -82,11 +82,11 @@ Beyond YouTube, I've run high-ROI Meta Ads, built communities that backed a $1.4
 
 ## Let's build something
 
-If you're ready to stop guessing and start turning views into customers — I'd love to spend 30 minutes with you. No pitch. Just a clear, honest look at what your channel needs and what to do about it.
+If you're ready to stop guessing and start turning views into customers — Book a 1-on-1 session and we'll spend 60 minutes on your channel: a clear, honest diagnosis of what it needs, and a plan for exactly what to do about it.
 
 <div style="text-align:center;margin:2rem 0;">
   <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a 1-on-1 Call →</a>
-  <div style="font-size:12px;opacity:0.5;margin-top:12px;">30 min · No obligation · Real advice</div>
+  <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
 </div>
 
 Or [connect with me on LinkedIn](https://linkedin.com/in/obed-favour-speaks) if you want to follow along first — no pressure.

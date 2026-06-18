@@ -6,7 +6,7 @@ draft = false
 
 <div style="text-align:center;margin:1rem 0 2.5rem;">
   <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a 1-on-1 Call →</a>
-  <div style="font-size:12px;opacity:0.5;margin-top:12px;">30 min · No obligation · Real advice</div>
+  <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
 </div>
 
 ## Your YouTube Channel Should Be Printing Subscribers. Why Isn't It?
@@ -140,7 +140,7 @@ Ready to grow your brand? Book a free 30-minute strategy call or fill out the fo
 
 <div style="text-align:center;margin:1.5rem 0;">
   <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a 1-on-1 Call →</a>
-  <div style="font-size:12px;opacity:0.5;margin-top:12px;">30 min · No obligation · Real advice</div>
+  <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
 </div>
 
 <form action="https://formspree.io/f/mjglnqqv" method="POST" style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; max-width: 600px;">
