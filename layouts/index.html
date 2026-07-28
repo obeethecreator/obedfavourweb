@@ -1,0 +1,87 @@
+{{ define "main" }}
+<div style="width: 100vw; min-height: 100vh; background-color: #08080a; color: #eceef2; overflow-x: hidden;">
+
+  <!-- Hero Section -->
+  <section style="width: 100%; padding: 4rem 1.5rem 4rem 1.5rem; text-align: center; background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.08) 0%, rgba(121, 40, 202, 0.05) 35%, rgba(8, 8, 10, 1) 75%); border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+    <div style="max-width: 1300px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+      
+      <!-- Avatar Ring with Neon Tech Gradient -->
+      <div style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+        <div style="width: 105px; height: 105px; border-radius: 9999px; padding: 2px; background: linear-gradient(135deg, #00d4ff 0%, #7928ca 100%); display: inline-block; overflow: hidden; box-shadow: 0 0 30px rgba(0, 212, 255, 0.25);">
+          <img src="/images/avatar.jpg" 
+               alt="Obed Favour" 
+               onerror="this.onerror=null; this.src='/avatar.jpg';" 
+               style="width: 100%; height: 100%; border-radius: 9999px; object-fit: cover; background-color: #121216; display: block;" />
+        </div>
+      </div>
+
+      <!-- Badge -->
+      <span style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #00d4ff; background: rgba(0, 212, 255, 0.08); padding: 0.45rem 1.25rem; border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.2); margin-bottom: 1.5rem;">
+        <span style="width: 6px; height: 6px; border-radius: 9999px; background-color: #00d4ff; box-shadow: 0 0 8px #00d4ff;"></span>
+        Growth Marketing & AI Systems
+      </span>
+      
+      <!-- Main Headline -->
+      <h1 style="font-size: clamp(2.4rem, 5.5vw, 4rem); font-weight: 800; color: #ffffff; margin-bottom: 1.25rem; line-height: 1.1; letter-spacing: -0.03em;">
+        Scale Your Brand.<br />
+        <span style="background: linear-gradient(135deg, #ffffff 30%, #00d4ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Automate Your Growth.</span>
+      </h1>
+      
+      <!-- Subtitle -->
+      <p style="font-size: clamp(1rem, 2vw, 1.2rem); color: #94a3b8; max-width: 44rem; margin: 0 auto; font-weight: 400; line-height: 1.6;">
+        Engineering high-converting acquisition engines, organic content systems, and custom AI workflows.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Metrics Grid -->
+  <section style="width: 100%; border-bottom: 1px solid rgba(255, 255, 255, 0.06); background: rgba(12, 12, 15, 0.8); padding: 2.5rem 1.5rem;">
+    <div style="max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+      <div>
+        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: #ffffff; letter-spacing: -0.02em;">10M+</div>
+        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: #64748b; margin-top: 0.35rem; font-weight: 600;">Organic Views</div>
+      </div>
+      <div>
+        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: #ffffff; letter-spacing: -0.02em;">$1.4M</div>
+        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: #64748b; margin-top: 0.35rem; font-weight: 600;">Client Raised</div>
+      </div>
+      <div>
+        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: #ffffff; letter-spacing: -0.02em;">67K+</div>
+        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: #64748b; margin-top: 0.35rem; font-weight: 600;">Subscribers</div>
+      </div>
+      <div>
+        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: #ffffff; letter-spacing: -0.02em;">AI & Auto</div>
+        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: #64748b; margin-top: 0.35rem; font-weight: 600;">Custom Workflows</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section style="max-width: 1300px; margin: 0 auto; padding: 4.5rem 1.5rem;">
+    <div style="text-align: center; margin-bottom: 3.5rem;">
+      <span style="font-size: 0.725rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: #00d4ff;">Capabilities</span>
+      <h2 style="font-size: clamp(1.85rem, 3.5vw, 2.4rem); font-weight: 800; color: #ffffff; margin-top: 0.4rem; letter-spacing: -0.02em;">What I Build</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
+      <div class="tech-card">
+        <div style="font-size: 0.725rem; font-weight: 700; color: #00d4ff; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.75rem;">01 / Acquisition</div>
+        <h3 style="font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Growth Marketing & Content Engines</h3>
+        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Designing full-funnel organic acquisition strategies, video distribution systems, and conversion funnels engineered to turn attention into pipeline.
+        </p>
+      </div>
+
+      <div class="tech-card">
+        <div style="font-size: 0.725rem; font-weight: 700; color: #7928ca; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.75rem;">02 / Engineering</div>
+        <h3 style="font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">AI & Operations Automation</h3>
+        <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Building custom AI workflows, automated lead routing, and business system integrations using modern AI tools and Zapier to save time and scale efficiency.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+{{ end }}
