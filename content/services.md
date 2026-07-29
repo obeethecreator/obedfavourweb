@@ -11,9 +11,9 @@ draft = false
 
 ## Growth Marketing & AI Automation for Founders and Scaling Brands
 
-You already know attention is out there. The problem isn't effort — it's the system. Most brands stall because nobody engineered the pipeline that turns attention into revenue, or built the automation that lets it run without them.
+You already know attention is out there. The problem isn't effort — it's the system. Most brands stall because nobody engineered the pipeline that turns attention into revenue, or built the automation that lets it run without them. As an attention strategist for founders, I build both.
 
-I have. I grew a channel **2,100% — from 3,000 to 67,000+ subscribers** — and generated **10M+ organic views** with zero ad spend. Not luck. A repeatable system. The same kind of system I build across growth marketing and AI automation for clients today.
+I grew a channel **2,100% — from 3,000 to 67,000+ subscribers** — and generated **10M+ organic views** with zero ad spend. Not luck. A repeatable system: Attention → Trust → Revenue. The same system I build across growth marketing and AI automation for clients today.
 
 ## YouTube Growth — Choose Your Level
 
@@ -92,7 +92,7 @@ Most brands create content. Few create content that converts. I design ToFu → 
 - Content calendar management
 - Weekly A/B testing & performance reporting
 
-**Result:** Generated 3.5M+ organic views and drove 3,000+ in-person event attendees through content alone.
+**Result:** Generated 10M+ organic views and drove 3,000+ in-person event attendees through content alone.
 
 ### 💰 Paid Social (Meta Ads)
 

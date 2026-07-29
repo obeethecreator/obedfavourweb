@@ -4,9 +4,9 @@ date = '2026-05-16T14:08:45+01:00'
 draft = false
 +++
 
-Most founders don't have a YouTube problem. They have a conversion problem.
+Most founders don't have a building problem. They have an attention problem.
 
-They're posting videos but growing slowly. Getting views but no customers. Building an audience that watches but never buys. The effort is there — the system that turns it into revenue isn't.
+They've shipped something real. It's good. It works. And almost nobody knows it exists yet. The effort is there — the system that gets it seen isn't.
 
 That's exactly where I come in.
 
@@ -14,36 +14,36 @@ That's exactly where I come in.
 
 ## The longer version
 
-My name is Obed Favour Chukwuemeka. I'm a YouTube growth strategist — and for the past 4+ years I've been obsessed with one question: *how do you turn a YouTube channel into a channel that actually brings in customers?*
+My name is Obed Favour Chukwuemeka. I'm an attention strategist for founders — and for the past 4+ years I've been obsessed with one question: *how do you get the right people to actually notice what you've built?*
 
-Not vanity views. Not subscriber counts that look good and do nothing. Real, compounding, revenue-generating growth.
+Not vanity metrics. Not numbers that look good and do nothing. Real attention that compounds into trust, and trust that compounds into revenue.
 
-I started by building channels the hard way — writing the titles, designing the thumbnails, studying retention, testing hooks until the numbers moved. And they moved. **I grew a channel 1,900% — from 3,000 to 67K+ subscribers — and engineered over 10M views into a funnel that converts.**
+I started in the trenches of YouTube growth — writing the titles, designing the thumbnails, studying retention, testing hooks until the numbers moved. And they moved. **I grew a channel 2,100% — from 3,000 to 67K+ subscribers — and engineered over 10M views into a funnel that converts.**
 
-But the deeper lesson wasn't any single tactic. It was the system underneath: the engine that turns an impression into a click, a click into a watch, and a watch into a customer. That pipeline is the whole game — and it's what I build.
+But the deeper lesson wasn't the platform. It was the system underneath: Attention → Trust → Revenue. Get seen by the right people, earn their trust with what you deliver, and the revenue follows. That pipeline is the whole game — and it's what I build now, across YouTube, content, and AI-powered systems.
 
 ---
 
 ## Who I work with
 
-I work best with **founders, startups, and growing businesses** who know YouTube should be bringing them customers — but it isn't yet.
+I work best with **founders and builders** who've already built something worth noticing — but the market hasn't noticed yet.
 
 If any of these sound familiar, we should talk:
 
-- You're posting videos but they're not converting into clients or customers
-- You're getting views but can't trace a single sale back to them
+- You've shipped a product or service you're proud of, and it's still mostly invisible
+- You're posting, building, showing up — but it's not translating into customers
 - You're doing everything manually and it's eating your week alive
-- You want to build a real audience — not just followers — before your next raise or launch
+- You want real audience and real trust built before your next raise or launch — not just followers
 
 ---
 
 ## What I believe
 
-Growth works best when it's built on truth — the truth of what your audience actually wants to watch, the truth of what your brand actually delivers, and the honesty to close the gap between the two.
+The world doesn't need more products. It needs fewer good things going unseen.
 
-I don't do smoke and mirrors. I don't chase trends for the sake of it. I build systems rooted in data, content that earns attention rather than demanding it, and funnels that turn that attention into revenue.
+Attention, earned honestly, doesn't just grow a business — it grows the right business, faster, without burning cash chasing people who were never going to buy. I don't do smoke and mirrors. I don't chase trends for the sake of it. I build systems rooted in data, content that earns attention rather than demanding it, and automation that removes the busywork so the work that matters gets done.
 
-> *"The best marketing doesn't feel like marketing. The best systems don't feel like work."*
+> *"The best attention doesn't feel like marketing. The best systems don't feel like work."*
 
 ---
 
@@ -52,7 +52,7 @@ I don't do smoke and mirrors. I don't chase trends for the sake of it. I build s
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:1.5rem 0;">
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
     <div style="font-size:32px;font-weight:600;color:inherit;" data-target="10M+">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Views grown across multiple channels</div>
+    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Views generated through organic attention systems</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
     <div style="font-size:32px;font-weight:600;color:inherit;" data-target="67K+">0</div>
@@ -66,7 +66,7 @@ I don't do smoke and mirrors. I don't chase trends for the sake of it. I build s
 <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:1.5rem 0;">
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
     <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$1.4M">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Pre-seed raise supported through community growth</div>
+    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Pre-seed raise supported through community-led growth</div>
   </div>
   <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
     <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$0.01">0</div>
@@ -74,7 +74,7 @@ I don't do smoke and mirrors. I don't chase trends for the sake of it. I build s
   </div>
 </div>
 
-Beyond YouTube, I've run high-ROI Meta Ads, built communities that backed a $1.4M raise, and set up AI automation that saves clients 10+ hours a week. Different levers — same job: building systems that compound.
+Beyond YouTube, I've run high-ROI Meta Ads, built communities that backed a $1.4M raise, and set up AI automation that saves clients 10+ hours a week. Different levers, same job: turning attention into systems that compound.
 
 [See the full case studies →](/portfolio)
 
@@ -82,10 +82,10 @@ Beyond YouTube, I've run high-ROI Meta Ads, built communities that backed a $1.4
 
 ## Let's build something
 
-If you're ready to stop guessing and start turning views into customers — Book a 1-on-1 session and we'll spend 60 minutes on your channel: a clear, honest diagnosis of what it needs, and a plan for exactly what to do about it.
+If you're ready to stop being invisible and start turning attention into customers — get a free Attention Audit and we'll spend time on exactly what's standing between you and being seen.
 
 <div style="text-align:center;margin:2rem 0;">
-  <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a 1-on-1 Call →</a>
+  <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Get Your Free Attention Audit →</a>
   <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
 </div>
 
