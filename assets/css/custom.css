@@ -1,3 +1,37 @@
+/* ==========================================================================
+   THEME VARIABLES — Light & Dark
+   ========================================================================== */
+:root {
+  --bg-primary: #fafafa;
+  --bg-secondary: #f2f3f5;
+  --card-bg: #ffffff;
+  --text-primary: #0a0a0b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --nav-bg: rgba(255, 255, 255, 0.72);
+  --accent-glow: #00d4ff;
+  --accent-text: #0284c7;
+  --accent-secondary: #7928ca;
+}
+
+html.dark {
+  --bg-primary: #08080a;
+  --bg-secondary: rgba(12, 12, 15, 0.8);
+  --card-bg: #161617;
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --nav-bg: rgba(20, 20, 24, 0.55);
+  --accent-glow: #00d4ff;
+  --accent-text: #00d4ff;
+  --accent-secondary: #7928ca;
+}
+
+/* ==========================================================================
+   Base page + prose width overrides
+   ========================================================================== */
 article { max-width: 100% !important; }
 .prose { max-width: 100% !important; }
 .max-w-prose { max-width: 100% !important; }
@@ -42,51 +76,42 @@ figcaption {
 }
 
 @media (max-width: 640px) {
-  /* Homepage stats grid ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â stack to 2 columns on mobile */
+  /* Legacy prose-based homepage grid rules (kept for older markdown-based pages) */
   .prose div[style*="grid-template-columns:repeat(4"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  /* Portfolio and services grids ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â stack to single column */
   .prose div[style*="grid-template-columns:repeat(2"] {
     grid-template-columns: 1fr !important;
   }
-  /* Case study rows ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â stack vertically */
   .prose div[style*="display:flex"] {
     flex-direction: column !important;
   }
-  /* Stat numbers ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â slightly smaller on mobile */
   .prose div[style*="font-size:32px"] {
     font-size: 24px !important;
   }
-  /* CTA button ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â full width on mobile */
   .prose a[style*="background:#2E75B6"] {
     display: block !important;
     text-align: center !important;
     padding: 16px 20px !important;
   }
-  /* Services page form ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â full width inputs */
   input, textarea, select {
     width: 100% !important;
     box-sizing: border-box !important;
   }
-  /* Portfolio result chips ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â wrap properly */
   .prose span[style*="display:inline-block"] {
     margin-bottom: 6px !important;
   }
-  /* General padding fix for custom HTML sections */
   .prose div[style*="padding:28px"] {
     padding: 20px 14px !important;
   }
-  /* Portfolio case study stat numbers */
   .prose div[style*="font-size:48px"] {
     font-size: 32px !important;
   }
-
-  /* Blog figures on mobile */
   figure img {
     height: 160px !important;
   }
 }
+
 @media (max-width: 640px) {
   .prose div[style*="grid-template-columns:repeat(auto-fit"] {
     grid-template-columns: 1fr !important;
@@ -108,135 +133,105 @@ figcaption {
   }
 }
 
-/* ===== Animations & polish (added) ===== */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-@media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
-}
-/* Hover lift on stat cards */
-.prose div[style*="padding:28px"] {
-  transition: transform 0.25s ease, background 0.25s ease !important;
-}
-.prose div[style*="padding:28px"]:hover {
-  transform: translateY(-4px) !important;
-  background: rgba(91,155,213,0.12) !important;
-}
-/* Hover lift on the CTA button */
+/* Hover lift on legacy CTA buttons */
 .prose a[style*="background:#2E75B6"] {
   transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 .prose a[style*="background:#2E75B6"]:hover {
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 24px rgba(46,117,182,0.4) !important;
+  box-shadow: 0 8px 24px rgba(46, 117, 182, 0.4) !important;
 }
 
-/* Fix: unify body/header background with hero color to remove visible seam */
+/* ==========================================================================
+   Global background / overflow fixes
+   ========================================================================== */
 html, body {
-  background-color: #08080a !important;
-}
-
-/* Fix: prevent horizontal scroll caused by 100vw elements exceeding viewport */
-html, body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
   overflow-x: hidden !important;
   max-width: 100% !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* Ensure no element can force horizontal overflow */
 img, video, svg, table {
   max-width: 100% !important;
   height: auto;
 }
 
-/* Strengthen nav bar distinction from page content while scrolling */
+/* ==========================================================================
+   Sticky nav — theme-aware glass bar
+   ========================================================================== */
 #menu-blur {
-  background-color: rgba(8, 8, 10, 0.85) !important;
+  background-color: var(--nav-bg) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4) !important;
-}
-
-/* Force nav backdrop always visible - do not rely on scroll-triggered JS opacity toggle */
-#menu-blur {
+  border-bottom: 1px solid var(--border-color) !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15) !important;
   opacity: 1 !important;
 }
 
-/* Lighten nav highlight - frosted glass, not solid black */
-#menu-blur {
-  background-color: rgba(20, 20, 24, 0.55) !important;
+.main-menu a,
+.main-menu a span {
+  color: var(--text-primary) !important;
+  opacity: 0.85 !important;
+}
+.main-menu a:hover,
+.main-menu a:hover span {
+  opacity: 1 !important;
 }
 
-/* ===== Mobile pass: current homepage (layouts/index.html) ===== */
-@media (max-width: 640px) {
-
-  /* Hero heading â€” already uses clamp(), but tighten min end for small phones */
-  h1 {
-    font-size: clamp(2rem, 8vw, 4rem) !important;
-    line-height: 1.15 !important;
-  }
-
-  /* Metrics grid: 4 columns -> 2 columns on mobile */
-  section div[style*="grid-template-columns: repeat(auto-fit"] {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1.5rem !important;
-  }
-
-  /* Capability cards (.tech-card): already auto-fit minmax(320px,1fr), force single column */
-  section div[style*="minmax(320px"] {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* Badge pill â€” prevent overflow/wrap issues on narrow screens */
-  span[style*="Growth Marketing"] {
-    font-size: 0.65rem !important;
-    padding: 0.4rem 1rem !important;
-    text-align: center !important;
-  }
-
-  /* Section padding â€” tighten on mobile */
-  section {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-
-  /* Avatar ring â€” slightly smaller on small phones */
-  div[style*="width: 105px; height: 105px"] {
-    width: 84px !important;
-    height: 84px !important;
-  }
+.main-menu > a,
+.main-menu a.text-base {
+  color: var(--text-primary) !important;
+  opacity: 1 !important;
 }
 
-@media (max-width: 400px) {
-  /* Stats grid: single column on very small phones */
-  section div[style*="grid-template-columns: repeat(auto-fit"] {
-    grid-template-columns: 1fr !important;
+label[for="mobile-menu-toggle"],
+label[for="mobile-menu-toggle"] svg,
+label[for="mobile-menu-toggle"] svg path {
+  color: var(--accent-text) !important;
+  fill: var(--accent-text) !important;
+  stroke: var(--accent-text) !important;
+  opacity: 1 !important;
+}
+
+label[for="mobile-menu-toggle"] ~ div svg,
+label[for="mobile-menu-toggle"] ~ div svg path {
+  color: var(--text-primary) !important;
+  fill: var(--text-primary) !important;
+  stroke: var(--text-primary) !important;
+}
+
+@media (max-width: 768px) {
+  .main-menu a {
+    font-weight: 600 !important;
+  }
+  .main-menu a span,
+  nav.mx-auto a span {
+    color: var(--text-primary) !important;
+    opacity: 1 !important;
   }
 }
 
-/* ===== Advanced Tech Aesthetic ===== */
+/* ==========================================================================
+   Advanced tech aesthetic — typography, cards, glow
+   ========================================================================== */
 h1, h2, h3, .headline {
   font-family: "Space Grotesk", -apple-system, sans-serif !important;
+  letter-spacing: -0.025em !important;
+  font-weight: 700;
+  color: var(--text-primary);
 }
 
-/* Eyebrow labels / badges get the mono technical treatment */
 span[style*="text-transform: uppercase"],
 div[style*="text-transform: uppercase"] {
   font-family: "JetBrains Mono", monospace !important;
 }
 
-/* Subtle animated grid backdrop behind hero for depth */
 section:first-of-type {
   position: relative;
   background-image:
@@ -245,15 +240,23 @@ section:first-of-type {
   background-size: 48px 48px;
 }
 
-/* Glow accent on the avatar ring */
 div[style*="width: 150px; height: 150px"] {
   box-shadow: 0 0 40px rgba(0, 212, 255, 0.15) !important;
 }
 
-/* Tech card glow-on-hover, layered on top of existing lift */
 .tech-card {
   position: relative;
   overflow: hidden;
+  background: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 18px !important;
+  padding: 2.25rem !important;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.tech-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: rgba(41, 151, 255, 0.35) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 0 20px rgba(41, 151, 255, 0.12) !important;
 }
 .tech-card::before {
   content: "";
@@ -268,10 +271,9 @@ div[style*="width: 150px; height: 150px"] {
   opacity: 1;
 }
 
-/* Stat numbers get a subtle glow */
 section div[style*="10M+"],
 section div[style*="font-size: clamp(2rem"] {
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
 }
 
 /* Cards fade/slide in automatically on page load - no JS required */
@@ -301,4 +303,51 @@ section div[style*="font-size: clamp(2rem"] {
     opacity: 1;
     transform: none;
   }
+}
+
+/* ==========================================================================
+   Free Audit — highlighted nav CTA (lead magnet emphasis)
+   ========================================================================== */
+.main-menu a[href*="audit"] {
+  background: linear-gradient(135deg, #2997ff 0%, #00d4ff 100%) !important;
+  color: #ffffff !important;
+  padding: 0.5rem 1.1rem !important;
+  border-radius: 9999px !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+  box-shadow: 0 2px 12px rgba(0, 212, 255, 0.35) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.main-menu a[href*="audit"] span {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.main-menu a[href*="audit"]:hover {
+  transform: translateY(-1px) scale(1.03) !important;
+  box-shadow: 0 4px 18px rgba(0, 212, 255, 0.5) !important;
+}
+
+/* Slight pulse to draw the eye without being obnoxious */
+@keyframes auditPulse {
+  0%, 100% { box-shadow: 0 2px 12px rgba(0, 212, 255, 0.35); }
+  50% { box-shadow: 0 2px 20px rgba(0, 212, 255, 0.6); }
+}
+.main-menu a[href*="audit"] {
+  animation: auditPulse 3s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .main-menu a[href*="audit"] {
+    animation: none;
+  }
+}
+
+/* Mobile fullscreen menu version */
+nav.mx-auto a[href*="audit"] span {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #2997ff 0%, #00d4ff 100%) !important;
+  padding: 0.4rem 1rem !important;
+  border-radius: 9999px !important;
+  display: inline-block !important;
 }
