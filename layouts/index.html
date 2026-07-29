@@ -1,92 +1,93 @@
-+++
-title = "About"
-date = '2026-05-16T14:08:45+01:00'
-draft = false
-+++
+{{ define "main" }}
+<div style="width: 100%; min-height: 100vh; background-color: var(--bg-primary); color: var(--text-primary); overflow-x: hidden;">
 
-Most founders don't have a building problem. They have an attention problem.
+  <!-- Hero Section -->
+  <section style="width: 100%; padding: 4rem 1.5rem 4rem 1.5rem; text-align: center; background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.08) 0%, rgba(121, 40, 202, 0.05) 35%, var(--bg-primary) 75%); border-bottom: 1px solid var(--border-color);">
+    <div style="max-width: 1300px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
 
-They've shipped something real. It's good. It works. And almost nobody knows it exists yet. The effort is there — the system that gets it seen isn't.
+      <!-- Avatar Ring with Neon Tech Gradient -->
+      <div style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+        <div style="width: 150px; height: 150px; border-radius: 9999px; padding: 2px; background: linear-gradient(135deg, #00d4ff 0%, #7928ca 100%); display: inline-block; overflow: hidden; box-shadow: 0 0 30px rgba(0, 212, 255, 0.25);">
+          <img src="/images/avatar.jpg?v=2"
+               alt="Obed Favour"
+               onerror="this.onerror=null; this.src='/avatar.jpg?v=2';"
+               style="width: 100%; height: 100%; border-radius: 9999px; object-fit: cover; background-color: var(--bg-secondary); display: block;" />
+        </div>
+      </div>
 
-That's exactly where I come in.
+      <!-- Badge -->
+      <span style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-text); background: rgba(0, 212, 255, 0.08); padding: 0.45rem 1.25rem; border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.2); margin-bottom: 1.5rem;">
+        <span style="width: 6px; height: 6px; border-radius: 9999px; background-color: #00d4ff; box-shadow: 0 0 8px #00d4ff;"></span>
+        Growth Marketing & AI Systems
+      </span>
 
----
+      <!-- Main Headline -->
+      <h1 style="font-size: clamp(2.4rem, 5.5vw, 4rem); font-weight: 800; color: var(--text-primary); margin-bottom: 1.25rem; line-height: 1.1; letter-spacing: -0.03em;">
+        You Built It.<br />
+        <span style="background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent-text) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">We'll Make Sure It Gets Seen.</span>
+      </h1>
 
-## The longer version
+      <!-- Subtitle -->
+      <p style="font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text-secondary); max-width: 44rem; margin: 0 auto; font-weight: 400; line-height: 1.6;">
+        Everyone's building right now. Almost nobody's getting seen. As an attention strategist for founders, I help builders cut through the noise, earn real attention, and turn it into paying customers &mdash; using the same system that took one YouTube channel to 10M+ views and helped raise $1.4M for a client.
+      </p>
 
-My name is Obed Favour Chukwuemeka. I'm an attention strategist for founders — and for the past 4+ years I've been obsessed with one question: *how do you get the right people to actually notice what you've built?*
+      <!-- CTAs -->
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2rem;">
+        <a href="https://selar.com/74i4823703" target="_blank" style="display: inline-block; background: #2997ff; color: #ffffff; font-weight: 600; font-size: 0.95rem; padding: 0.85rem 2.25rem; border-radius: 9999px; text-decoration: none; box-shadow: 0 4px 20px rgba(41, 151, 255, 0.35); transition: transform 0.2s ease;">Get Your Free Attention Audit</a>
+        <a href="#capabilities" style="display: inline-block; background: transparent; color: var(--text-primary); font-weight: 600; font-size: 0.95rem; padding: 0.85rem 2.25rem; border-radius: 9999px; text-decoration: none; border: 1px solid var(--border-color); transition: border-color 0.2s ease;">Explore Systems</a>
+      </div>
 
-Not vanity metrics. Not numbers that look good and do nothing. Real attention that compounds into trust, and trust that compounds into revenue.
+    </div>
+  </section>
 
-I started in the trenches of YouTube growth — writing the titles, designing the thumbnails, studying retention, testing hooks until the numbers moved. And they moved. **I grew a channel 1,900% — from 3,000 to 67K+ subscribers — and engineered over 10M views into a funnel that converts.**
+  <!-- Metrics Grid -->
+  <section style="width: 100%; border-bottom: 1px solid var(--border-color); background: var(--bg-secondary); padding: 2.5rem 1.5rem;">
+    <div style="max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+      <div>
+        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">10M+</div>
+        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 0.35rem; font-weight: 600;">Organic Views</div>
+      </div>
+      <div>
+        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">$1.4M</div>
+        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 0.35rem; font-weight: 600;">Client Raised</div>
+      </div>
+      <div>
+        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">67K+</div>
+        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 0.35rem; font-weight: 600;">Subscribers</div>
+      </div>
+      <div>
+        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">AI & Auto</div>
+        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 0.35rem; font-weight: 600;">Custom Workflows</div>
+      </div>
+    </div>
+  </section>
 
-But the deeper lesson wasn't the platform. It was the system underneath: Attention → Trust → Revenue. Get seen by the right people, earn their trust with what you deliver, and the revenue follows. That pipeline is the whole game — and it's what I build now, across YouTube, content, and AI-powered systems.
+  <!-- Cards Section -->
+  <section id="capabilities" style="max-width: 1300px; margin: 0 auto; padding: 4.5rem 1.5rem;">
+    <div style="text-align: center; margin-bottom: 3.5rem;">
+      <span style="font-size: 0.725rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-text);">Capabilities</span>
+      <h2 style="font-size: clamp(1.85rem, 3.5vw, 2.4rem); font-weight: 800; color: var(--text-primary); margin-top: 0.4rem; letter-spacing: -0.02em;">What I Build</h2>
+    </div>
 
----
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
+      <div class="tech-card">
+        <div style="font-size: 0.725rem; font-weight: 700; color: var(--accent-text); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.75rem;">01 / Acquisition</div>
+        <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem;">Growth Marketing & Content Engines</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Designing full-funnel organic acquisition strategies, video distribution systems, and conversion funnels engineered to turn attention into pipeline.
+        </p>
+      </div>
 
-## Who I work with
+      <div class="tech-card">
+        <div style="font-size: 0.725rem; font-weight: 700; color: var(--accent-secondary); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 0.75rem;">02 / Engineering</div>
+        <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem;">AI & Operations Automation</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Building custom AI workflows, automated lead routing, and business system integrations using modern AI tools and Zapier to save time and scale efficiency.
+        </p>
+      </div>
+    </div>
+  </section>
 
-I work best with **founders and builders** who've already built something worth noticing — but the market hasn't noticed yet.
-
-If any of these sound familiar, we should talk:
-
-- You've shipped a product or service you're proud of, and it's still mostly invisible
-- You're posting, building, showing up — but it's not translating into customers
-- You're doing everything manually and it's eating your week alive
-- You want real audience and real trust built before your next raise or launch — not just followers
-
----
-
-## What I believe
-
-The world doesn't need more products. It needs fewer good things going unseen.
-
-Attention, earned honestly, doesn't just grow a business — it grows the right business, faster, without burning cash chasing people who were never going to buy. I don't do smoke and mirrors. I don't chase trends for the sake of it. I build systems rooted in data, content that earns attention rather than demanding it, and automation that removes the busywork so the work that matters gets done.
-
-> *"The best attention doesn't feel like marketing. The best systems don't feel like work."*
-
----
-
-## Proof it works
-
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:1.5rem 0;">
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="10M+">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Views generated through organic attention systems</div>
-  </div>
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="67K+">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Subscribers built from scratch</div>
-  </div>
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="73M+">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Impressions engineered through packaging & SEO</div>
-  </div>
 </div>
-<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:1.5rem 0;">
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$1.4M">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Pre-seed raise supported through community-led growth</div>
-  </div>
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$0.01">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">CPC achieved on a $1,000 Meta Ads budget</div>
-  </div>
-</div>
-
-Beyond YouTube, I've run high-ROI Meta Ads, built communities that backed a $1.4M raise, and set up AI automation that saves clients 10+ hours a week. Different levers, same job: turning attention into systems that compound.
-
-[See the full case studies →](/portfolio)
-
----
-
-## Let's build something
-
-If you're ready to stop being invisible and start turning attention into customers — get a free Attention Audit and we'll spend time on exactly what's standing between you and being seen.
-
-<div style="text-align:center;margin:2rem 0;">
-  <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Get Your Free Attention Audit →</a>
-  <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
-</div>
-
-Or [connect with me on LinkedIn](https://linkedin.com/in/obed-favour-speaks) if you want to follow along first — no pressure.
+{{ end }}
