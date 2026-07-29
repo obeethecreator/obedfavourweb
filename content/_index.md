@@ -1,6 +1,6 @@
 ---
 title: "Obed Favour"
-description: "I help founders turn YouTube into a customer acquisition channel. 10M+ views grown, 67K+ subscribers built, $1.4M community-backed raise supported."
+description: "Growth marketing systems and AI automation for founders and scaling brands. 10M+ organic views, 67K+ subscribers, $1.4M raised for a client."
 ---
 <div style="text-align:center;margin:2.5rem 0 1.5rem;">
   <h1 style="font-size:2.6rem;font-weight:700;line-height:1.15;margin-bottom:1rem;">Turn Your YouTube Channel Into a Customer Acquisition Engine.</h1>
@@ -36,5 +36,5 @@ description: "I help founders turn YouTube into a customer acquisition channel. 
 </div>
 <div style="text-align:center;margin:2rem 0 1rem;">
   <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a 1-on-1 Call</a>
-  <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
+  <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min Ã‚Â· 1-on-1 session Ã‚Â· limited slots</div>
 </div>

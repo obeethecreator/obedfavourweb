@@ -1,6 +1,6 @@
 ---
 title: "Portfolio"
-description: "YouTube growth proof: 10.3M+ views, 67K+ subscribers, 73.7M impressions. Real channels grown across multiple niches."
+description: "Proof across growth marketing and AI automation: 10M+ organic views, 67K+ subscribers, 73M+ impressions, $1.4M raised for a client."
 showDate: false
 showAuthor: false
 showReadingTime: false

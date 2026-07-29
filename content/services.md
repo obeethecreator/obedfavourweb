@@ -9,17 +9,17 @@ draft = false
   <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
 </div>
 
-## Your YouTube Channel Should Be Printing Subscribers. Why Isn't It?
+## Growth Marketing & AI Automation for Founders and Scaling Brands
 
-You already know YouTube is where attention lives. The problem isn't effort — it's the system. Most channels stall because nobody engineered the views-to-subscribers-to-revenue pipeline behind them.
+You already know attention is out there. The problem isn't effort — it's the system. Most brands stall because nobody engineered the pipeline that turns attention into revenue, or built the automation that lets it run without them.
 
-I have. I grew a channel **2,100% — from 3,000 to 67,000+ subscribers** — and generated **10M+ organic views** with zero ad spend. Not luck. A repeatable system. And it's the same system I'll build for you.
+I have. I grew a channel **2,100% — from 3,000 to 67,000+ subscribers** — and generated **10M+ organic views** with zero ad spend. Not luck. A repeatable system. The same kind of system I build across growth marketing and AI automation for clients today.
 
 ## YouTube Growth — Choose Your Level
 
-Whether you're a solopreneur filming on your phone or an org with a full team, there's an entry point built for you. Same proven framework. Different levels of done-for-you.
+YouTube is one of the strongest acquisition channels available, and it's where this system was proven. Whether you're a solopreneur filming on your phone or an org with a full team, there's an entry point built for you. Same proven framework. Different levels of done-for-you.
 
-### 🔍 The YouTube Growth Audit
+### 🔍 The Growth Audit
 
 The fastest way to find out exactly why your channel is stuck — and the 90-day plan to fix it.
 
@@ -50,7 +50,7 @@ Your team films. I steer the growth engine every single month.
 - Packaging optimised on every upload
 - Monthly growth report tied to real numbers, not vanity metrics
 
-**Best for:** Funded founders, organisations with an in-house creator, and agencies who want a YouTube specialist behind their team — including white-label.
+**Best for:** Funded founders, organisations with an in-house creator, and agencies who want a growth specialist behind their team — including white-label.
 
 ### 🚀 Done-For-You Channel Management
 
@@ -68,9 +68,9 @@ You show up and film. I run everything else.
   <div style="font-size:12px;opacity:0.5;margin-top:12px;">One call. We'll find the right level for where you are.</div>
 </div>
 
-## Full-Service Growth
+## Full-Service Growth & Automation
 
-YouTube is the spearhead — but growth rarely lives on one platform. When you need the full engine, these are the supporting systems I build.
+YouTube is one lever — but growth rarely lives on one platform, and it shouldn't run entirely by hand either. When you need the full engine, these are the supporting systems I build.
 
 ### 📱 Social Media Growth
 
@@ -107,7 +107,7 @@ Every naira and dollar of your ad budget should work hard. I run lean, high-ROI 
 
 ### 🤖 AI Automation & Systems
 
-Stop doing manually what a system can do for you. I build AI-powered workflows that save time, reduce costs, and let you focus on what matters.
+Stop doing manually what a system can do for you. I build AI-powered workflows that save time, reduce costs, and let your business run growth on autopilot.
 
 - Marketing automation setup
 - Content workflow automation
@@ -134,9 +134,23 @@ Build an audience that shows up, engages, and buys. I grow and manage online com
 3. **Execution** — I get to work, keep you updated, and deliver results
 4. **Review & Scale** — We review performance and double down on what works
 
+## Frequently Asked Questions
+
+### What's the difference between growth marketing and AI automation?
+
+Growth marketing focuses on getting more of the right people to find, trust, and buy from your brand — through content, funnels, and organic acquisition. AI automation focuses on removing manual work from the systems you already run, so growth doesn't require more hours from you. Most clients benefit from both working together.
+
+### Do I need a large following before this works?
+
+No. Several of the systems in this offer — funnel design, automation, paid social — work for brands at zero or near-zero following. The starting point is your goal, not your current audience size.
+
+### How fast will I see results?
+
+Growth audits and blueprints typically deliver a clear plan within 1–2 weeks. Full growth or automation builds usually show measurable movement within 30–90 days, depending on scope.
+
 ## Let's Work Together
 
-Ready to grow your brand? Book a free 30-minute strategy call or fill out the form below.
+Ready to grow your brand? Book a 1-on-1 call or fill out the form below.
 
 <div style="text-align:center;margin:1.5rem 0;">
   <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a 1-on-1 Call →</a>
@@ -148,7 +162,7 @@ Ready to grow your brand? Book a free 30-minute strategy call or fill out the fo
     <input type="email" name="email" placeholder="Your Email" required style="display:block; width:100%; padding: 10px; margin-top: 6px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
     <select name="service" style="display:block; width:100%; padding: 10px; margin-top: 6px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
       <option value="">Select a service...</option>
-      <option value="YouTube Growth Audit">YouTube Growth Audit</option>
+      <option value="Growth Audit">Growth Audit</option>
       <option value="Channel Blueprint">Channel Blueprint</option>
       <option value="Done-With-You Partnership">Done-With-You Partnership</option>
       <option value="Done-For-You Management">Done-For-You Management</option>

@@ -8,13 +8,13 @@ title = "Obed Favour"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  description = "YouTube Growth Strategist for founders, creators & brands"
+  description = "Growth Marketing & AI Automation Consultant for founders and scaling brands"
 
 [params.author]
   name = "Obed Favour"
   image = "avatar.jpg"
-  headline = "For founders who want viewers to become customers - not just numbers"
-  bio = "I help founders turn YouTube into a predictable customer acquisition channel - content systems that grow views, build trust, and convert viewers into customers. 10M+ views, 67K+ subscribers, $1.4M raised."
+  headline = "Growth systems and AI automation that turn attention into revenue"
+  bio = "I help founders and brands build growth marketing systems and AI automation that turn attention into revenue - across content, funnels, and operations. 10M+ views generated, 67K+ subscribers grown, $1.4M raised for a client through community-led growth."
   links = [
     { github = "https://github.com/obeethecreator" },
     { instagram = "https://instagram.com/obeethecre8or" },
