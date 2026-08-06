@@ -1,7 +1,7 @@
 +++
 title = "Migrated My Entire Automation Stack to Self-Hosted Today"
 date = '2026-08-05T16:58:46+01:00'
-draft = false
+draft = true
 description = "Spent today moving everything off the trial n8n Cloud instance onto my own self-hosted setup — the booking pipeline, the trend digest, and this conten"
 tags = ["growth marketing", "AI automation"]
 categories = ["Marketing"]
