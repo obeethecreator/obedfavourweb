@@ -240,7 +240,9 @@ section:first-of-type {
   background-size: 48px 48px;
 }
 
-div[style*="width: 150px; height: 150px"] {
+.hero-avatar-ring {
+  width: clamp(96px, 24vw, 150px);
+  height: clamp(96px, 24vw, 150px);
   box-shadow: 0 0 40px rgba(0, 212, 255, 0.15) !important;
 }
 
