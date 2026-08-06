@@ -170,6 +170,24 @@ img, video, svg, table {
   aspect-ratio: 1 / 1 !important;
 }
 
+/* Author bio card layout — no responsive breakpoint on the theme's own
+   "flex author" wrapper forces the avatar and text side-by-side even on
+   narrow phones. Stack and center below 640px, matching this file's
+   existing breakpoint; row/left-aligned unchanged above it. */
+.author {
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .author {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /* ==========================================================================
    Sticky nav — theme-aware glass bar
    ========================================================================== */
