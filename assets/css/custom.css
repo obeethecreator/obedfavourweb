@@ -162,6 +162,14 @@ img, video, svg, table {
   height: auto;
 }
 
+/* Author bio avatar (About page + bottom of every blog post) — the global
+   rule above can shrink this image's width below its fixed 96px height in
+   narrow containers, distorting it into an oval with no object-fit set. */
+.author img {
+  object-fit: cover !important;
+  aspect-ratio: 1 / 1 !important;
+}
+
 /* ==========================================================================
    Sticky nav — theme-aware glass bar
    ========================================================================== */
