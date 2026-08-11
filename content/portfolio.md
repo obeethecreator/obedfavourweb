@@ -98,28 +98,18 @@ Proof the same growth method works across very different niches - from brand-new
 </div>
 </div>
 
-<div id="shot-lightbox" onclick="closeShotLightbox()" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.92);z-index:999999;cursor:zoom-out;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;touch-action:none;">
+<div id="shot-lightbox" onclick="closeShotLightbox()" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.92);z-index:999999;cursor:zoom-out;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;">
 <button type="button" onclick="closeShotLightbox()" aria-label="Close" style="position:fixed;top:16px;right:16px;width:44px;height:44px;border-radius:9999px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.35);color:#fff;font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:1000000;">✕</button>
 <img id="shot-lightbox-img" src="" alt="" onclick="closeShotLightbox()" style="max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;display:block;cursor:zoom-out;">
 </div>
 <script>
 function openShotLightbox(src, alt) {
-  var lb = document.getElementById('shot-lightbox');
   document.getElementById('shot-lightbox-img').src = src;
   document.getElementById('shot-lightbox-img').alt = alt;
-  lb.style.display = 'flex';
-  document.documentElement.style.overflow = 'hidden';
-  document.body.style.overflow = 'hidden';
-  document.documentElement.style.position = 'fixed';
-  document.documentElement.style.width = '100%';
+  document.getElementById('shot-lightbox').style.display = 'flex';
 }
 function closeShotLightbox() {
-  var lb = document.getElementById('shot-lightbox');
-  lb.style.display = 'none';
-  document.documentElement.style.overflow = '';
-  document.body.style.overflow = '';
-  document.documentElement.style.position = '';
-  document.documentElement.style.width = '';
+  document.getElementById('shot-lightbox').style.display = 'none';
 }
 document.addEventListener('keyup', function(e) { if (e.key === 'Escape') closeShotLightbox(); });
 </script>
