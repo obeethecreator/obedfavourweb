@@ -1,7 +1,7 @@
 +++
 title = "I Built an AI Content Pipeline Today. It Tried to Publish a Fake Client Story."
 date = '2026-08-05T11:37:42+01:00'
-draft = false
+draft = true
 description = "I spent today building an automated content system for this site. Trend intelligence, AI drafting, Telegram approval, auto-publish to GitHub. The kind"
 tags = ["growth marketing", "AI automation"]
 categories = ["Marketing"]
