@@ -2,6 +2,7 @@
 title = "About"
 date = '2026-05-16T14:08:45+01:00'
 draft = false
+description = "Meet Obed Favour Chukwuemeka, Attention Strategist — the system behind 10M+ organic views, 67K+ subscribers, and a $1.4M client raise."
 +++
 
 Most founders don't have a building problem. They have an attention problem.

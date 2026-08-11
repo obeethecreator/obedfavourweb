@@ -1,6 +1,6 @@
 ---
 title: "Obed Favour"
-description: "Growth marketing systems and AI automation for founders and scaling brands. 10M+ organic views, 67K+ subscribers, $1.4M raised for a client."
+description: "I help founders and consultants turn attention into revenue — organic growth systems and AI automation, no ad spend. 10M+ views, 67K+ subscribers, $1.4M raised for a client."
 ---
 <div style="text-align:center;margin:2.5rem 0 1.5rem;">
   <h1 style="font-size:2.6rem;font-weight:700;line-height:1.15;margin-bottom:1rem;">Turn Your YouTube Channel Into a Customer Acquisition Engine.</h1>
