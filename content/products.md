@@ -15,7 +15,7 @@ description = "Tools and systems built from real client work — starting with t
 <hr style="border:none;border-top:1px solid rgba(255,255,255,0.1);margin:1.5rem 0 2.5rem;">
 
 <a href="/youtube-customers/" style="text-decoration:none;display:block;margin-bottom:2.5rem;">
-  <div style="background:linear-gradient(135deg,#0A1628 0%,#16263d 100%);border:1px solid rgba(255,77,46,0.4);border-radius:16px;padding:2.5rem;position:relative;overflow:hidden;">
+  <div class="card-hover" style="background:linear-gradient(135deg,#0A1628 0%,#16263d 100%);border:1px solid rgba(255,77,46,0.4);border-radius:16px;padding:2.5rem;position:relative;overflow:hidden;">
     <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#FF4D2E;"></div>
     <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#FFB020;margin-bottom:12px;font-weight:700;">Available Now</div>
     <div style="font-size:1.6rem;font-weight:700;margin-bottom:10px;line-height:1.25;color:#ffffff;">Built the Product. Now Get Customers.</div>
@@ -30,11 +30,11 @@ description = "Tools and systems built from real client work — starting with t
 </a>
 <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-bottom:3rem;">
 
-  <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.2);border-radius:16px;padding:2rem;position:relative;">
+  <div class="card-hover" style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.2);border-radius:16px;padding:2rem;position:relative;">
     <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#3b82f6,#8b5cf6);border-radius:16px 16px 0 0;"></div>
     <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#3b82f6;margin-bottom:12px;">Coming Soon</div>
     <div style="font-size:1.2rem;font-weight:700;margin-bottom:10px;line-height:1.3;">The AI Marketing Playbook 2026</div>
-    <div style="font-size:0.9rem;opacity:0.7;line-height:1.7;margin-bottom:1.5rem;">7 AI tools + 10 proven prompts I use every week to save 10+ hours and 10x content output. Step-by-step workflows, real examples, zero fluff.</div>
+    <div style="font-size:0.9rem;opacity:0.7;line-height:1.7;margin-bottom:1.5rem;">7 AI tools + 10 proven prompts I use every week to save 10+ hours and turn one work session into a week of content. Step-by-step workflows, real examples, zero fluff.</div>
     <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.5rem;">
       <span style="background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#3b82f6;">AI Tools</span>
       <span style="background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#3b82f6;">Prompts</span>
@@ -43,7 +43,7 @@ description = "Tools and systems built from real client work — starting with t
     <a href="/audit/" style="display:inline-block;background:#2E75B6;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none;">Take the Free Audit</a>
   </div>
 
-  <div style="background:rgba(139,92,246,0.06);border:1px solid rgba(139,92,246,0.2);border-radius:16px;padding:2rem;position:relative;">
+  <div class="card-hover" style="background:rgba(139,92,246,0.06);border:1px solid rgba(139,92,246,0.2);border-radius:16px;padding:2rem;position:relative;">
     <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#8b5cf6,#ec4899);border-radius:16px 16px 0 0;"></div>
     <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8b5cf6;margin-bottom:12px;">Coming Soon</div>
     <div style="font-size:1.2rem;font-weight:700;margin-bottom:10px;line-height:1.3;">The Content System Starter Kit</div>
@@ -56,7 +56,7 @@ description = "Tools and systems built from real client work — starting with t
     <a href="/audit/" style="display:inline-block;background:#8b5cf6;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none;">Take the Free Audit</a>
   </div>
 
-  <div style="background:rgba(236,72,153,0.06);border:1px solid rgba(236,72,153,0.2);border-radius:16px;padding:2rem;position:relative;">
+  <div class="card-hover" style="background:rgba(236,72,153,0.06);border:1px solid rgba(236,72,153,0.2);border-radius:16px;padding:2rem;position:relative;">
     <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ec4899,#f59e0b);border-radius:16px 16px 0 0;"></div>
     <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#ec4899;margin-bottom:12px;">Coming Soon</div>
     <div style="font-size:1.2rem;font-weight:700;margin-bottom:10px;line-height:1.3;">Meta Ads Swipe File</div>
