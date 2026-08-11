@@ -62,34 +62,39 @@ Proof the same growth method works across very different niches - from brand-new
 ## Beyond growth: AI systems that run without me
 
 <div style="text-align:center;margin:1rem auto 2rem;max-width:640px;">
-<p style="font-size:1.02rem;opacity:0.85;">The other half of what I build. Five automations running right now on my own self-hosted infrastructure - not a demo, not a sandbox. A booking pipeline, a content-publishing pipeline, an AI research digest, a message router, and the failure-alert system watching all three. Together they replace hours of manual admin a week, cost $0/month to run, and have never failed silently.</p>
+<p style="font-size:1.02rem;opacity:0.85;text-align:center;">The other half of what I build. Five automations running right now on my own self-hosted infrastructure - not a demo, not a sandbox. A booking pipeline, a content-publishing pipeline, an AI research digest, a message router, and the failure-alert system watching all three. Together they replace hours of manual admin a week, cost $0/month to run, and have never failed silently.</p>
 </div>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:1.5rem 0;">
 <div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
 {{< figure src="/portfolio/automation/01-cal-booking-intake.jpg" alt="Cal.com Booking Intake n8n workflow" >}}
 <div style="font-size:16px;font-weight:600;margin-top:10px;">Booking-to-CRM, fully automated</div>
-<div style="font-size:13px;opacity:0.85;margin-top:6px;">Every Cal.com booking is checked for real confirmation status and only logged to the CRM once accepted - no manual sorting, no copy-paste, no missed calls.</div>
+<div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Booking confirmations get logged to the CRM by hand - or missed entirely.</div>
+<div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> Every confirmed Cal.com booking lands in the CRM automatically. Zero manual sorting, zero missed leads.</div>
 </div>
 <div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
 {{< figure src="/portfolio/automation/02-content-pipeline.jpg" alt="Content Pipeline n8n workflow" >}}
 <div style="font-size:16px;font-weight:600;margin-top:10px;">Publish a blog post by texting a bot</div>
-<div style="font-size:13px;opacity:0.85;margin-top:6px;">Message a Telegram bot, approve the preview, and it's committed to GitHub and live on this site in under two minutes. This is literally how this page gets updated.</div>
+<div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Publishing usually means a laptop, a CMS, a git client.</div>
+<div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> Text a bot, approve the preview, live in under 2 minutes. This page updates exactly this way.</div>
 </div>
 <div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
 {{< figure src="/portfolio/automation/03-error-handler.jpg" alt="Error Handler n8n workflow" >}}
 <div style="font-size:16px;font-weight:600;margin-top:10px;">Nothing fails silently</div>
-<div style="font-size:13px;opacity:0.85;margin-top:6px;">Sits behind every other workflow and fires an instant alert the moment anything breaks - catching a problem in seconds instead of a week later.</div>
+<div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Automations break quietly - you find out a week later, after a lead is already gone.</div>
+<div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> An instant alert the moment anything breaks. Seconds, not weeks.</div>
 </div>
 <div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
 {{< figure src="/portfolio/automation/04-trend-intelligence-agent.jpg" alt="Trend Intelligence Agent n8n workflow" >}}
 <div style="font-size:16px;font-weight:600;margin-top:10px;">A research analyst that never sleeps</div>
-<div style="font-size:13px;opacity:0.85;margin-top:6px;">Pulls 7 sources in parallel, scores everything with AI, and delivers a ranked trend digest on demand - fuel for content that's built on what people are already searching for.</div>
+<div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Finding what's actually worth writing about means hours of manual research.</div>
+<div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> 7 sources pulled in parallel, AI-scored, ranked digest delivered on demand.</div>
 </div>
 <div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
 {{< figure src="/portfolio/automation/05-telegram-router.jpg" alt="Telegram Message Router n8n workflow" >}}
 <div style="font-size:16px;font-weight:600;margin-top:10px;">One bot, two jobs, zero duplication</div>
-<div style="font-size:13px;opacity:0.85;margin-top:6px;">A single lightweight router reads every message and decides where it goes, so two automations share one bot instead of needing their own.</div>
+<div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Every new automation usually means standing up its own bot and its own infrastructure.</div>
+<div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> One router, one bot - two automations share it instead of duplicating setup.</div>
 </div>
 </div>
 

@@ -1,4 +1,20 @@
 /* ==========================================================================
+   Medium-zoom lightbox — force above everything else
+   Fixes: tapping a zoomable image darkened the background and hid the
+   original but the enlarged clone never appeared. The overlay had no
+   explicit z-index (defaults to auto) and the clone was only z-index:100 —
+   not high enough to guarantee it wins against every other element on the
+   page. Boosting both removes the ambiguity regardless of what else on the
+   page was contesting it.
+   ========================================================================== */
+.medium-zoom-overlay {
+  z-index: 99999 !important;
+}
+.medium-zoom-image--opened {
+  z-index: 100000 !important;
+}
+
+/* ==========================================================================
    THEME VARIABLES — Light & Dark
    ========================================================================== */
 :root {
