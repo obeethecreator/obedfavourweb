@@ -67,36 +67,55 @@ Proof the same growth method works across very different niches - from brand-new
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:1.5rem 0;">
 <div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
-{{< figure src="/portfolio/automation/01-cal-booking-intake.jpg" href="/portfolio/automation/01-cal-booking-intake.jpg" nozoom="true" alt="Cal.com Booking Intake n8n workflow" >}}
+<figure><img class="my-0 rounded-md nozoom" src="/portfolio/automation/01-cal-booking-intake.jpg" alt="Cal.com Booking Intake n8n workflow" style="cursor:zoom-in;" onclick="openShotLightbox(this.src,this.alt)"></figure>
 <div style="font-size:16px;font-weight:600;margin-top:10px;">Booking-to-CRM, fully automated</div>
 <div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Booking confirmations get logged to the CRM by hand - or missed entirely.</div>
 <div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> Every confirmed Cal.com booking lands in the CRM automatically. Zero manual sorting, zero missed leads.</div>
 </div>
 <div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
-{{< figure src="/portfolio/automation/02-content-pipeline.jpg" href="/portfolio/automation/02-content-pipeline.jpg" nozoom="true" alt="Content Pipeline n8n workflow" >}}
+<figure><img class="my-0 rounded-md nozoom" src="/portfolio/automation/02-content-pipeline.jpg" alt="Content Pipeline n8n workflow" style="cursor:zoom-in;" onclick="openShotLightbox(this.src,this.alt)"></figure>
 <div style="font-size:16px;font-weight:600;margin-top:10px;">Publish a blog post by texting a bot</div>
 <div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Publishing usually means a laptop, a CMS, a git client.</div>
 <div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> Text a bot, approve the preview, live in under 2 minutes. This page updates exactly this way.</div>
 </div>
 <div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
-{{< figure src="/portfolio/automation/03-error-handler.jpg" href="/portfolio/automation/03-error-handler.jpg" nozoom="true" alt="Error Handler n8n workflow" >}}
+<figure><img class="my-0 rounded-md nozoom" src="/portfolio/automation/03-error-handler.jpg" alt="Error Handler n8n workflow" style="cursor:zoom-in;" onclick="openShotLightbox(this.src,this.alt)"></figure>
 <div style="font-size:16px;font-weight:600;margin-top:10px;">Nothing fails silently</div>
 <div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Automations break quietly - you find out a week later, after a lead is already gone.</div>
 <div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> An instant alert the moment anything breaks. Seconds, not weeks.</div>
 </div>
 <div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
-{{< figure src="/portfolio/automation/04-trend-intelligence-agent.jpg" href="/portfolio/automation/04-trend-intelligence-agent.jpg" nozoom="true" alt="Trend Intelligence Agent n8n workflow" >}}
+<figure><img class="my-0 rounded-md nozoom" src="/portfolio/automation/04-trend-intelligence-agent.jpg" alt="Trend Intelligence Agent n8n workflow" style="cursor:zoom-in;" onclick="openShotLightbox(this.src,this.alt)"></figure>
 <div style="font-size:16px;font-weight:600;margin-top:10px;">A research analyst that never sleeps</div>
 <div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Finding what's actually worth writing about means hours of manual research.</div>
 <div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> 7 sources pulled in parallel, AI-scored, ranked digest delivered on demand.</div>
 </div>
 <div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
-{{< figure src="/portfolio/automation/05-telegram-router.jpg" href="/portfolio/automation/05-telegram-router.jpg" nozoom="true" alt="Telegram Message Router n8n workflow" >}}
+<figure><img class="my-0 rounded-md nozoom" src="/portfolio/automation/05-telegram-router.jpg" alt="Telegram Message Router n8n workflow" style="cursor:zoom-in;" onclick="openShotLightbox(this.src,this.alt)"></figure>
 <div style="font-size:16px;font-weight:600;margin-top:10px;">One bot, two jobs, zero duplication</div>
 <div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Every new automation usually means standing up its own bot and its own infrastructure.</div>
 <div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> One router, one bot - two automations share it instead of duplicating setup.</div>
 </div>
 </div>
+
+<div id="shot-lightbox" onclick="closeShotLightbox()" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.92);z-index:999999;cursor:zoom-out;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;">
+<img id="shot-lightbox-img" src="" alt="" style="max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;display:block;">
+</div>
+<script>
+function openShotLightbox(src, alt) {
+  var lb = document.getElementById('shot-lightbox');
+  document.getElementById('shot-lightbox-img').src = src;
+  document.getElementById('shot-lightbox-img').alt = alt;
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeShotLightbox() {
+  var lb = document.getElementById('shot-lightbox');
+  lb.style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keyup', function(e) { if (e.key === 'Escape') closeShotLightbox(); });
+</script>
 
 <div style="text-align:center;margin:2rem 0 1rem;">
 <a href="https://sprinkle-link-149.notion.site/AI-Automation-Portfolio-Live-Systems-Not-Demos-3b9ff9262f5d81b78229d41a57d53e48" target="_blank" style="display:inline-block;background:transparent;border:1px solid rgba(255,255,255,0.35);color:#fff;padding:12px 28px;border-radius:6px;font-size:14px;font-weight:500;text-decoration:none;">See the full technical breakdown →</a>
