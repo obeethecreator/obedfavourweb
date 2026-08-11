@@ -2,6 +2,7 @@
 title = "Services"
 date = '2026-05-16T14:09:16+01:00'
 draft = false
+description = "The Attention → Trust → Revenue system, done for you: content, automation, and conversion infrastructure that took one channel from 3K to 67K+ subscribers and helped raise $1.4M — without ad spend."
 +++
 
 <div style="text-align:center;margin:1rem 0 2.5rem;">
@@ -9,11 +10,11 @@ draft = false
   <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
 </div>
 
-## Growth Marketing & AI Automation for Founders and Scaling Brands
+## The Attention → Trust → Revenue System
 
-You already know attention is out there. The problem isn't effort — it's the system. Most brands stall because nobody engineered the pipeline that turns attention into revenue, or built the automation that lets it run without them. As an attention strategist for founders, I build both.
+I help funded founders and consultants who've already built something real get found by the people who'd pay for it — without ad spend.
 
-I grew a channel **2,100% — from 3,000 to 67,000+ subscribers** — and generated **10M+ organic views** with zero ad spend. Not luck. A repeatable system: Attention → Trust → Revenue. The same system I build across growth marketing and AI automation for clients today.
+Most founders and consultants don't have a building problem — they have an attention problem. I build the organic Attention → Trust → Revenue system — content, automation, and conversion infrastructure — that took one YouTube channel from 3,000 to 67,000+ subscribers (**2,100% growth, 10M+ organic views**) and helped a startup raise **$1.4M**, all without paid ads.
 
 ## YouTube Growth — Choose Your Level
 
@@ -68,9 +69,9 @@ You show up and film. I run everything else.
   <div style="font-size:12px;opacity:0.5;margin-top:12px;">One call. We'll find the right level for where you are.</div>
 </div>
 
-## Full-Service Growth & Automation
+## The Rest of the System
 
-YouTube is one lever — but growth rarely lives on one platform, and it shouldn't run entirely by hand either. When you need the full engine, these are the supporting systems I build.
+YouTube is one lever — but attention rarely lives on one platform, and it shouldn't run entirely by hand either. When you need the full Attention → Trust → Revenue system, these are the supporting systems I build.
 
 ### 📱 Social Media Growth
 
