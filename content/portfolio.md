@@ -12,11 +12,16 @@ showEdit: false
 <p style="font-size:1.05rem;opacity:0.8;max-width:560px;margin:0 auto;">Attention, engineered — not accidental. Below is the receipts: organic systems that turned views into customers and community into a $1.4M raise, across YouTube, content, and automation.</p>
 </div>
 
-<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:2rem 0;">
-<div style="padding:24px 16px;text-align:center;background:rgba(255,255,255,0.03);"><div style="font-size:28px;font-weight:600;" data-target="10.3M+">0</div><div style="font-size:12px;opacity:0.6;margin-top:6px;">views grown</div></div>
-<div style="padding:24px 16px;text-align:center;background:rgba(255,255,255,0.03);"><div style="font-size:28px;font-weight:600;" data-target="67K+">0</div><div style="font-size:12px;opacity:0.6;margin-top:6px;">subscribers</div></div>
-<div style="padding:24px 16px;text-align:center;background:rgba(255,255,255,0.03);"><div style="font-size:28px;font-weight:600;" data-target="73.7M">0</div><div style="font-size:12px;opacity:0.6;margin-top:6px;">impressions</div></div>
-<div style="padding:24px 16px;text-align:center;background:rgba(255,255,255,0.03);"><div style="font-size:28px;font-weight:600;" data-target="$1.4M">0</div><div style="font-size:12px;opacity:0.6;margin-top:6px;">raised</div></div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:2rem 0;">
+<div class="tech-card" style="text-align:center;"><div style="font-size:28px;font-weight:600;" data-target="10.3M+">0</div><div style="font-size:12px;opacity:0.6;margin-top:6px;">views grown</div></div>
+<div class="tech-card" style="text-align:center;"><div style="font-size:28px;font-weight:600;" data-target="67K+">0</div><div style="font-size:12px;opacity:0.6;margin-top:6px;">subscribers</div></div>
+<div class="tech-card" style="text-align:center;"><div style="font-size:28px;font-weight:600;" data-target="73.7M">0</div><div style="font-size:12px;opacity:0.6;margin-top:6px;">impressions</div></div>
+<div class="tech-card" style="text-align:center;"><div style="font-size:28px;font-weight:600;" data-target="$1.4M">0</div><div style="font-size:12px;opacity:0.6;margin-top:6px;">raised</div></div>
+</div>
+
+<div style="text-align:center;margin:1.5rem 0 2.5rem;">
+<a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;">Book a 1-on-1 Call →</a>
+<div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
 </div>
 
 ## The flagship: 3K to a 10-million-view engine
