@@ -80,8 +80,14 @@ figcaption {
   .prose div[style*="grid-template-columns:repeat(4"] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  .prose div[style*="grid-template-columns:repeat(3"] {
+    grid-template-columns: 1fr !important;
+  }
   .prose div[style*="grid-template-columns:repeat(2"] {
     grid-template-columns: 1fr !important;
+  }
+  .tech-card {
+    padding: 1.25rem !important;
   }
   .prose div[style*="display:flex"] {
     flex-direction: column !important;
@@ -315,6 +321,15 @@ section div[style*="font-size: clamp(2rem"] {
 .tech-card:nth-of-type(2) {
   animation-delay: 0.25s;
 }
+.tech-card:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+.tech-card:nth-of-type(4) {
+  animation-delay: 0.55s;
+}
+.tech-card:nth-of-type(5) {
+  animation-delay: 0.7s;
+}
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
@@ -327,6 +342,35 @@ section div[style*="font-size: clamp(2rem"] {
 }
 @media (prefers-reduced-motion: reduce) {
   .tech-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Same fade-in + hover-lift mechanics as .tech-card, without the
+   background/border override - for elements that keep their own
+   color scheme (e.g. the Products page's differently-tinted cards). */
+.card-hover {
+  animation: fadeSlideIn 0.7s ease forwards;
+  opacity: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+.card-hover:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.card-hover:nth-of-type(2) {
+  animation-delay: 0.25s;
+}
+.card-hover:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-hover {
     animation: none;
     opacity: 1;
     transform: none;

@@ -20,6 +20,8 @@ Most founders and consultants don't have a building problem — they have an att
 
 YouTube is one of the strongest acquisition channels available, and it's where this system was proven. Whether you're a solopreneur filming on your phone or an org with a full team, there's an entry point built for you. Same proven framework. Different levels of done-for-you.
 
+<div class="tech-card">
+
 ### 🔍 The Growth Audit
 
 The fastest way to find out exactly why your channel is stuck — and the 90-day plan to fix it.
@@ -30,6 +32,10 @@ The fastest way to find out exactly why your channel is stuck — and the 90-day
 - Prioritised 90-day action plan you can run yourself
 
 **Best for:** Solopreneurs and founders who want clarity and proof before going all in.
+
+</div>
+
+<div class="tech-card">
 
 ### 🗺️ The Channel Blueprint
 
@@ -42,6 +48,10 @@ I build the strategy. You execute. Everything you need to stop guessing and star
 
 **Best for:** Solopreneurs and lean founders with the time to execute — once they finally know what works.
 
+</div>
+
+<div class="tech-card">
+
 ### 🤝 Done-With-You Growth Partnership
 
 Your team films. I steer the growth engine every single month.
@@ -52,6 +62,10 @@ Your team films. I steer the growth engine every single month.
 - Monthly growth report tied to real numbers, not vanity metrics
 
 **Best for:** Funded founders, organisations with an in-house creator, and agencies who want a growth specialist behind their team — including white-label.
+
+</div>
+
+<div class="tech-card">
 
 ### 🚀 Done-For-You Channel Management
 
@@ -64,6 +78,8 @@ You show up and film. I run everything else.
 
 **Best for:** Organisations and funded founders who want the results without the workload. *Limited slots — capacity is intentionally small so every channel gets the attention it needs.*
 
+</div>
+
 <div style="text-align:center;margin:2rem 0;">
   <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Find Your Starting Point →</a>
   <div style="font-size:12px;opacity:0.5;margin-top:12px;">One call. We'll find the right level for where you are.</div>
@@ -72,6 +88,8 @@ You show up and film. I run everything else.
 ## The Rest of the System
 
 YouTube is one lever — but attention rarely lives on one platform, and it shouldn't run entirely by hand either. When you need the full Attention → Trust → Revenue system, these are the supporting systems I build.
+
+<div class="tech-card">
 
 ### 📱 Social Media Growth
 
@@ -84,6 +102,10 @@ Turn your social media into a real acquisition channel. I build content systems 
 
 **Result:** Grew a YouTube channel from 3,000 → 67,000+ subscribers (2,100%) and Instagram from 3,000 → 28,000+ followers with zero ad spend.
 
+</div>
+
+<div class="tech-card">
+
 ### 📊 Full-Funnel Content Strategy
 
 Most brands create content. Few create content that converts. I design ToFu → MoFu → BoFu content funnels that move people from discovery to decision.
@@ -94,6 +116,10 @@ Most brands create content. Few create content that converts. I design ToFu → 
 - Weekly A/B testing & performance reporting
 
 **Result:** Generated 10M+ organic views and drove 3,000+ in-person event attendees through content alone.
+
+</div>
+
+<div class="tech-card">
 
 ### 💰 Paid Social (Meta Ads)
 
@@ -106,6 +132,10 @@ Every naira and dollar of your ad budget should work hard. I run lean, high-ROI 
 
 **Result:** Achieved $0.01 CPC — 1M+ impressions and 100,000+ link clicks on a $1,000 budget.
 
+</div>
+
+<div class="tech-card">
+
 ### 🤖 AI Automation & Systems
 
 Stop doing manually what a system can do for you. I build AI-powered workflows that save time, reduce costs, and let your business run growth on autopilot.
@@ -117,6 +147,10 @@ Stop doing manually what a system can do for you. I build AI-powered workflows t
 
 **Result:** Clients reclaim 10+ hours per week through automated systems.
 
+</div>
+
+<div class="tech-card">
+
 ### 🌐 Community Growth
 
 Build an audience that shows up, engages, and buys. I grow and manage online communities that become your most powerful marketing asset.
@@ -127,6 +161,8 @@ Build an audience that shows up, engages, and buys. I grow and manage online com
 - Web3 & NFT community management
 
 **Result:** Helped drive a $1.4M pre-seed fundraise through community-led acquisition at Ayoken NFT Marketplace.
+
+</div>
 
 ## How It Works
 

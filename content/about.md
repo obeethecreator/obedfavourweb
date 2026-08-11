@@ -50,26 +50,26 @@ Attention, earned honestly, doesn't just grow a business — it grows the right 
 
 ## Proof it works
 
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:1.5rem 0;">
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0;">
+  <div class="tech-card" style="text-align:center;">
     <div style="font-size:32px;font-weight:600;color:inherit;" data-target="10M+">0</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Views generated through organic attention systems</div>
   </div>
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
+  <div class="tech-card" style="text-align:center;">
     <div style="font-size:32px;font-weight:600;color:inherit;" data-target="67K+">0</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Subscribers built from scratch</div>
   </div>
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
+  <div class="tech-card" style="text-align:center;">
     <div style="font-size:32px;font-weight:600;color:inherit;" data-target="73M+">0</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Impressions engineered through packaging & SEO</div>
   </div>
 </div>
-<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:1.5rem 0;">
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.5rem 0;">
+  <div class="tech-card" style="text-align:center;">
     <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$1.4M">0</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Pre-seed raise supported through community-led growth</div>
   </div>
-  <div style="padding:28px 20px;text-align:center;background:rgba(255,255,255,0.03);">
+  <div class="tech-card" style="text-align:center;">
     <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$0.01">0</div>
     <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">CPC achieved on a $1,000 Meta Ads budget</div>
   </div>
