@@ -101,7 +101,7 @@ Pick two or three from this list. Learn them properly. Build them into your work
 
 The goal was never to replace your marketing. It was to build a marketing engine that runs smarter — and keeps running while you sleep.
 
-If you want help mapping out which tools fit your specific workflow and goals, I run free 30-minute strategy calls for founders and marketers who want clarity on exactly that.
+If you want help mapping out which tools fit your specific workflow and goals, [take the free Attention Audit](/audit/) — it's the fastest way to get clarity on exactly that.
 
 <div style="text-align:center;margin:2rem 0;">
   <a href="/youtube-customers/" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Get the Guide &rarr;</a>

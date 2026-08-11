@@ -146,7 +146,7 @@ That's what 10 hours back per week actually buys you. Not just time. Headspace.
 
 ## Your next step
 
-If you want a clear, personalised picture of which automations would save you the most time — based on your specific business and workflow — book a free 30-minute strategy call.
+If you want a clear, personalised picture of which automations would save you the most time — based on your specific business and workflow — [take the free Attention Audit](/audit/).
 
 I'll map out exactly where you're losing time and which tools and systems to implement first.
 

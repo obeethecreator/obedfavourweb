@@ -151,7 +151,7 @@ Start with one question: **what happens after someone finds you?**
 
 If you can't answer that clearly, that's where we start.
 
-I offer free 30-minute strategy calls to founders, marketers, and business owners who want a clear picture of what's holding their content back — and exactly what to fix first.
+I offer a free Attention Audit to founders, marketers, and business owners who want a clear picture of what's holding their content back — and exactly what to fix first. [Take it here](/audit/).
 
 No pitch. No fluff. Just clarity.
 

@@ -3,6 +3,7 @@ title = "Digital Products"
 date = '2026-05-16T14:09:27+01:00'
 draft = false
 slug = "products"
+description = "Tools and systems built from real client work — starting with the AQCE guide, the system that turns YouTube attention into paying customers, no ad spend required."
 +++
 
 <div style="text-align:center;padding:2rem 0 1.5rem;">
@@ -39,7 +40,7 @@ slug = "products"
       <span style="background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#3b82f6;">Prompts</span>
       <span style="background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#3b82f6;">Workflows</span>
     </div>
-    <a href="https://calendly.com/obeethecreator/30min" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none;">Get Notified at Launch</a>
+    <a href="/audit/" style="display:inline-block;background:#2E75B6;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none;">Take the Free Audit</a>
   </div>
 
   <div style="background:rgba(139,92,246,0.06);border:1px solid rgba(139,92,246,0.2);border-radius:16px;padding:2rem;position:relative;">
@@ -52,7 +53,7 @@ slug = "products"
       <span style="background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#8b5cf6;">Notion</span>
       <span style="background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#8b5cf6;">Frameworks</span>
     </div>
-    <a href="https://calendly.com/obeethecreator/30min" target="_blank" style="display:inline-block;background:#8b5cf6;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none;">Get Notified at Launch</a>
+    <a href="/audit/" style="display:inline-block;background:#8b5cf6;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none;">Take the Free Audit</a>
   </div>
 
   <div style="background:rgba(236,72,153,0.06);border:1px solid rgba(236,72,153,0.2);border-radius:16px;padding:2rem;position:relative;">
@@ -65,14 +66,14 @@ slug = "products"
       <span style="background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.2);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#ec4899;">Copywriting</span>
       <span style="background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.2);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#ec4899;">Templates</span>
     </div>
-    <a href="https://calendly.com/obeethecreator/30min" target="_blank" style="display:inline-block;background:#ec4899;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none;">Get Notified at Launch</a>
+    <a href="/audit/" style="display:inline-block;background:#ec4899;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none;">Take the Free Audit</a>
   </div>
 
 </div>
 
 <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.2);border-radius:16px;padding:2.5rem;text-align:center;margin:2rem 0;">
   <div style="font-size:1.4rem;font-weight:700;margin-bottom:10px;">Want early access?</div>
-  <p style="opacity:0.7;font-size:0.95rem;margin-bottom:1.5rem;line-height:1.7;">All products launch first to people on my calendar. Book a free strategy call and you'll be the first to know — plus get a launch discount.</p>
-  <a href="https://calendly.com/obeethecreator/30min" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;">Book a Free Strategy Call &rarr;</a>
-  <div style="font-size:12px;opacity:0.5;margin-top:12px;">30 min &middot; No obligation &middot; Real advice</div>
+  <p style="opacity:0.7;font-size:0.95rem;margin-bottom:1.5rem;line-height:1.7;">All products launch first to people I've worked with directly. Book your 1-on-1 consult and you'll be the first to know — plus get a launch discount.</p>
+  <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;">Book a 1-on-1 Call &rarr;</a>
+  <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min &middot; 1-on-1 session &middot; limited slots</div>
 </div>
