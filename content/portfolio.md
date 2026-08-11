@@ -1,6 +1,6 @@
 ---
 title: "Portfolio"
-description: "Proof across growth marketing and AI automation: 10M+ organic views, 67K+ subscribers, 73M+ impressions, $1.4M raised for a client."
+description: "Proof, not theory: 10M+ organic views, 67K+ subscribers, 73M+ impressions, and a $1.4M raise — across growth marketing and AI automation."
 showDate: false
 showAuthor: false
 showReadingTime: false
@@ -9,7 +9,7 @@ showEdit: false
 
 <div style="text-align:center;margin:2rem 0;">
   <h1 style="font-size:2.2rem;font-weight:700;margin-bottom:0.5rem;">Not theory. Receipts.</h1>
-  <p style="font-size:1.05rem;opacity:0.8;max-width:560px;margin:0 auto;">I build YouTube channels from zero and turn them into customer acquisition engines. Below is the proof - across multiple niches.</p>
+  <p style="font-size:1.05rem;opacity:0.8;max-width:560px;margin:0 auto;">Attention, engineered — not accidental. Below is the receipts: organic systems that turned views into customers and community into a $1.4M raise, across YouTube, content, and automation.</p>
 </div>
 
 <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1);border-radius:8px;overflow:hidden;margin:2rem 0;">
