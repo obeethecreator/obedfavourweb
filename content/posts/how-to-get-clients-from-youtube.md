@@ -1,6 +1,6 @@
 +++
 title = "How to Get Clients From YouTube (Even With a Small Channel)"
-date = '2026-09-14T10:00:00+01:00'
+date = '2026-09-14T08:00:00+01:00'
 draft = false
 description = "You don't need a huge subscriber count to get clients from YouTube. Here's the exact system for turning a small, focused channel into a real client pipeline."
 tags = ["YouTube marketing", "get clients", "consultants", "small business", "YouTube for business"]

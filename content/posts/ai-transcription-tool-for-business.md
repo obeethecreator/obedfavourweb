@@ -1,6 +1,6 @@
 +++
 title = "Microsoft Just Made Transcription Almost Free. Here Is What That Actually Changes For You"
-date = '2026-09-14T10:00:00+01:00'
+date = '2026-09-14T08:00:00+01:00'
 draft = false
 description = "Microsoft's MAI-Transcribe-2 undercuts OpenAI, Google, and ElevenLabs on price and accuracy. Here's what it actually means for repurposing your content, and the one catch worth knowing."
 tags = ["AI transcription", "content repurposing", "AI tools", "Microsoft", "founders"]

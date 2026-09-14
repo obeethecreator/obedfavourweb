@@ -1,6 +1,6 @@
 +++
 title = "RankYak Just Launched Full SEO Autopilot. Here Is What It Actually Means For You"
-date = '2026-09-14T10:00:00+01:00'
+date = '2026-09-14T08:00:00+01:00'
 draft = false
 description = "RankYak launched full SEO autopilot at $99/mo per site. Here's what it actually does, and why Google's own 2026 spam updates make the fully automated pitch riskier than it sounds."
 tags = ["SEO automation", "small business SEO", "AI content", "automated SEO software", "founders"]

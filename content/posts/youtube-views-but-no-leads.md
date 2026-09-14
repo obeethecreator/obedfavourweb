@@ -1,6 +1,6 @@
 +++
 title = "Why Your YouTube Channel Gets Views But No Leads (And How to Fix the Actual Problem)"
-date = '2026-09-14T10:00:00+01:00'
+date = '2026-09-14T08:00:00+01:00'
 draft = false
 description = "Getting views but no leads on YouTube almost always traces back to one of three fixable problems. Here's how to diagnose which one is actually happening on your channel."
 tags = ["YouTube leads", "lead generation", "YouTube marketing", "content strategy", "founders"]
