@@ -101,6 +101,7 @@ Proof the same growth method works across very different niches - from brand-new
 <div style="font-size:16px;font-weight:600;margin-top:10px;">LinkedIn AI Posting Agent</div>
 <div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Consistent LinkedIn content requires daily research, writing, and publishing time most founders don't have.</div>
 <div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> A Telegram-controlled AI agent that researches, drafts in my voice, generates images, and publishes to LinkedIn - with two separate human approval gates before anything goes live. Live and verified end to end.</div>
+<div style="font-size:13px;margin-top:10px;"><a href="/posts/linkedin-ai-posting-agent-case-study/" style="color:#2E75B6;text-decoration:none;font-weight:500;">Read the full case study →</a></div>
 </div>
 </div>
 
