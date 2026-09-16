@@ -7,27 +7,48 @@ tags = ["AI automation", "n8n", "case study", "LinkedIn"]
 categories = ["Marketing"]
 +++
 
+<style>
+.portrait-shot { max-width: 340px; margin: 1.75rem auto; }
+.portrait-shot img { width: 100%; height: auto; display: block; cursor: zoom-in; }
+.portrait-shot figcaption { text-align: center; }
+@media (max-width: 600px) {
+  .portrait-shot { max-width: 72%; }
+}
+</style>
+
 Most AI automation portfolios show you the finished thing. This one shows you the machine, the real conversation that runs it, and the nine actual failures it took to get here.
 
 ## What it does
 
 This is a self-hosted, zero-paid-API n8n agent that runs on its own dedicated Telegram bot. Send it a topic, a photo, or a voice note, and it researches from free sources, drafts a LinkedIn post in my own voice, generates or accepts an image, and only publishes after two separate human approvals — a draft approval, then a final "this cannot be undone" publish confirmation. It holds conversation memory across the thread.
 
-{{< figure src="/blog/linkedin-agent-workflow-canvas.jpg" alt="n8n workflow canvas for the LinkedIn AI Posting Agent, showing the full automation end to end" caption="The finished workflow, end to end, inside n8n." >}}
+<figure>
+<img class="my-0 rounded-md nozoom" src="/blog/linkedin-agent-workflow-canvas.jpg" alt="n8n workflow canvas for the LinkedIn AI Posting Agent, showing the full automation end to end" style="cursor:zoom-in;" onclick="openShotLightbox(this.src,this.alt)">
+<figcaption>The finished workflow, end to end, inside n8n.</figcaption>
+</figure>
 
 ## What it actually looks like to use
 
 This isn't a mockup. Here's a real conversation: a draft coming back, an image being generated and sent for approval, right inside Telegram.
 
-{{< figure src="/blog/linkedin-agent-draft-image-approval.jpg" alt="Telegram conversation showing a LinkedIn post draft and an image approval request from the AI agent" caption="A real draft, then a request to approve the image that goes with it." >}}
+<figure class="portrait-shot">
+<img class="nozoom" src="/blog/linkedin-agent-draft-image-approval.jpg" alt="Telegram conversation showing a LinkedIn post draft and an image approval request from the AI agent" onclick="openShotLightbox(this.src,this.alt)">
+<figcaption>A real draft, then a request to approve the image that goes with it.</figcaption>
+</figure>
 
 Right before anything reaches LinkedIn, it asks one more time, separately, because publishing under my own name isn't something a workflow gets to decide alone.
 
-{{< figure src="/blog/linkedin-agent-publish-confirmation.jpg" alt="Telegram conversation showing the final publish confirmation gate and success message from the AI agent" caption="The final gate — 'this cannot be undone' — then real confirmation once it's live." >}}
+<figure class="portrait-shot">
+<img class="nozoom" src="/blog/linkedin-agent-publish-confirmation.jpg" alt="Telegram conversation showing the final publish confirmation gate and success message from the AI agent" onclick="openShotLightbox(this.src,this.alt)">
+<figcaption>The final gate — 'this cannot be undone' — then real confirmation once it's live.</figcaption>
+</figure>
 
 And here's the actual result, live on LinkedIn, not a screenshot of a staging environment.
 
-{{< figure src="/blog/linkedin-agent-live-post.jpg" alt="Live LinkedIn post published by the AI posting agent" caption="A real post, published live by this exact system." >}}
+<figure class="portrait-shot">
+<img class="nozoom" src="/blog/linkedin-agent-live-post.jpg" alt="Live LinkedIn post published by the AI posting agent" onclick="openShotLightbox(this.src,this.alt)">
+<figcaption>A real post, published live by this exact system.</figcaption>
+</figure>
 
 ## Why two approval gates, not zero
 
