@@ -7,7 +7,6 @@ showDate = false
 showReadingTime = false
 showWordCount = false
 showAuthor = false
-showTitle = false
 +++
 
 <style>
@@ -54,7 +53,7 @@ showTitle = false
 <div class="ty-wrap">
   <div class="ty-box">
     <div style="font-size:3.5rem;margin-bottom:1.2rem;">🎉</div>
-    <h1 style="font-size:2rem;font-weight:700;margin-bottom:1rem;color:#ffffff;">Your Free Guide is Ready</h1>
+    <div style="font-size:2rem;font-weight:700;margin-bottom:1rem;color:#ffffff;">Your Free Guide is Ready</div>
     <p style="color:#A8C4E8;font-size:1rem;line-height:1.7;margin-bottom:2rem;">Your copy of <strong>From Zero to Live</strong> is ready to download right now. Click below and start building.</p>
     <a href="/downloads/from-zero-to-live.pdf" class="ty-btn">Download Your Free Guide</a>
     <p style="color:#4A7A9B;font-size:0.85rem;margin-bottom:1rem;">While you are here:</p>

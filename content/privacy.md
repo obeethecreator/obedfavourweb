@@ -11,7 +11,6 @@ description = "Privacy Policy for obedfavour.com"
 
 <div style="max-width:680px;margin:0 auto;padding:2rem 1rem;">
 
-<h1 style="font-size:1.8rem;font-weight:700;margin-bottom:0.5rem;">Privacy Policy</h1>
 <p style="opacity:0.5;font-size:14px;margin-bottom:2rem;">Last updated: May 2026</p>
 
 <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:0.75rem;">Who we are</h2>

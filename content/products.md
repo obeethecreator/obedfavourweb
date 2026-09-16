@@ -8,7 +8,7 @@ description = "Tools and systems built from real client work — starting with t
 
 <div style="text-align:center;padding:2rem 0 1.5rem;">
   <div style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;opacity:0.5;margin-bottom:12px;">Digital Products</div>
-  <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;margin:0 0 16px;line-height:1.2;">Tools & Playbooks That<br>Do the Heavy Lifting</h1>
+  <div style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;margin:0 0 16px;line-height:1.2;">Tools & Playbooks That<br>Do the Heavy Lifting</div>
   <p style="font-size:1rem;opacity:0.7;max-width:520px;margin:0 auto;line-height:1.7;">Everything I've built, tested, and refined working with real brands — packaged so you can implement it yourself.</p>
 </div>
 

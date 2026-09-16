@@ -11,7 +11,6 @@ description = "Privacy Policy for the Obee LinkedIn Posting Agent"
 
 <div style="max-width:680px;margin:0 auto;padding:2rem 1rem;">
 
-<h1 style="font-size:1.8rem;font-weight:700;margin-bottom:0.5rem;">Privacy Policy — Obee LinkedIn Posting Agent</h1>
 <p style="opacity:0.5;font-size:14px;margin-bottom:2rem;">Last updated: August 25, 2026</p>
 
 <h2 style="font-size:1.2rem;font-weight:600;margin-bottom:0.75rem;">What this is</h2>

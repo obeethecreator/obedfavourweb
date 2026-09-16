@@ -8,7 +8,7 @@ showEdit: false
 ---
 
 <div style="text-align:center;margin:2rem 0;">
-<h1 style="font-size:2.2rem;font-weight:700;margin-bottom:0.5rem;">Not theory. Receipts.</h1>
+<div style="font-size:2.2rem;font-weight:700;margin-bottom:0.5rem;">Not theory. Receipts.</div>
 <p style="font-size:1.05rem;opacity:0.8;max-width:560px;margin:0 auto;">Attention, engineered — not accidental. Below is the receipts: organic systems that turned views into customers and community into a $1.4M raise, across YouTube, content, and automation.</p>
 </div>
 
