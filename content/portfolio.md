@@ -62,7 +62,7 @@ Proof the same growth method works across very different niches - from brand-new
 <h2 style="text-align:center;">Beyond growth: AI systems that run without me</h2>
 
 <div style="text-align:center;margin:1rem auto 2rem;max-width:640px;">
-<p style="font-size:1.02rem;opacity:0.85;text-align:center;">The other half of what I build. Five automations running right now on my own self-hosted infrastructure - not a demo, not a sandbox. A booking pipeline, a content-publishing pipeline, an AI research digest, a message router, and the failure-alert system watching all three. Together they replace hours of manual admin a week, cost $0/month to run, and have never failed silently.</p>
+<p style="font-size:1.02rem;opacity:0.85;text-align:center;">The other half of what I build. Six automations running right now on my own self-hosted infrastructure - not a demo, not a sandbox. A booking pipeline, a content-publishing pipeline, an AI research digest, a message router, a LinkedIn posting agent, and the failure-alert system watching them all. Together they replace hours of manual admin a week, cost $0/month to run, and have never failed silently.</p>
 </div>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:1.5rem 0;">
@@ -95,6 +95,12 @@ Proof the same growth method works across very different niches - from brand-new
 <div style="font-size:16px;font-weight:600;margin-top:10px;">One bot, two jobs, zero duplication</div>
 <div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Every new automation usually means standing up its own bot and its own infrastructure.</div>
 <div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> One router, one bot - two automations share it instead of duplicating setup.</div>
+</div>
+<div style="border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:1.25rem;">
+<figure><img class="my-0 rounded-md nozoom" src="/portfolio/automation/06-linkedin-posting-agent.jpg" alt="LinkedIn AI Posting Agent n8n workflow" style="cursor:zoom-in;" onclick="openShotLightbox(this.src,this.alt)"></figure>
+<div style="font-size:16px;font-weight:600;margin-top:10px;">LinkedIn AI Posting Agent</div>
+<div style="font-size:13px;opacity:0.7;margin-top:10px;"><strong>Problem:</strong> Consistent LinkedIn content requires daily research, writing, and publishing time most founders don't have.</div>
+<div style="font-size:13px;opacity:0.9;margin-top:6px;"><strong>Result:</strong> A Telegram-controlled AI agent that researches, drafts in my voice, generates images, and publishes to LinkedIn - with two separate human approval gates before anything goes live. Live and verified end to end.</div>
 </div>
 </div>
 
