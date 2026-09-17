@@ -11,6 +11,8 @@ categories = ["Marketing"]
 
 OpenAI launched GPT-6 Astra on September 3, with general availability the next day. Most of the coverage since has split into two camps: one treating it as a pure capability leap, the other treating it as a safety alarm. If you're a founder trying to get customers, not trying to win an AI Twitter argument, here's the version that actually matters to you.
 
+> **Quick answer:** GPT-6 Astra (OpenAI, launched Sept 3) is a genuine capability jump — 98% on FrontierMath Tier 4, near-perfect ARC-AGI-3 — priced like a frontier model at $10/$50 per million tokens, with cached input at $1 and batch at half price. For founders, the real lever is architecting prompts around that pricing spread, not the raw benchmark numbers. It's also OpenAI's first model at the Critical cybersecurity tier under its own safety framework, which buyers are now factoring into adoption decisions.
+
 ## What actually shipped
 
 Astra rolled out to ChatGPT Plus, Pro, Business, and Enterprise plans, plus the API and Amazon Web Services. On benchmarks, OpenAI is citing a 98% score on FrontierMath Tier 4, 99.9% on ARC-AGI-3, and a perfect 100% on ExploitBench. On raw speed, it's running close to twice as fast on computer-use tasks as its predecessor, with GPT-5.6 Sol-class tasks completing roughly 60% faster.

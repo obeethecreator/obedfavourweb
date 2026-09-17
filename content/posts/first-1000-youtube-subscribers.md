@@ -8,6 +8,8 @@ categories = ["YouTube Growth"]
 [params]
   featuredImage = "/blog/youtube-subscribers-hero.jpg"
 +++
+> **Quick answer:** Getting your first 1,000 YouTube subscribers is a system problem, not a talent or luck problem — below that number the algorithm has too little data to push your videos, so growth depends on deliberate topic and audience choices, not virality. Most creators quit three weeks before the system starts compounding. This guide covers the exact playbook, no daily posting or viral swings required.
+
 You've posted the videos. Good ones, even. You poured a weekend into a single upload, hit publish, and refreshed the analytics like it owed you money.
 
 And the number barely moved.

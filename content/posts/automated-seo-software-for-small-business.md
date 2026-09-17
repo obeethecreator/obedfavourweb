@@ -11,6 +11,8 @@ categories = ["Marketing"]
 
 RankYak launched on September 2, an AI platform that handles keyword research, content planning, daily article writing, publishing, and ongoing page maintenance, with no in-house SEO team required. It's priced at $99 per site per month, or $990 per site per year, with a free trial. On paper, it's a full SEO department for the price of a couple of coffees a day. Here's what that actually means if you're a small business owner weighing it.
 
+> **Quick answer:** RankYak's new SEO autopilot ($99/mo per site) automates keyword research, daily article publishing, and page maintenance — but Google's 2026 spam updates specifically penalize the high-volume, unsupervised AI publishing pattern this kind of tool makes easy (50–80% traffic drops for sites that skip human review). Sites publishing fewer AI-assisted articles with real editorial oversight saw 30–80% traffic increases in the same period. The deciding factor isn't whether AI touched the content — it's whether a human reviewed it before it went live.
+
 ## What actually launched
 
 RankYak positions itself as handling every stage of SEO, not just writing articles. It researches keywords, plans content around them, writes and publishes daily, and maintains the pages a site already has so they keep ranking instead of decaying. The pitch is specifically aimed at small businesses and agencies that can't justify a full-time SEO hire. Co-founder Lars Koole framed the whole product around that gap directly: "Most SEO tools tell you what to do and leave you to do it. Our customers do not. So we built one."

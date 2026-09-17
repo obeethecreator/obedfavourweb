@@ -21,6 +21,8 @@ categories = ["YouTube Growth"]
     answer = "Check who's actually commenting and who's watching. If the people engaging look like other creators or industry peers rather than potential buyers, that's an audience-targeting problem, not a conversion problem — and no amount of CTA optimization will fix the wrong audience showing up in the first place."
 +++
 
+> **Quick answer:** Getting views but no leads almost always comes down to one of three fixable problems: the wrong audience, no clear conversion mechanism, or tracking the wrong metrics. "Subscribe" isn't a lead-generation call-to-action — a real one needs a specific capture mechanism, placed in the first line of the description and spoken aloud in the video. This guide shows how to diagnose which of the three problems is actually happening on your channel.
+
 Getting views but no leads is one of the most common and most misdiagnosed problems in YouTube marketing. Most people respond to it by making more videos, hoping volume fixes what's actually a specific, fixable problem hiding in plain sight.
 
 It almost never is a volume problem. It's a diagnosis problem.

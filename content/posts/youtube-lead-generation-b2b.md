@@ -23,6 +23,8 @@ categories = ["YouTube Growth"]
     question = "What's the difference between YouTube leads and LinkedIn leads for B2B?"
     answer = "YouTube leads take longer to start arriving but keep coming for a year or more after a video is published, since it keeps showing up in search. LinkedIn leads arrive faster but drop off within days as the post gets buried in the feed. The two aren't competitors — they solve different timing problems, and most founders benefit from running both."
 +++
+> **Quick answer:** YouTube works for B2B lead generation because buyer-intent searches ("how to fix X problem") are just as common in B2B as consumer markets — the businesses that struggle are posting awareness content instead of answering searched questions. The fix is targeting buyer-intent topics, qualifying viewers inside the video, and placing a spoken call-to-action right after naming their problem. This guide walks through the full views-to-booked-calls funnel.
+
 YouTube lead generation for B2B works. Most founders just never build the part of the system that turns a view into a booked call, so they conclude YouTube "doesn't work for B2B" when really they never gave it a job to do beyond getting watched.
 
 I've used this exact approach — attract the right viewer, qualify them fast, convert them to a lead — as part of a playbook that's driven 10M+ views and 67K+ subscribers across the channels I work on. None of that came from posting and hoping. It came from treating every video as a step in a funnel, not a standalone piece of content.

@@ -18,6 +18,8 @@ categories = ["Marketing"]
 
 Most AI automation portfolios show you the finished thing. This one shows you the machine, the real conversation that runs it, and the nine actual failures it took to get here.
 
+> **Quick answer:** This is a real, working n8n AI agent that drafts and publishes LinkedIn posts through Telegram, with two human approval gates before anything goes live. It documents all nine real production bugs hit while building it — DNS failures, a silent research failure, a leaked voice-profile example, and more — not just the finished result. Voice, credentials, and the target account are configuration, not hardcoded, so the same system can run for a different person's brand without a rebuild.
+
 ## What it does
 
 This is a self-hosted, zero-paid-API n8n agent that runs on its own dedicated Telegram bot. Send it a topic, a photo, or a voice note, and it researches from free sources, drafts a LinkedIn post in my own voice, generates or accepts an image, and only publishes after two separate human approvals — a draft approval, then a final "this cannot be undone" publish confirmation. It holds conversation memory across the thread.

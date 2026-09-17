@@ -11,6 +11,8 @@ categories = ["Marketing"]
 
 On September 3, Microsoft released MAI-Transcribe-2, a speech-to-text model that undercuts OpenAI, Google, and ElevenLabs on both price and accuracy at the same time. That combination almost never happens in AI pricing. Usually you get one or the other. Here's what it actually changes if you're sitting on hours of video or audio you've never done anything with.
 
+> **Quick answer:** Microsoft's MAI-Transcribe-2 undercuts OpenAI, Google, and ElevenLabs on both price and accuracy at once — $0.10/audio hour, a 5.2% average word error rate across 60 languages, and built-in speaker diarization. The catch: that price is an explicitly limited-time promotional rate through the end of 2026, not a permanent one. For anyone sitting on unused video or audio, this makes content repurposing dramatically cheaper right now, with the caveat of budgeting for a price increase later.
+
 ## What actually shipped
 
 MAI-Transcribe-2 launched at $0.10 per audio hour, a steep drop from the $0.36 per hour MAI-Transcribe-1 launched at. Independent benchmarking from Artificial Analysis puts it at a 2.0% word error rate, processing audio at roughly 410 times real-time speed, which works out to about $1.67 per 1,000 minutes transcribed. Microsoft's own reported figure across all 60 supported languages is a 5.2% average word error rate, with 3.4% across its top 25 languages. It adds speaker diarization, word-level timestamps, and domain keyword biasing, so it can tell your speakers apart and pick up on industry-specific terms it would otherwise mishear.
