@@ -20,6 +20,8 @@ Most founders and consultants don't have a building problem — they have an att
 
 YouTube is one of the strongest acquisition channels available, and it's where this system was proven. Whether you're a solopreneur filming on your phone or an org with a full team, there's an entry point built for you. Same proven framework. Different levels of done-for-you.
 
+*Related reading: [How to Get Customers From YouTube](/posts/how-to-get-customers-from-youtube/) · [How to Get Clients From YouTube (Even With a Small Channel)](/posts/how-to-get-clients-from-youtube/) · [YouTube Lead Generation for B2B](/posts/youtube-lead-generation-b2b/)*
+
 <div class="tech-card">
 
 ### 🔍 The Growth Audit
@@ -146,6 +148,8 @@ Stop doing manually what a system can do for you. I build AI-powered workflows t
 - Standard Operating Procedures (SOPs)
 
 **Result:** Clients reclaim 10+ hours per week through automated systems.
+
+*Related reading: [LinkedIn AI Posting Agent — A Real Case Study, Bugs Included](/posts/linkedin-ai-posting-agent-case-study/) · [RankYak Just Launched Full SEO Autopilot](/posts/automated-seo-software-for-small-business/)*
 
 </div>
 

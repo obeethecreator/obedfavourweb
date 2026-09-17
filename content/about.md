@@ -81,6 +81,15 @@ Beyond YouTube, I've run high-ROI Meta Ads, built communities that backed a $1.4
 
 ---
 
+## More from the blog
+
+- [How to Get Your First 1,000 YouTube Subscribers (When It Feels Impossible)](/posts/first-1000-youtube-subscribers/)
+- [YouTube Lead Generation for B2B: From Views to Booked Calls](/posts/youtube-lead-generation-b2b/)
+- [LinkedIn AI Posting Agent — A Real Case Study, Bugs Included](/posts/linkedin-ai-posting-agent-case-study/)
+- [GPT-6 Astra Just Launched. Here Is What Actually Changes For Founders](/posts/gpt-6-astra-for-business/)
+
+---
+
 ## Let's build something
 
 If you're ready to stop being invisible and start turning attention into customers — get a free Attention Audit and we'll spend time on exactly what's standing between you and being seen.
