@@ -28,7 +28,7 @@ disableTextInHeader = false
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
-defaultSocialImage = "avatar.jpg" # used as default for social media sharing (Open Graph and Twitter)
+defaultSocialImage = "obed-favour-social-v3.jpg" # 1200x630 share image; new filename = new URL, so LinkedIn/X caches refetch. Bump the -vN suffix to bust again
 hotlinkFeatureImage = false
 # Thumbnail aspect ratio as a number (e.g., "1.5", "1.0", "1.777")
 # thumbnailAspectRatio = "1.5"

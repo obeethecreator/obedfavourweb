@@ -8,10 +8,26 @@
       <!-- Avatar Ring with Neon Tech Gradient -->
       <div style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
         <div class="hero-avatar-ring" style="border-radius: 9999px; padding: 2px; background: linear-gradient(135deg, #00d4ff 0%, #7928ca 100%); display: inline-block; overflow: hidden; box-shadow: 0 0 30px rgba(0, 212, 255, 0.25);">
-          <img src="/images/avatar.jpg?v=2"
+          {{- /* Hugo-processed, responsive: 150/300/450px crops with content-hashed filenames, so the browser picks the right size and a changed photo can never be served stale. The ring is clamp(96px, 24vw, 150px), hence the sizes rule. */ -}}
+          {{ with resources.Get "avatar.jpg" }}
+          {{ $a1 := .Fill "150x150 Center q85" }}
+          {{ $a2 := .Fill "300x300 Center q85" }}
+          {{ $a3 := .Fill "450x450 Center q85" }}
+          <img src="{{ $a2.RelPermalink }}"
+               srcset="{{ $a1.RelPermalink }} 150w, {{ $a2.RelPermalink }} 300w, {{ $a3.RelPermalink }} 450w"
+               sizes="(max-width: 625px) 24vw, 150px"
+               width="150" height="150"
                alt="Obed Favour"
-               onerror="this.onerror=null; this.src='/avatar.jpg?v=2';"
+               fetchpriority="high" decoding="async"
+               onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='/images/avatar.jpg?v=3';"
                style="width: 100%; height: 100%; border-radius: 9999px; object-fit: cover; background-color: var(--bg-secondary); display: block;" />
+          {{ else }}
+          <img src="/images/avatar.jpg?v=3"
+               alt="Obed Favour"
+               width="150" height="150"
+               onerror="this.onerror=null; this.src='/avatar.jpg?v=3';"
+               style="width: 100%; height: 100%; border-radius: 9999px; object-fit: cover; background-color: var(--bg-secondary); display: block;" />
+          {{ end }}
         </div>
       </div>
 
