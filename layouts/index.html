@@ -58,24 +58,12 @@
   </section>
 
   <!-- Metrics Grid -->
-  <section style="width: 100%; border-bottom: 1px solid var(--border-color); background: transparent; padding: 2.5rem 0;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; text-align: center;">
-      <div class="tech-card">
-        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">10M+</div>
-        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 0.35rem; font-weight: 600;">Organic Views</div>
-      </div>
-      <div class="tech-card">
-        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">$1.4M</div>
-        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 0.35rem; font-weight: 600;">Client Raised</div>
-      </div>
-      <div class="tech-card">
-        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">67K+</div>
-        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 0.35rem; font-weight: 600;">Subscribers</div>
-      </div>
-      <div class="tech-card">
-        <div style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">AI & Auto</div>
-        <div style="font-size: 0.725rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-top: 0.35rem; font-weight: 600;">Custom Workflows</div>
-      </div>
+  <section class="home-stats">
+    <div class="home-stats-grid">
+      <div class="tech-card stat-card"><div class="stat-value">10M+</div><div class="stat-label">Organic Views</div></div>
+      <div class="tech-card stat-card"><div class="stat-value">$1.4M</div><div class="stat-label">Client Raised</div></div>
+      <div class="tech-card stat-card"><div class="stat-value">67K+</div><div class="stat-label">Subscribers</div></div>
+      <div class="tech-card stat-card"><div class="stat-value">6</div><div class="stat-label">Live Automations</div></div>
     </div>
   </section>
 
@@ -111,12 +99,13 @@
       <span style="font-size: 0.725rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent-text);">From the Blog</span>
       <h2 style="font-size: clamp(1.85rem, 3.5vw, 2.4rem); font-weight: 800; color: var(--text-primary); margin-top: 0.4rem; letter-spacing: -0.02em;">Recent Writing</h2>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
-      <a href="/posts/how-to-get-customers-from-youtube/" class="tech-card" style="display: block; text-decoration: none; color: var(--text-primary);">How to Get Customers From YouTube (The Complete Founder's Guide)</a>
-      <a href="/posts/how-to-get-clients-from-youtube/" class="tech-card" style="display: block; text-decoration: none; color: var(--text-primary);">How to Get Clients From YouTube (Even With a Small Channel)</a>
-      <a href="/posts/youtube-views-but-no-leads/" class="tech-card" style="display: block; text-decoration: none; color: var(--text-primary);">Why Your YouTube Channel Gets Views But No Leads</a>
-      <a href="/posts/linkedin-ai-posting-agent-case-study/" class="tech-card" style="display: block; text-decoration: none; color: var(--text-primary);">LinkedIn AI Posting Agent — A Real Case Study, Bugs Included</a>
+    <div class="post-grid">
+      {{ with site.GetPage "/posts/how-to-get-customers-from-youtube" }}<a href="/posts/how-to-get-customers-from-youtube/" class="tech-card post-card"><span class="post-card-title">How to Get Customers From YouTube (The Complete Founder's Guide)</span><span class="post-card-meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</span></a>{{ else }}<a href="/posts/how-to-get-customers-from-youtube/" class="tech-card post-card"><span class="post-card-title">How to Get Customers From YouTube (The Complete Founder's Guide)</span></a>{{ end }}
+      {{ with site.GetPage "/posts/how-to-get-clients-from-youtube" }}<a href="/posts/how-to-get-clients-from-youtube/" class="tech-card post-card"><span class="post-card-title">How to Get Clients From YouTube (Even With a Small Channel)</span><span class="post-card-meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</span></a>{{ else }}<a href="/posts/how-to-get-clients-from-youtube/" class="tech-card post-card"><span class="post-card-title">How to Get Clients From YouTube (Even With a Small Channel)</span></a>{{ end }}
+      {{ with site.GetPage "/posts/youtube-views-but-no-leads" }}<a href="/posts/youtube-views-but-no-leads/" class="tech-card post-card"><span class="post-card-title">Why Your YouTube Channel Gets Views But No Leads</span><span class="post-card-meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</span></a>{{ else }}<a href="/posts/youtube-views-but-no-leads/" class="tech-card post-card"><span class="post-card-title">Why Your YouTube Channel Gets Views But No Leads</span></a>{{ end }}
+      {{ with site.GetPage "/posts/linkedin-ai-posting-agent-case-study" }}<a href="/posts/linkedin-ai-posting-agent-case-study/" class="tech-card post-card"><span class="post-card-title">LinkedIn AI Posting Agent — A Real Case Study, Bugs Included</span><span class="post-card-meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</span></a>{{ else }}<a href="/posts/linkedin-ai-posting-agent-case-study/" class="tech-card post-card"><span class="post-card-title">LinkedIn AI Posting Agent — A Real Case Study, Bugs Included</span></a>{{ end }}
     </div>
+    <p class="post-all"><a href="/posts/" class="btn btn-secondary">View all posts</a></p>
   </section>
 
 </div>
