@@ -2,11 +2,11 @@
 <div style="width: 100%; min-height: 100vh; background-color: var(--bg-primary); color: var(--text-primary); overflow-x: hidden;">
 
   <!-- Hero Section -->
-  <section style="width: 100%; padding: 4rem 0; text-align: center; background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.08) 0%, rgba(121, 40, 202, 0.05) 35%, var(--bg-primary) 75%); border-bottom: 1px solid var(--border-color);">
+  <section style="width: 100%; padding: 2.5rem 0 3rem; text-align: center; background: radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.08) 0%, rgba(121, 40, 202, 0.05) 35%, var(--bg-primary) 75%); border-bottom: 1px solid var(--border-color);">
     <div style="display: flex; flex-direction: column; align-items: center;">
 
       <!-- Avatar Ring with Neon Tech Gradient -->
-      <div style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+      <div style="margin-top: 0; margin-bottom: 1.25rem;">
         <div class="hero-avatar-ring" style="border-radius: 9999px; padding: 2px; background: linear-gradient(135deg, #00d4ff 0%, #7928ca 100%); display: inline-block; overflow: hidden; box-shadow: 0 0 30px rgba(0, 212, 255, 0.25);">
           {{- /* Hugo-processed, responsive: 150/300/450px crops with content-hashed filenames, so the browser picks the right size and a changed photo can never be served stale. The ring is clamp(96px, 24vw, 150px), hence the sizes rule. */ -}}
           {{ with resources.Get "avatar.jpg" }}
@@ -15,8 +15,8 @@
           {{ $a3 := .Fill "450x450 Center q85" }}
           <img src="{{ $a2.RelPermalink }}"
                srcset="{{ $a1.RelPermalink }} 150w, {{ $a2.RelPermalink }} 300w, {{ $a3.RelPermalink }} 450w"
-               sizes="(max-width: 625px) 24vw, 150px"
-               width="150" height="150"
+               sizes="(max-width: 436px) 22vw, 112px"
+               width="112" height="112"
                alt="Obed Favour"
                fetchpriority="high" decoding="async"
                onerror="this.onerror=null; this.removeAttribute('srcset'); this.src='/images/avatar.jpg?v=3';"
@@ -24,7 +24,7 @@
           {{ else }}
           <img src="/images/avatar.jpg?v=3"
                alt="Obed Favour"
-               width="150" height="150"
+               width="112" height="112"
                onerror="this.onerror=null; this.src='/avatar.jpg?v=3';"
                style="width: 100%; height: 100%; border-radius: 9999px; object-fit: cover; background-color: var(--bg-secondary); display: block;" />
           {{ end }}
@@ -32,26 +32,26 @@
       </div>
 
       <!-- Badge -->
-      <span style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-text); background: rgba(0, 212, 255, 0.08); padding: 0.45rem 1.25rem; border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.2); margin-bottom: 1.5rem;">
+      <span style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-text); background: rgba(0, 212, 255, 0.08); padding: 0.45rem 1.25rem; border-radius: 8px; border: 1px solid rgba(0, 212, 255, 0.2); margin-bottom: 1.25rem;">
         <span style="width: 6px; height: 6px; border-radius: 9999px; background-color: #00d4ff; box-shadow: 0 0 8px #00d4ff;"></span>
         Attention Strategist
       </span>
 
       <!-- Main Headline -->
-      <h1 style="font-size: clamp(2.4rem, 5.5vw, 4rem); font-weight: 800; color: var(--text-primary); margin-bottom: 1.25rem; line-height: 1.1; letter-spacing: -0.03em;">
+      <h1 style="font-size: clamp(2.2rem, 4.6vw, 3.5rem); font-weight: 800; color: var(--text-primary); margin-bottom: 1rem; line-height: 1.1; letter-spacing: -0.03em;">
         You Built It.<br />
-        <span style="background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent-text) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">I'll Make Sure It Gets Seen.</span>
+        I'll Make Sure It <span class="hero-accent">Gets Seen.</span>
       </h1>
 
       <!-- Subtitle -->
-      <p style="font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text-secondary); max-width: 44rem; margin: 0 auto; font-weight: 400; line-height: 1.6;">
+      <p style="font-size: clamp(1rem, 1.5vw, 1.125rem); color: var(--text-secondary); max-width: 42rem; margin: 0 auto; font-weight: 400; line-height: 1.55;">
         Everyone's building right now. Almost nobody's getting seen. As an attention strategist for founders, I help builders cut through the noise, earn real attention, and turn it into paying customers using the Attention &rarr; Trust &rarr; Revenue system &mdash; the same one that took one YouTube channel to 10M+ views and helped raise $1.4M for a client.
       </p>
 
       <!-- CTAs -->
-      <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2rem;">
-        <a href="https://selar.com/74i4823703" target="_blank" style="display: inline-block; background: #2997ff; color: #ffffff; font-weight: 600; font-size: 0.95rem; padding: 0.85rem 2.25rem; border-radius: 9999px; text-decoration: none; box-shadow: 0 4px 20px rgba(41, 151, 255, 0.35); transition: transform 0.2s ease;">Get Your Free Attention Audit</a>
-        <a href="#capabilities" style="display: inline-block; background: transparent; color: var(--text-primary); font-weight: 600; font-size: 0.95rem; padding: 0.85rem 2.25rem; border-radius: 9999px; text-decoration: none; border: 1px solid var(--border-color); transition: border-color 0.2s ease;">Explore Systems</a>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; align-items: center; margin-top: 1.75rem;">
+        <a href="https://selar.com/74i4823703" target="_blank" class="btn btn-primary">Get Your Free Attention Audit</a>
+        <a href="#capabilities" class="btn btn-secondary">Explore Systems</a>
       </div>
 
     </div>

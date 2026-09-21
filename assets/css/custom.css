@@ -37,6 +37,7 @@
   --btn-primary-bg: #2997ff;
   --btn-primary-text: #ffffff;
   --btn-border: rgba(0, 0, 0, 0.2);
+  --headline-grad: linear-gradient(90deg, #0284c7 0%, #2997ff 100%);
 }
 @media (max-width: 767px) { :root { --header-h: 56px; } }
 
@@ -54,6 +55,7 @@ html.dark {
   --accent-secondary: #7928ca;
   --nav-link: rgba(255, 255, 255, 0.72);
   --btn-border: rgba(255, 255, 255, 0.2);
+  --headline-grad: linear-gradient(90deg, #2997ff 0%, #00d4ff 100%);
 }
 
 /* ==========================================================================
@@ -377,6 +379,15 @@ label[for="mobile-menu-toggle"] ~ div svg path {
   stroke: var(--text-primary) !important;
 }
 
+/* --- Hero headline accent: a clean left-to-right gradient on the final phrase only --- */
+.hero-accent {
+  background: var(--headline-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 /* --- Focus rings --- */
 .site-brand:focus-visible,
 .site-nav-link:focus-visible,
@@ -449,8 +460,8 @@ section:first-of-type {
 }
 
 .hero-avatar-ring {
-  width: clamp(96px, 24vw, 150px);
-  height: clamp(96px, 24vw, 150px);
+  width: clamp(96px, 22vw, 112px);
+  height: clamp(96px, 22vw, 112px);
   box-shadow: 0 0 40px rgba(0, 212, 255, 0.15) !important;
 }
 
