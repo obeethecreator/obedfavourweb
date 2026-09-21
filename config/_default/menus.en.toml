@@ -1,9 +1,4 @@
 [[main]]
-  name = "Home"
-  url = "/"
-  weight = 10
-
-[[main]]
   name = "About"
   pageRef = "about"
   weight = 20
@@ -46,4 +41,6 @@
 [[main]]
   name = "Free Audit"
   pageRef = "audit"
-  weight = 45
+  weight = 90   # rendered last, as the CTA button (params.cta), after the search/theme icons
+  [main.params]
+    cta = true

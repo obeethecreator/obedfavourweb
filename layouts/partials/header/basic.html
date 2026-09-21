@@ -1,0 +1,18 @@
+{{- /* Override of Blowfish header/basic.html. The brand slot shows params.brandName (short wordmark) instead of .Site.Title, because .Site.Title carries the long SEO string used in <title>, Open Graph and JSON-LD and must not change. */ -}}
+<div class="main-menu site-bar">
+  <a href="{{ "" | relLangURL }}" class="site-brand" data-brand aria-label="{{ .Site.Title | plainify }} - home">
+    {{ with resources.Get "avatar.jpg" }}
+      {{ $b := .Fill "64x64 Center q85" }}
+      <img class="site-brand-avatar nozoom" src="{{ $b.RelPermalink }}" width="32" height="32" alt="" decoding="async">
+    {{ end }}
+    <span>{{ site.Params.brandName | default .Site.Title | markdownify }}</span>
+  </a>
+  <div class="site-actions">
+    <div class="site-show-desktop">
+      {{ partial "header/components/desktop-menu.html" . }}
+    </div>
+    <div class="site-show-mobile">
+      {{ partial "header/components/mobile-menu.html" . }}
+    </div>
+  </div>
+</div>

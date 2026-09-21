@@ -29,7 +29,16 @@
   --accent-glow: #00d4ff;
   --accent-text: #0284c7;
   --accent-secondary: #7928ca;
+  /* layout + controls (shared by header, hero, footer) */
+  --container-max: 1200px;      /* 1152px content + 2 x 24px gutter */
+  --gutter: 24px;
+  --header-h: 64px;
+  --nav-link: rgba(10, 10, 11, 0.72);
+  --btn-primary-bg: #2997ff;
+  --btn-primary-text: #ffffff;
+  --btn-border: rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 767px) { :root { --header-h: 56px; } }
 
 html.dark {
   --bg-primary: #08080a;
@@ -43,6 +52,8 @@ html.dark {
   --accent-glow: #00d4ff;
   --accent-text: #00d4ff;
   --accent-secondary: #7928ca;
+  --nav-link: rgba(255, 255, 255, 0.72);
+  --btn-border: rgba(255, 255, 255, 0.2);
 }
 
 /* ==========================================================================
@@ -211,42 +222,154 @@ img, video, svg, table {
 }
 
 /* ==========================================================================
-   Sticky nav — theme-aware glass bar
+   Layout container, header and buttons
+   One container (max 1200px = 1152px content + 24px gutters) is used by the
+   header, every page section and the footer, so all left edges line up.
    ========================================================================== */
+.site-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  box-sizing: border-box;
+}
+body.max-w-7xl {
+  max-width: var(--container-max) !important;
+  padding-inline: var(--gutter) !important;
+}
+.site-header-spacer { height: var(--header-h); }
+
+/* --- Header bar: 64px desktop / 56px mobile, translucent, blurred, hairline border --- */
 #menu-blur {
   background-color: var(--nav-bg) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(16px) saturate(1.4) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(1.4) !important;
   border-bottom: 1px solid var(--border-color) !important;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: none !important;
   opacity: 1 !important;
 }
-
-.main-menu a,
-.main-menu a span {
+.site-bar {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: var(--header-h);
+}
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  min-height: 40px;          /* full-height hit area even when the avatar is hidden */
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  white-space: nowrap;
   color: var(--text-primary) !important;
-  opacity: 0.85 !important;
+  text-decoration: none !important;
 }
-.main-menu a:hover,
-.main-menu a:hover span {
-  opacity: 1 !important;
+.site-brand-avatar {
+  width: 32px;
+  height: 32px;
+  margin: 0 !important;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+.site-actions { margin-left: auto; display: flex; align-items: center; min-width: 0; }
+.site-show-desktop { display: none; }
+.site-show-mobile { display: flex; }
+@media (min-width: 768px) {
+  .site-show-desktop { display: flex; }
+  .site-show-mobile { display: none; }
 }
 
-.main-menu > a,
-.main-menu a.text-base {
+/* --- Desktop nav: single-line 15px/500 links, muted until hover, active page underlined --- */
+.site-nav { display: flex; align-items: center; gap: 4px; }
+.site-nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--nav-link) !important;
+  text-decoration: none !important;
+  border-radius: 8px;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+.site-nav-link:hover {
   color: var(--text-primary) !important;
-  opacity: 1 !important;
+  background: color-mix(in srgb, var(--text-primary) 6%, transparent);
+}
+.site-nav-link.is-active { color: var(--text-primary) !important; }
+.site-nav-link.is-active::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 2px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent-glow);
+}
+.site-nav-tools { display: flex; align-items: center; gap: 4px; margin-left: 12px; }
+.site-cta { margin-left: 16px; }
+
+/* --- Icon buttons: 40x40 hit area, 18px glyph --- */
+.site-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--nav-link) !important;
+  cursor: pointer;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+.site-icon-btn:hover {
+  color: var(--text-primary) !important;
+  background: color-mix(in srgb, var(--text-primary) 6%, transparent);
+}
+.site-icon-btn .icon,
+.site-icon-btn svg { width: 18px; height: 18px; }
+.site-icon-btn svg { fill: currentColor; }
+
+/* --- Compact desktop nav (768-1023px): tighter spacing, no wordmark avatar, still one line each --- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .site-bar { gap: 16px; }
+  .site-brand-avatar { display: none; }
+  .site-nav { gap: 2px; }
+  .site-nav-link { padding: 0 8px; }
+  .site-nav-link.is-active::after { left: 8px; right: 8px; }
+  .site-nav-tools { margin-left: 4px; }
+  .site-cta { margin-left: 8px; }
+  .btn-sm { padding: 0 14px; }
 }
 
-label[for="mobile-menu-toggle"],
-label[for="mobile-menu-toggle"] svg,
-label[for="mobile-menu-toggle"] svg path {
-  color: var(--accent-text) !important;
-  fill: var(--accent-text) !important;
-  stroke: var(--accent-text) !important;
-  opacity: 1 !important;
+/* --- Mobile: 44px buttons, full-width panel, 48px link rows, CTA button at the bottom --- */
+.site-mobile-tools { display: flex; align-items: center; gap: 4px; }
+.site-mobile-tools .site-icon-btn { width: 44px; height: 44px; }
+.site-mobile-nav { display: flex; flex-direction: column; max-width: 28rem; margin: 0 auto; }
+.site-mobile-link {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 8px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--border-color);
 }
-
+.site-mobile-link.is-active { color: var(--accent-text) !important; }
+.site-mobile-nav .btn-block { margin-top: 24px; }
 label[for="mobile-menu-toggle"] ~ div svg,
 label[for="mobile-menu-toggle"] ~ div svg path {
   color: var(--text-primary) !important;
@@ -254,15 +377,52 @@ label[for="mobile-menu-toggle"] ~ div svg path {
   stroke: var(--text-primary) !important;
 }
 
-@media (max-width: 768px) {
-  .main-menu a {
-    font-weight: 600 !important;
-  }
-  .main-menu a span,
-  nav.mx-auto a span {
-    color: var(--text-primary) !important;
-    opacity: 1 !important;
-  }
+/* --- Focus rings --- */
+.site-brand:focus-visible,
+.site-nav-link:focus-visible,
+.site-icon-btn:focus-visible,
+.site-mobile-link:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--accent-glow);
+  outline-offset: 2px;
+}
+
+/* --- Buttons: one system for the header CTA, hero and any future CTA --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none !important;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.btn-sm { height: 40px; padding: 0 18px; }
+.btn-block { width: 100%; }
+.btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text) !important;
+  box-shadow: 0 2px 12px rgba(0, 212, 255, 0.22);
+}
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3); }
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary) !important;
+  border-color: var(--btn-border);
+}
+.btn-secondary:hover { border-color: var(--accent-text); }
+@media (prefers-reduced-motion: reduce) {
+  .btn, .site-nav-link, .site-icon-btn { transition: none; }
+  .btn-primary:hover { transform: none; }
 }
 
 /* ==========================================================================
@@ -391,51 +551,4 @@ section div[style*="font-size: clamp(2rem"] {
     opacity: 1;
     transform: none;
   }
-}
-
-/* ==========================================================================
-   Free Audit — highlighted nav CTA (lead magnet emphasis)
-   ========================================================================== */
-.main-menu a[href*="audit"] {
-  background: linear-gradient(135deg, #2997ff 0%, #00d4ff 100%) !important;
-  color: #ffffff !important;
-  padding: 0.5rem 1.1rem !important;
-  border-radius: 9999px !important;
-  font-weight: 600 !important;
-  opacity: 1 !important;
-  box-shadow: 0 2px 12px rgba(0, 212, 255, 0.35) !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-}
-
-.main-menu a[href*="audit"] span {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
-
-.main-menu a[href*="audit"]:hover {
-  transform: translateY(-1px) scale(1.03) !important;
-  box-shadow: 0 4px 18px rgba(0, 212, 255, 0.5) !important;
-}
-
-/* Slight pulse to draw the eye without being obnoxious */
-@keyframes auditPulse {
-  0%, 100% { box-shadow: 0 2px 12px rgba(0, 212, 255, 0.35); }
-  50% { box-shadow: 0 2px 20px rgba(0, 212, 255, 0.6); }
-}
-.main-menu a[href*="audit"] {
-  animation: auditPulse 3s ease-in-out infinite;
-}
-@media (prefers-reduced-motion: reduce) {
-  .main-menu a[href*="audit"] {
-    animation: none;
-  }
-}
-
-/* Mobile fullscreen menu version */
-nav.mx-auto a[href*="audit"] span {
-  color: #ffffff !important;
-  background: linear-gradient(135deg, #2997ff 0%, #00d4ff 100%) !important;
-  padding: 0.4rem 1rem !important;
-  border-radius: 9999px !important;
-  display: inline-block !important;
 }

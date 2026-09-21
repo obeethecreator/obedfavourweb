@@ -1,0 +1,67 @@
+{{- /* Override of Blowfish mobile-menu.html. Same dialog/peer-checked mechanics and element ids the theme's JS expects (#search-button-mobile, #appearance-switcher-mobile, #mobile-menu-toggle), with 44px buttons, 48px link rows, and the CTA as a full-width button at the bottom of the panel. */ -}}
+<div class="site-mobile-tools">
+  {{ if .Site.Params.enableSearch | default false }}
+    <button
+      id="search-button-mobile"
+      type="button"
+      aria-label="Search"
+      class="site-icon-btn"
+      title="{{ i18n "search.open_button_title" }}">
+      {{ partial "icon.html" "search" }}
+    </button>
+  {{ end }}
+
+  {{ if .Site.Params.footer.showAppearanceSwitcher | default false }}
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Dark mode switcher"
+      class="site-icon-btn">
+      <div class="dark:hidden">
+        {{ partial "icon.html" "moon" }}
+      </div>
+      <div class="hidden dark:block">
+        {{ partial "icon.html" "sun" }}
+      </div>
+    </button>
+  {{ end }}
+
+  {{ if .Site.Menus.main }}
+    <input type="checkbox" id="mobile-menu-toggle" autocomplete="off" class="hidden peer">
+    <label for="mobile-menu-toggle" class="site-icon-btn" role="button" aria-label="Open menu">
+      {{ partial "icon.html" "bars" }}
+    </label>
+
+    <div
+      role="dialog"
+      aria-modal="true"
+      style="scrollbar-gutter: stable;"
+      class="fixed inset-0 z-50 invisible overflow-y-auto px-6 py-20 opacity-0 transition-[opacity,visibility] duration-300 peer-checked:visible peer-checked:opacity-100 bg-neutral-50/97 dark:bg-neutral-900/99
+      {{ if site.Params.enableStyledScrollbar | default true }}bf-scrollbar{{ end }}">
+      <label
+        for="mobile-menu-toggle"
+        aria-label="Close menu"
+        class="fixed end-8 top-5 flex items-center justify-center z-50 h-12 w-12 cursor-pointer select-none rounded-full bf-icon-color-hover border bf-border-color bf-border-color-hover bg-neutral-50 dark:bg-neutral-900">
+        {{ partial "icon.html" "xmark" }}
+      </label>
+      <nav class="site-mobile-nav" aria-label="Primary">
+        {{ range .Site.Menus.main }}
+          {{ if not .Params.cta }}
+            {{ $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+            <a
+              href="{{ .URL }}"
+              class="site-mobile-link{{ if $active }} is-active{{ end }}"
+              {{ if $active }}aria-current="page"{{ end }}>
+              {{ .Name | markdownify }}
+            </a>
+          {{ end }}
+        {{ end }}
+        {{ range .Site.Menus.main }}
+          {{ if .Params.cta }}
+            <a href="{{ .URL }}" class="btn btn-primary btn-block">{{ .Name | markdownify }}</a>
+          {{ end }}
+        {{ end }}
+      </nav>
+    </div>
+  {{ end }}
+</div>

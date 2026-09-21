@@ -1,0 +1,51 @@
+{{- /* Override of Blowfish desktop-menu.html. Order: text links, then search + theme icons, then the CTA last (any main-menu entry with params.cta = true). Active page gets aria-current and an underline. */ -}}
+<nav class="site-nav js-nav" aria-label="Primary">
+  {{ range .Site.Menus.main }}
+    {{ if not .Params.cta }}
+      {{ $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+      <a
+        href="{{ .URL }}"
+        class="site-nav-link{{ if $active }} is-active{{ end }}"
+        {{ if $active }}aria-current="page"{{ end }}
+        {{ if or (strings.HasPrefix .URL "http:" ) (strings.HasPrefix .URL "https:" ) }}target="_blank" rel="noopener"{{ end }}
+        {{ with .Title }}title="{{ . }}"{{ end }}>
+        {{ .Name | markdownify }}
+      </a>
+    {{ end }}
+  {{ end }}
+
+  {{ partial "header/components/translations.html" . }}
+
+  <div class="site-nav-tools">
+    {{ if .Site.Params.enableSearch | default false }}
+      <button
+        id="search-button"
+        type="button"
+        aria-label="Search"
+        class="site-icon-btn"
+        title="{{ i18n "search.open_button_title" }}">
+        {{ partial "icon.html" "search" }}
+      </button>
+    {{ end }}
+    {{ if .Site.Params.footer.showAppearanceSwitcher | default false }}
+      <button
+        id="appearance-switcher"
+        type="button"
+        aria-label="Dark mode switcher"
+        class="site-icon-btn">
+        <div class="flex items-center justify-center dark:hidden">
+          {{ partial "icon.html" "moon" }}
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          {{ partial "icon.html" "sun" }}
+        </div>
+      </button>
+    {{ end }}
+  </div>
+
+  {{ range .Site.Menus.main }}
+    {{ if .Params.cta }}
+      <a href="{{ .URL }}" class="btn btn-primary btn-sm site-cta">{{ .Name | markdownify }}</a>
+    {{ end }}
+  {{ end }}
+</nav>
