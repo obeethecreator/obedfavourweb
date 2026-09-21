@@ -1,0 +1,37 @@
+{{- /* Override of Blowfish footer.html. Uses the project's .site-container, mirrors the primary nav, shows YouTube/LinkedIn/X as 40px icon buttons and copyright; the Hugo/Blowfish credit is dropped. Zoom script and extend-footer hook kept from the theme. */ -}}
+<footer id="site-footer" class="site-footer print:hidden">
+  <div class="site-footer-top">
+    <nav class="site-footer-nav" aria-label="Footer">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="site-footer-link">{{ .Name | markdownify }}</a>
+      {{ end }}
+    </nav>
+    <div class="site-footer-social">
+      {{ $links := dict }}
+      {{ range .Site.Params.Author.links }}{{ range $k, $v := . }}{{ $links = merge $links (dict $k $v) }}{{ end }}{{ end }}
+      {{ range $name := slice "youtube" "linkedin" "x-twitter" }}
+        {{ with index $links $name }}
+          <a href="{{ . }}" class="site-icon-btn" target="_blank" rel="me noopener" aria-label="{{ cond (eq $name "x-twitter") "X" (cond (eq $name "youtube") "YouTube" (cond (eq $name "linkedin") "LinkedIn" (title $name))) }}">{{ partial "icon.html" $name }}</a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  {{ if .Site.Params.footer.showCopyright | default true }}
+    <p class="site-footer-copy">
+      {{- with replace .Site.Params.copyright "{ year }" now.Year }}{{ . | markdownify }}{{ else }}&copy; {{ now.Format "2006" }} {{ .Site.Params.Author.name | markdownify }}{{ end -}}
+    </p>
+  {{ end }}
+  {{ if not .Site.Params.disableImageZoom | default true }}
+    <script>
+      mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+        margin: 24,
+        background: "rgba(0,0,0,0.5)",
+        scrollOffset: 0,
+      });
+    </script>
+  {{ end }}
+  {{/* Extend footer - eg. for extra scripts, etc. */}}
+  {{ if templates.Exists "partials/extend-footer.html" }}
+    {{ partialCached "extend-footer.html" . }}
+  {{ end }}
+</footer>
