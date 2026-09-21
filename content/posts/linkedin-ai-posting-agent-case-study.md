@@ -20,7 +20,7 @@ Most AI automation portfolios show you the finished thing. This one shows you th
 
 *Updated 21 September 2026. This build changed after it first went up: it now also posts on a schedule, with no human confirmation on that path. Everything below describes what runs today.*
 
-> **Quick answer:** This is a real, working n8n AI agent that drafts and publishes LinkedIn posts through Telegram, with two human approval gates before anything goes live. It documents all nine real production bugs hit while building it — DNS failures, a silent research failure, a leaked voice-profile example, and more — not just the finished result. Voice, credentials, and the target account are configuration, not hardcoded, so the same system can run for a different person's brand without a rebuild.
+> **Quick answer:** This is a real, working n8n AI agent that researches, drafts and publishes LinkedIn posts through Telegram. In chat it asks for two human approvals before anything goes live. On its Monday to Saturday schedule there is no human confirmation, so every draft has to pass an automated voice check that fails closed, with a hard stop after five failed attempts. The page also documents the real production bugs hit while building it, and what the agent still does badly.
 
 ## What it does
 
