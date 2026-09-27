@@ -1,6 +1,11 @@
 [[main]]
-  name = "About"
-  pageRef = "about"
+  name = "For Agencies"
+  pageRef = "agencies"
+  weight = 10
+
+[[main]]
+  name = "Services"
+  pageRef = "services"
   weight = 20
 
 [[main]]
@@ -14,12 +19,12 @@
   weight = 30
 
 [[main]]
-  name = "Services"
-  pageRef = "services"
+  name = "About"
+  pageRef = "about"
   weight = 40
 
 [[main]]
-  name = "Digital Products"
+  name = "Guide"
   pageRef = "products"
   weight = 60
 
@@ -35,12 +40,12 @@
 
 [[footer]]
   name = "Contact"
-  pageRef = "services"
+  url = "/agencies/#call"
   weight = 30
 
 [[main]]
-  name = "Free Audit"
-  pageRef = "audit"
+  name = "Book a Call"
+  url = "/agencies/#call"
   weight = 90   # rendered last, as the CTA button (params.cta), after the search/theme icons
   [main.params]
     cta = true

@@ -2,19 +2,19 @@ disabled = false
 locale = "en"
 label = "English"
 weight = 1
-title = "Obed Favour | AI Automation, n8n & Growth Marketing"
+title = "Obed Favour | AI Automation for Marketing Agencies"
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  description = "I help founders and consultants turn attention into revenue — organic growth systems and AI automation, no ad spend."
+  description = "I build the AI systems that let small marketing agencies deliver more client work without hiring: content engines, client reporting and review management, built in n8n and handed over."
 
 [params.author]
   name = "Obed Favour"
   image = "avatar.jpg"
-  headline = "Growth systems and AI automation that turn attention into revenue"
-  bio = "I help founders and brands build growth marketing systems and AI automation that turn attention into revenue - across content, funnels, and operations. 10M+ views generated, 67K+ subscribers grown, $1.4M raised for a client through community-led growth."
+  headline = "AI delivery systems for marketing agencies"
+  bio = "I build the AI systems that let small marketing agencies deliver more client work without hiring. Growth marketer first: grew Great Grace TV's YouTube channel from 3K to 67K+ subscribers and supported a $1.4M community-led raise at Ayoken. Now I build and run the automations, in n8n, that I sell."
   links = [
     { github = "https://github.com/obeethecreator" },
     { instagram = "https://instagram.com/obeethecre8or" },
@@ -22,6 +22,7 @@ title = "Obed Favour | AI Automation, n8n & Growth Marketing"
     { linkedin = "https://linkedin.com/in/obed-favour-speaks" },
     { tiktok = "https://tiktok.com/@obeethecreator" },
     { youtube = "https://youtube.com/@obeethecreator" },
+    { substack = "https://obeethecreator.substack.com" },
   ]
 
 
