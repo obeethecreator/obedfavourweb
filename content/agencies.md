@@ -100,9 +100,10 @@ I'm based in Lagos (GMT+1), so I work UK and European hours and overlap with US 
 
 Tell me a little about your agency and I'll reply within one working day with times for a call. No pitch deck: we'll look at where your team's hours go and whether a system would pay for itself.
 
-<form action="https://formspree.io/f/mjglnqqv" method="POST" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; max-width: 600px;">
+<form action="https://agency-intake.obeethecreator.workers.dev/" method="POST" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; max-width: 600px;">
   <input type="hidden" name="_subject" value="Agency intro call request">
   <input type="hidden" name="source" value="Website /agencies/">
+  <div aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;"><label>Leave this empty <input type="text" name="company_url" tabindex="-1" autocomplete="off"></label></div>
   <input type="text" name="name" placeholder="Your name" required style="display:block; width:100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
   <input type="email" name="email" placeholder="Work email" required style="display:block; width:100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
   <input type="text" name="agency" placeholder="Agency name" required style="display:block; width:100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
@@ -113,6 +114,16 @@ Tell me a little about your agency and I'll reply within one working day with ti
     <option value="5-15">5 to 15</option>
     <option value="16-30">16 to 30</option>
     <option value="31+">31 or more</option>
+  </select>
+  <select name="region" required style="display:block; width:100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
+    <option value="">Where is your agency based?</option>
+    <option value="UK">UK</option>
+    <option value="Ireland">Ireland</option>
+    <option value="EU">EU</option>
+    <option value="US">US</option>
+    <option value="Canada">Canada</option>
+    <option value="Australia">Australia</option>
+    <option value="Other">Other</option>
   </select>
   <select name="interest" style="display:block; width:100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
     <option value="">What interests you most?</option>
