@@ -78,6 +78,8 @@ Getting the click is only the first half of the job. What happens after someone 
 
 And if you are still figuring out which topics are worth building a video and a CTA around in the first place, that groundwork, validating a topic against real search demand before you ever hit record, is covered in a companion piece on choosing YouTube video topics that actually get you customers.
 
+The CTA is one piece of a much bigger machine. If you want to see exactly how topic selection, video structure, the CTA, and the funnel behind it all fit together into one repeatable system, that is what [How to Get Customers From YouTube: The Complete Founder's Guide](/posts/how-to-get-customers-from-youtube/) walks through end to end.
+
 Every founder's funnel looks slightly different depending on what they are actually selling and how their audience buys, and getting the CTA, the landing step, and the follow up sequence to actually work together as one system is usually a five minute conversation once someone looks at your specific setup, not a generic template.
 
 ## What If You Are Not Sure Which CTA Will Actually Convert?
