@@ -647,3 +647,9 @@ main, article, .prose { min-width: 0; }
     font-size: 16px !important;
   }
 }
+
+/* Theme heading "#" anchor links sit 24px left of the heading (-start-6), past the page's
+   left edge on phones; hide them below 768px (headings keep their ids for deep links) */
+@media (max-width: 767px) {
+  :is(h1, h2, h3, h4, h5, h6) > span.not-prose.-start-6 { display: none; }
+}
