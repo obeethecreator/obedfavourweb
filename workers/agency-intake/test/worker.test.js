@@ -137,6 +137,27 @@ test('Notion failure: still redirects (Formspree has it) and Telegram carries th
   assert.match(tg.text, /Notion row NOT created: HTTP 404 object_not_found/);
 });
 
+test('deep health: needs the key, reads the schema, never creates a row', async () => {
+  const calls = [];
+  globalThis.fetch = async (input) => {
+    const url = typeof input === 'string' ? input : input.url;
+    calls.push(url);
+    if (url.includes('/v1/data_sources/')) return Response.json({ title: [{ plain_text: 'Agency Pipeline' }], properties: Object.fromEntries(['Agency', 'Owner', 'Email', 'Website', 'Source', 'Stage', 'Team size', 'Interested in', 'Region', 'Research notes', 'Marketing agency'].map((k) => [k, {}])) });
+    if (url.includes('/getMe')) return Response.json({ ok: true, result: { username: 'obeeleads_bot' } });
+    return Response.json({ ok: true });
+  };
+  const e = { ...env, HEALTH_KEY: 'k' };
+  assert.equal(await (await worker.fetch(new Request('https://x/health?key=wrong'), e)).text(), 'ok');
+  assert.equal(calls.length, 0);
+  const r = await worker.fetch(new Request('https://x/health?key=k&ping=1'), e);
+  const j = await r.json();
+  assert.equal(r.status, 200);
+  assert.deepEqual(j.notion.missing, []);
+  assert.equal(j.telegram.bot, '@obeeleads_bot');
+  assert.equal(j.telegram.pinged, true);
+  assert.ok(!calls.some((u) => u.endsWith('/v1/pages')));
+});
+
 test('GET /health and other paths', async () => {
   mockFetch();
   assert.equal((await worker.fetch(new Request('https://x/health'), env)).status, 200);

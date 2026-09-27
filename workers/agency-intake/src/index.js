@@ -27,7 +27,10 @@ const MAX_FIELD = 2000;
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    if (request.method === 'GET' && url.pathname === '/health') return new Response('ok');
+    if (request.method === 'GET' && url.pathname === '/health') {
+      if (env.HEALTH_KEY && url.searchParams.get('key') === env.HEALTH_KEY) return deepHealth(env, url.searchParams.get('ping') === '1');
+      return new Response('ok');
+    }
     if (request.method !== 'POST' || url.pathname !== '/') return new Response('Not found', { status: 404 });
 
     const origin = request.headers.get('Origin');
@@ -84,6 +87,37 @@ export default {
     return redirect(env.THANKS_URL);
   },
 };
+
+// Read-only check that the secrets work: reads the Agency Pipeline schema (no row is created) and,
+// with ping=1, sends a test Telegram message. Returns names and statuses only, never secret values.
+const REQUIRED_PROPS = ['Agency', 'Owner', 'Email', 'Website', 'Source', 'Stage', 'Team size', 'Interested in', 'Region', 'Research notes', 'Marketing agency'];
+
+async function deepHealth(env, ping) {
+  const out = {};
+  try {
+    const res = await fetch(`https://api.notion.com/v1/data_sources/${env.NOTION_DATA_SOURCE_ID}`, {
+      headers: { Authorization: `Bearer ${env.NOTION_TOKEN}`, 'Notion-Version': NOTION_VERSION },
+    });
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(`HTTP ${res.status} ${body.code || ''}`);
+    const props = Object.keys(body.properties || {});
+    out.notion = { ok: true, title: body.title?.map((t) => t.plain_text).join('') || '', properties: props.length, missing: REQUIRED_PROPS.filter((p) => !props.includes(p)) };
+  } catch (e) {
+    out.notion = { ok: false, error: e.message };
+  }
+  try {
+    const res = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/getMe`);
+    const body = await res.json();
+    out.telegram = { ok: body.ok, bot: body.result ? `@${body.result.username}` : null };
+    if (ping) {
+      await sendTelegram(env, '✅ Test from the agency-intake Worker: this bot is connected. Website intro-call requests will arrive here.');
+      out.telegram.pinged = true;
+    }
+  } catch (e) {
+    out.telegram = { ...out.telegram, ok: false, error: e.message };
+  }
+  return Response.json(out, { status: out.notion.ok && out.telegram.ok ? 200 : 500 });
+}
 
 function redirect(to) {
   return Response.redirect(to, 303);
