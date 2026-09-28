@@ -653,3 +653,55 @@ main, article, .prose { min-width: 0; }
 @media (max-width: 767px) {
   :is(h1, h2, h3, h4, h5, h6) > span.not-prose.-start-6 { display: none; }
 }
+
+/* ==========================================================================
+   Wide-desktop layout (2026-09-28)
+   Blowfish renders <body class="flex flex-col h-screen m-auto max-w-7xl ...">, and the overflow-x rule on
+   html/body above turned the body into a fixed-height scroll container: the page sat in a 1200px column with
+   its own scrollbar beside the content, and window scroll listeners (header blur, scroll-to-top) never fired.
+   Here the document scrolls normally (one native scrollbar at the window edge), the body spans the viewport,
+   and only the content is held in the centred container.
+   ========================================================================== */
+html {
+  height: auto !important;
+  overflow-x: clip !important;           /* clip, not hidden: no scroll container, so the window scrolls */
+  overflow-y: visible !important;
+  background-color: var(--bg-primary) !important;
+}
+body,
+body.max-w-7xl {
+  height: auto !important;                /* undo h-screen */
+  min-height: 100vh;
+  width: 100% !important;
+  max-width: none !important;             /* undo max-w-7xl */
+  margin: 0 !important;
+  padding-inline: 0 !important;
+  overflow: visible !important;
+  overflow-x: clip !important;
+}
+
+/* Readable content stays in the same centred container the header uses */
+#main-content {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  box-sizing: border-box;
+}
+
+/* Footer: border and background span the window, its content lines up with the container */
+.site-footer {
+  padding-inline: max(var(--gutter), calc((100% - var(--container-max)) / 2 + var(--gutter)));
+}
+
+/* Homepage: the wrapper's inline overflow would clip the full-width bands */
+#main-content > div[style*="min-height: 100vh"] { overflow: visible !important; }
+
+/* Full-width bands: background from window edge to window edge, content still inside the container.
+   calc(50% - 50vw) pulls the band out of the container; the matching padding puts the content back. */
+#main-content > div > section:first-of-type,
+.home-stats {
+  width: auto !important;
+  margin-inline: calc(50% - 50vw) !important;
+  padding-inline: calc(50vw - 50%) !important;
+}
