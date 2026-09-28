@@ -695,13 +695,15 @@ body.max-w-7xl {
 }
 
 /* Homepage: the wrapper's inline overflow would clip the full-width bands */
-#main-content > div[style*="min-height: 100vh"] { overflow: visible !important; }
+#main-content > div[style*="min-height: 100vh"] { overflow: visible !important; background-color: transparent !important; }  /* same colour as the page; transparent so it isn't a column-width band */
 
 /* Full-width bands: background from window edge to window edge, content still inside the container.
    calc(50% - 50vw) pulls the band out of the container; the matching padding puts the content back. */
 #main-content > div > section:first-of-type,
+#main-content article > section:first-of-type,   /* inner pages: the first section carries the grid texture (section:first-of-type rule above) */
 .home-stats {
   width: auto !important;
+  max-width: none !important;             /* the article section carries max-w-full */
   margin-inline: calc(50% - 50vw) !important;
   padding-inline: calc(50vw - 50%) !important;
 }
