@@ -24,12 +24,12 @@ The same kinds of systems I build for agencies: content engines, production pipe
 
 <div class="pf-grid">
 <div class="pf-card pf-wide">
-<figure class="pf-shot"><img src="/portfolio/automation/autopilot-overview.jpg" width="1474" height="310" alt="Scheduled LinkedIn Autopilot workflow in n8n" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"></figure>
 <div class="pf-thumbs">
 <figure class="pf-shot"><img src="/portfolio/automation/autopilot-late-slot-guard.jpg" width="740" height="408" alt="Autopilot late-slot guard: Start Jitter, Guard Decision and the skipped-slot notice" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Late-slot guard</figcaption></figure>
 <figure class="pf-shot"><img src="/portfolio/automation/autopilot-voice-check-loop.jpg" width="1474" height="402" alt="Autopilot voice-check loop: draft, precheck, judge and retry" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Voice-check loop</figcaption></figure>
 <figure class="pf-shot"><img src="/portfolio/automation/autopilot-approval-gate.jpg" width="667" height="408" alt="Autopilot approval gate: Telegram approval before Publish to LinkedIn" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Approval gate</figcaption></figure>
 </div>
+<figure class="pf-shot pf-overview"><img src="/portfolio/automation/autopilot-overview.jpg" width="1474" height="310" alt="Scheduled LinkedIn Autopilot workflow in n8n" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>The whole Autopilot, from schedule to publish</figcaption></figure>
 <div class="pf-title">LinkedIn Scheduled Autopilot</div>
 <div class="pf-line"><strong>Problem:</strong> A posting habit breaks the first week you get busy.</div>
 <div class="pf-line"><strong>What it does:</strong> Twice a day, Monday to Saturday, it asks me for a topic, researches it, drafts in my voice, runs the draft through an automated voice check and sends the version that passes to me in Telegram.</div>
@@ -37,7 +37,7 @@ The same kinds of systems I build for agencies: content engines, production pipe
 </div>
 
 <div class="pf-card">
-<figure class="pf-shot"><img src="/portfolio/automation/linkedin-chat-agent.jpg" width="1474" height="346" alt="LinkedIn AI Posting Agent chat workflow in n8n" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"></figure>
+<figure class="pf-shot"><img src="/portfolio/automation/linkedin-chat-agent.jpg" width="976" height="408" alt="LinkedIn AI Posting Agent chat workflow in n8n" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"></figure>
 <div class="pf-title">LinkedIn AI Posting Agent</div>
 <div class="pf-line"><strong>Problem:</strong> Good post ideas come up during the day and are gone by the time there is time to write.</div>
 <div class="pf-line"><strong>What it does:</strong> A Telegram chat agent. I send a thought, a photo or a voice note; it researches, drafts in my voice and revises until I am happy.</div>
@@ -49,7 +49,7 @@ The same kinds of systems I build for agencies: content engines, production pipe
 <figure class="pf-shot"><img src="/portfolio/automation/research-topic-scoring.jpg" width="1006" height="408" alt="Research Topic workflow in n8n: news and trends feeds scored by AI" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"></figure>
 <div class="pf-title">Topic research and scoring</div>
 <div class="pf-line"><strong>Problem:</strong> Finding something worth posting about takes an hour of reading.</div>
-<div class="pf-line"><strong>What it does:</strong> Pulls Google News and Google Trends for a topic, scores every item with an AI model and hands the drafting step the best sources, with names and links. A Reddit feed is wired in too, but Reddit currently blocks it, so it adds nothing.</div>
+<div class="pf-line"><strong>What it does:</strong> Pulls Google News and Google Trends for a topic, scores every item with an AI model and hands the drafting step the best sources, with names and links.</div>
 <div class="pf-line pf-proof"><strong>Detail:</strong> Scores up to 20 items and keeps the top 6. Sources without a real publication name are dropped, so nothing gets cited to "Markets" or a bare domain.</div>
 </div>
 
@@ -120,12 +120,12 @@ The same kinds of systems I build for agencies: content engines, production pipe
 <div class="pf-grid">
 <div class="pf-card pf-wide">
 <div class="pf-thumbs">
-<figure class="pf-shot"><img src="/portfolio/automation/re-score-route.jpg" width="1474" height="281" alt="Reputation Engine: Score and Route workflow in n8n" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Score and route</figcaption></figure>
+<figure class="pf-shot"><img src="/portfolio/automation/re-score-route.jpg" width="1474" height="342" alt="Reputation Engine: Score and Route workflow in n8n" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Score and route</figcaption></figure>
 <figure class="pf-shot"><img src="/portfolio/automation/re-draft-response.jpg" width="1474" height="342" alt="Reputation Engine: Draft Response workflow in n8n" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Draft response</figcaption></figure>
 <figure class="pf-shot"><img src="/portfolio/automation/re-manager-alert.jpg" width="1474" height="367" alt="Reputation Engine: Manager Alert workflow in n8n" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Manager alert</figcaption></figure>
 </div>
 <div class="pf-title">Reputation and Feedback Intelligence Engine <span class="pf-tag">Reference build</span></div>
-<div class="pf-line">A complete system I built end to end in n8n and tested live, ready to deploy for agencies' multi-location clients. It is not a client project, and no client has used it yet.</div>
+<div class="pf-line">A complete system I built end to end in n8n and tested live, ready to deploy for agencies' multi-location clients.</div>
 <div class="pf-line"><strong>Problem:</strong> Multi-location businesses hear about unhappy customers too late, and replies are slow and inconsistent.</div>
 <div class="pf-line"><strong>What it does:</strong> Every customer reply is scored by AI for sentiment, severity and confidence, then routed by fixed rules: ready to post, private follow-up, escalation, or human review when the AI is unsure. Negative replies get a personal draft for staff to approve.</div>
 <div class="pf-line pf-proof"><strong>Detail:</strong> Escalations alert the branch manager by email and Telegram. Drafts are never sent to the customer automatically. It passed a 5 of 5 live end-to-end run.</div>
