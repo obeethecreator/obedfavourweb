@@ -7,7 +7,8 @@
 
 const NOTION_VERSION = '2025-09-03';
 
-const TEAM_SIZE = { '1-4': 3, '5-15': 10, '16-30': 23, '31+': 40 };
+// '1' = "Just me" (founders welcome since 2026-09-28); '1-4' kept for pages cached before the options changed.
+const TEAM_SIZE = { '1': 1, '2-4': 3, '1-4': 3, '5-15': 10, '16-30': 23, '31+': 40 };
 
 // Form value -> Agency Pipeline "Interested in" option. "Not sure yet" (and anything unknown) stays empty.
 const INTEREST = {

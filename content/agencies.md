@@ -21,11 +21,11 @@ description = "AI delivery systems for marketing agencies with 5 to 30 staff: an
 ## Who this is for
 
 - Marketing, creative or content agencies selling SEO, social, content or paid work on retainer
-- 5 to 30 staff, in the UK, Ireland, Europe, the US, Canada or Australia
+- Agencies with 5 to 30 staff, plus founders and small teams (solo founders included) who want the same systems for their own business
 - Your team already uses AI tools, but it isn't built into how you deliver
 - You want more margin or more capacity, not another tool subscription
 
-**Probably not a fit:** solo freelancers without clients yet, or anyone looking for a one-off $50 workflow.
+**Probably not a fit:** anyone looking for a one-off $50 workflow.
 
 ## What I build
 
@@ -90,11 +90,9 @@ Monitoring, error alerts, fixes, and one improvement every month. Systems drift 
 
 ## Why me
 
-I run my own business on these systems: a LinkedIn posting agent with an automated voice check, a blog pipeline with a human approval gate, and research and alerting workflows, all on my own n8n. I write up every build, bugs included ([here is one](/posts/linkedin-ai-posting-agent-case-study/)).
+I run my own business on these systems: a LinkedIn posting agent with an automated voice check, a blog pipeline with a human approval gate, and research and alerting workflows, all running on my own stack (n8n and Cloudflare Workers). I write up every build, bugs included ([here is one](/posts/linkedin-ai-posting-agent-case-study/)).
 
 Before automation, I was a growth marketer. I grew Great Grace TV's YouTube channel from 3,000 to 67,000+ subscribers and 10M+ views, and built the community behind Ayoken's $1.4M pre-seed raise. So I build automations that serve growth, not automations for their own sake. [See the full portfolio →](/portfolio/)
-
-I'm based in Lagos (GMT+1), so I work UK and European hours and overlap with US mornings.
 
 <h2 id="call">Book a 30-minute intro call</h2>
 
@@ -110,7 +108,8 @@ Tell me a little about your agency and I'll reply within one working day with ti
   <input type="url" name="website" placeholder="Agency website" style="display:block; width:100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
   <select name="team_size" required style="display:block; width:100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
     <option value="">Team size...</option>
-    <option value="1-4">1 to 4</option>
+    <option value="1">Just me</option>
+    <option value="2-4">2 to 4</option>
     <option value="5-15">5 to 15</option>
     <option value="16-30">16 to 30</option>
     <option value="31+">31 or more</option>

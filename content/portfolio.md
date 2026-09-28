@@ -1,6 +1,6 @@
 ---
 title: "Portfolio"
-description: "AI systems I run my own business on, built in n8n: a LinkedIn posting agent with a voice-check and approval gate, topic research, error alerts and a website intake pipeline. Plus a reference build for review management, and earlier growth work at Great Grace TV and Ayoken."
+description: "AI systems I run my own business on, built with n8n and Cloudflare Workers: a LinkedIn posting agent with a voice-check and approval gate, topic research, error alerts and a website intake pipeline. Plus a reference build for review management, and earlier growth work at Great Grace TV and Ayoken."
 showDate: false
 showAuthor: false
 showReadingTime: false
@@ -20,7 +20,7 @@ showEdit: false
 
 ## AI systems running my own business
 
-The same kinds of systems I build for agencies: content engines, production pipelines with approval gates, research, intake and alerting.
+The same kinds of systems I build for agencies and founders: content engines, production pipelines with approval gates, research, intake and alerting. Built on the right stack for your business: n8n, Cloudflare Workers, the Notion API, Telegram bots, OpenAI and Cloudflare Workers AI models, and the tools you already use.
 
 <div class="pf-grid">
 <div class="pf-card pf-wide">

@@ -84,7 +84,7 @@ test('full submission: Notion row, Formspree backup, Telegram ping, redirect to 
 });
 
 test('team size and interest mappings; "Not sure yet" leaves Interested in empty', async () => {
-  for (const [size, n] of [['1-4', 3], ['5-15', 10], ['16-30', 23], ['31+', 40]]) {
+  for (const [size, n] of [['1', 1], ['2-4', 3], ['1-4', 3], ['5-15', 10], ['16-30', 23], ['31+', 40]]) {
     const calls = mockFetch();
     await worker.fetch(post({ ...good, team_size: size, interest: 'Not sure yet' }), env);
     const p = JSON.parse(calls.find((c) => c.url.includes('notion')).init.body).properties;

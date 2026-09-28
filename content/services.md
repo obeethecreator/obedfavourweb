@@ -3,7 +3,7 @@ title = "Services"
 date = '2026-05-16T14:09:16+01:00'
 lastmod = '2026-09-27T12:00:00+01:00'
 draft = false
-description = "Services for marketing agencies: AI Ops Audit, Owner Pipeline System, Delivery Automation Sprints (client reporting, content production, review management) and a Support Retainer. Built in n8n, handed over and supported."
+description = "Services for marketing agencies: AI Ops Audit, Owner Pipeline System, Delivery Automation Sprints (client reporting, content production, review management) and a Support Retainer. Built on the right stack for your business, handed over and supported."
 +++
 
 I build AI systems for marketing agencies with 5 to 30 staff. Every engagement starts small, has a fixed scope, and is measured against one number agreed up front.
@@ -46,6 +46,8 @@ For agency owners whose new business depends on finding time to post. A voice-tr
 
 One system that removes a recurring job from your team, built in two to three weeks inside your own accounts.
 
+Built on the right stack for your business: n8n, Cloudflare Workers, the Notion API, Telegram bots, OpenAI and Cloudflare Workers AI models, and the tools you already use.
+
 - **Client reporting:** data pulled, summary written, report sent on schedule
 - **Content production pipeline:** brief → draft → your team's approval → scheduled post
 - **Review management for local clients:** feedback collected and scored, reply drafts written, the right manager alerted
@@ -71,9 +73,9 @@ Tools change and systems drift. The retainer covers monitoring, error alerts, fi
 
 ## Frequently asked questions
 
-### Do I need to use n8n already?
+### Do I need any particular tools?
 
-No. I build in n8n because it can be self-hosted, it's cheap to run, and you own the workflows. I set it up in your accounts if you don't have it.
+No. I build on whatever fits: n8n, Cloudflare Workers, direct API integrations, or the tools you already use. You own everything.
 
 ### Will my clients' data be safe?
 
@@ -89,7 +91,7 @@ Yes. Systems can be built under your agency's name for your own clients. We agre
 
 ### What time zone do you work in?
 
-I'm in Lagos (GMT+1). I work UK and European hours and overlap with US Eastern mornings.
+I work with clients across time zones and agree call times that suit you.
 
 ## Founders and creators
 

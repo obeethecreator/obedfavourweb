@@ -32,14 +32,12 @@ That is what I now build for agencies.
 - **Honest proof.** Real numbers only. If something is a demo or a reference build rather than client work, I say so.
 - **Nothing breaks quietly.** Every system ships with error alerts and a written handover.
 
-I'm based in Lagos, Nigeria (GMT+1), so I work UK and European hours and overlap with US mornings.
-
 ---
 
 ## Background
 
 - Growth marketing: YouTube growth at Great Grace TV, community-led growth at Ayoken, lean Meta Ads campaigns
-- AI automation: self-hosted n8n, LLM workflows, LinkedIn and content systems
+- AI automation: n8n, Cloudflare Workers, Notion and Telegram integrations, LLM workflows, LinkedIn and content systems
 - Reference build: a Reputation and Feedback Intelligence Engine, built end to end in n8n and tested live, that scores customer feedback, drafts replies and alerts branch managers
 - TS Academy (Hajime cohort)
 - Certifications in SEO, content marketing, email marketing, Google Analytics and Google Digital Marketing Fundamentals
