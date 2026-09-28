@@ -29,7 +29,7 @@ That is what I now build for agencies.
 - **Small first.** Every engagement starts with a paid audit and a fixed-scope sprint, not a long retainer.
 - **One number.** We agree the metric a system has to move before I build it.
 - **Your accounts, your ownership.** I build inside your tools, credentials stay with you, and you own everything.
-- **Honest proof.** Real numbers only. If something is a demo or a capstone project, I say so.
+- **Honest proof.** Real numbers only. If something is a demo or a reference build rather than client work, I say so.
 - **Nothing breaks quietly.** Every system ships with error alerts and a written handover.
 
 I'm based in Lagos, Nigeria (GMT+1), so I work UK and European hours and overlap with US mornings.
@@ -40,7 +40,8 @@ I'm based in Lagos, Nigeria (GMT+1), so I work UK and European hours and overlap
 
 - Growth marketing: YouTube growth at Great Grace TV, community-led growth at Ayoken, lean Meta Ads campaigns
 - AI automation: self-hosted n8n, LLM workflows, LinkedIn and content systems
-- TS Academy (Hajime cohort) capstone: a Reputation and Feedback Intelligence Engine that scores customer feedback, drafts replies and alerts branch managers
+- Reference build: a Reputation and Feedback Intelligence Engine, built end to end in n8n and tested live, that scores customer feedback, drafts replies and alerts branch managers
+- TS Academy (Hajime cohort)
 - Certifications in SEO, content marketing, email marketing, Google Analytics and Google Digital Marketing Fundamentals
 
 [See the systems and case studies →](/portfolio/)

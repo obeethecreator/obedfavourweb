@@ -707,3 +707,29 @@ body.max-w-7xl {
   margin-inline: calc(50% - 50vw) !important;
   padding-inline: calc(50vw - 50%) !important;
 }
+
+/* ==========================================================================
+   Portfolio cards (2026-09-28): screenshot, problem, what it does, one checkable detail
+   ========================================================================== */
+.pf-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 1.5rem 0 2.5rem; }
+.pf-card { border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; background: var(--card-bg); min-width: 0; }
+.pf-wide { grid-column: 1 / -1; }
+.pf-title { font-size: 1.05rem; font-weight: 650; margin: 0.9rem 0 0.4rem; color: var(--text-primary); }
+.pf-line { font-size: 0.9rem; line-height: 1.55; margin-top: 0.4rem; color: var(--text-secondary); }
+.pf-line strong { color: var(--text-primary); }
+.pf-proof { border-left: 2px solid var(--accent-glow); padding-left: 0.6rem; }
+.pf-tag { display: inline-block; margin-left: 0.4rem; padding: 2px 8px; border-radius: 99px; font-size: 0.72rem; font-weight: 600; vertical-align: middle; color: var(--accent-text); border: 1px solid var(--accent-text); }
+.pf-thumbs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 10px; }
+.pf-shot { margin: 0 !important; }
+.prose .pf-shot img, .pf-shot img { width: auto !important; max-width: 100% !important; display: block !important; margin-inline: auto !important; height: auto !important; object-fit: contain !important; margin-block: 0 !important; border-radius: 8px !important; border: 1px solid var(--border-color); background: #1b1d22; cursor: zoom-in; }
+.pf-shot figcaption { font-style: normal !important; opacity: 0.75 !important; font-size: 0.8rem !important; }
+.pf-diagram { color: var(--text-primary); max-width: 760px; margin: 0.25rem auto 1rem; }
+.pf-diagram svg { display: block; width: 100%; height: auto; }
+@media (max-width: 767px) {
+  .pf-grid { grid-template-columns: 1fr; }
+  .pf-thumbs { grid-template-columns: 1fr; }
+  .pf-line, .pf-shot figcaption { font-size: 0.875rem !important; }
+  .pf-tag { font-size: 12px; }
+}
+.pf-diagram-tall { display: none !important; }
+@media (max-width: 767px) { .pf-diagram-wide { display: none !important; } .pf-diagram-tall { display: block !important; max-width: 360px; margin: 0 auto; } }
