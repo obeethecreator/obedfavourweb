@@ -46,7 +46,7 @@ For agency owners whose new business depends on finding time to post. A voice-tr
 
 One system that removes a recurring job from your team, built in two to three weeks inside your own accounts.
 
-Built on the right stack for your business: n8n, Cloudflare Workers, the Notion API, Telegram bots, OpenAI and Cloudflare Workers AI models, and the tools you already use.
+Built on tools that actually last — reliable, widely-used infrastructure (n8n, Cloudflare, Notion, Telegram, OpenAI) rather than a fragile stack of duct-taped plugins — plus whatever you already use.
 
 - **Client reporting:** data pulled, summary written, report sent on schedule
 - **Content production pipeline:** brief → draft → your team's approval → scheduled post
@@ -79,7 +79,7 @@ No. I build on whatever fits: n8n, Cloudflare Workers, direct API integrations, 
 
 ### Will my clients' data be safe?
 
-I build inside your accounts wherever possible, keep AI provider data sharing switched off, and never run client work on shared or training-enabled projects. You own everything I build.
+I build inside your own accounts wherever possible, and I keep your data out of any AI model's training set — your client work is never shared or reused. You own everything I build.
 
 ### What if the system breaks after handover?
 
