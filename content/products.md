@@ -28,6 +28,20 @@ description = "Tools and systems built from real client work — starting with t
     <span style="display:inline-block;background:#FF4D2E;color:#fff;padding:13px 30px;border-radius:8px;font-size:14px;font-weight:700;">Get the guide &#8594;</span>
   </div>
 </a>
+<a href="/obee/guide/" style="text-decoration:none;display:block;margin-bottom:2.5rem;">
+  <div class="card-hover" style="background:linear-gradient(135deg,#0A1628 0%,#16263d 100%);border:1px solid rgba(255,77,46,0.4);border-radius:16px;padding:2.5rem;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#FF4D2E;"></div>
+    <div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#FFB020;margin-bottom:12px;font-weight:700;">Available Now</div>
+    <div style="font-size:1.6rem;font-weight:700;margin-bottom:10px;line-height:1.25;color:#ffffff;">Build Your Own AI LinkedIn Posting Agent</div>
+    <div style="font-size:0.95rem;opacity:0.85;line-height:1.7;margin-bottom:1.5rem;color:#A8C4E8;max-width:640px;">The step-by-step guide to building your own self-hosted AI agent that researches, writes, and posts to LinkedIn for you — no coding required. Just $5.</div>
+    <div style="display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.5rem;">
+      <span style="background:rgba(255,77,46,0.12);border:1px solid rgba(255,77,46,0.25);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#FF6B4F;">For Founders</span>
+      <span style="background:rgba(255,77,46,0.12);border:1px solid rgba(255,77,46,0.25);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#FF6B4F;">LinkedIn</span>
+      <span style="background:rgba(255,77,46,0.12);border:1px solid rgba(255,77,46,0.25);border-radius:20px;padding:3px 10px;font-size:0.75rem;color:#FF6B4F;">AI Automation</span>
+    </div>
+    <span style="display:inline-block;background:#FF4D2E;color:#fff;padding:13px 30px;border-radius:8px;font-size:14px;font-weight:700;">Get the guide &#8594;</span>
+  </div>
+</a>
 <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-bottom:3rem;">
 
   <div class="card-hover" style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.2);border-radius:16px;padding:2rem;position:relative;">
