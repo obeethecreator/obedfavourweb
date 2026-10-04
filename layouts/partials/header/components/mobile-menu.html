@@ -1,5 +1,10 @@
-{{- /* Override of Blowfish mobile-menu.html. Same dialog/peer-checked mechanics and element ids the theme's JS expects (#search-button-mobile, #appearance-switcher-mobile, #mobile-menu-toggle), with 44px buttons, 48px link rows, and the CTA as a full-width button at the bottom of the panel. */ -}}
+{{- /* Override of Blowfish mobile-menu.html. Same dialog/peer-checked mechanics and element ids the theme's JS expects (#search-button-mobile, #appearance-switcher-mobile, #mobile-menu-toggle), with 44px buttons, 48px link rows, and the CTA as a full-width button at the bottom of the panel. The CTA is also shown in the bar itself (.site-mobile-cta) wherever it fits (480px and up, see custom.css). */ -}}
 <div class="site-mobile-tools">
+  {{ range .Site.Menus.main }}
+    {{ if .Params.cta }}
+      <a href="{{ .URL }}" class="btn btn-primary btn-sm site-mobile-cta">{{ .Name | markdownify }}</a>
+    {{ end }}
+  {{ end }}
   {{ if .Site.Params.enableSearch | default false }}
     <button
       id="search-button-mobile"

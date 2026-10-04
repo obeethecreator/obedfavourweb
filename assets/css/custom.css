@@ -278,9 +278,12 @@ body.max-w-7xl {
   object-fit: cover;
 }
 .site-actions { margin-left: auto; display: flex; align-items: center; min-width: 0; }
+/* Desktop nav from 1024px only: 6 links + search + theme + CTA need ~830px plus the
+   wordmark, so between 768 and 1023px it overflowed the viewport. Below 1024px the
+   mobile bar is used, with the CTA kept visible in the bar where it fits. */
 .site-show-desktop { display: none; }
 .site-show-mobile { display: flex; }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .site-show-desktop { display: flex; }
   .site-show-mobile { display: none; }
 }
@@ -343,20 +346,10 @@ body.max-w-7xl {
 .site-icon-btn svg { width: 18px; height: 18px; }
 .site-icon-btn svg { fill: currentColor; }
 
-/* --- Compact desktop nav (768-1023px): tighter spacing, no wordmark avatar, still one line each --- */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .site-bar { gap: 16px; }
-  .site-brand-avatar { display: none; }
-  .site-nav { gap: 2px; }
-  .site-nav-link { padding: 0 8px; }
-  .site-nav-link.is-active::after { left: 8px; right: 8px; }
-  .site-nav-tools { margin-left: 4px; }
-  .site-cta { margin-left: 8px; }
-  .btn-sm { padding: 0 14px; }
-}
-
 /* --- Mobile: 44px buttons, full-width panel, 48px link rows, CTA button at the bottom --- */
 .site-mobile-tools { display: flex; align-items: center; gap: 4px; }
+.site-mobile-tools .site-mobile-cta { display: none; margin-right: 4px; }
+@media (min-width: 480px) { .site-mobile-tools .site-mobile-cta { display: inline-flex; } }
 .site-mobile-tools .site-icon-btn { width: 44px; height: 44px; }
 .site-mobile-nav { display: flex; flex-direction: column; max-width: 28rem; margin: 0 auto; }
 .site-mobile-link {
@@ -417,7 +410,7 @@ label[for="mobile-menu-toggle"] ~ div svg path {
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
-.btn-sm { height: 40px; padding: 0 18px; }
+.btn-sm { height: 44px; padding: 0 18px; }
 .btn-block { width: 100%; }
 .btn-primary {
   background: var(--btn-primary-bg);
@@ -573,7 +566,9 @@ section div[style*="font-size: clamp(2rem"] {
 }
 .stat-value { font-size: 2.25rem; font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; color: var(--text-primary); white-space: nowrap; }
 .stat-label { margin-top: 0.4rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); }
-@media (max-width: 767px) { .home-stats-grid { gap: 0.5rem; } .stat-value { font-size: 1.5rem; } .stat-label { font-size: 0.625rem; letter-spacing: 0.06em; text-align: center; } .tech-card.stat-card { padding: 0.5rem 0.5rem !important; } }
+@media (max-width: 767px) { .home-stats-grid { gap: 0.5rem; } .stat-value { font-size: 1.5rem; } .stat-label { font-size: 0.75rem; letter-spacing: 0.06em; text-align: center; } .tech-card.stat-card { padding: 0.5rem 0.75rem !important; } }
+/* Phones: 2 x 2 (third card spans the row) so labels get room at 12px */
+@media (max-width: 639px) { .home-stats-grid { grid-template-columns: 1fr 1fr; } .home-stats-grid > :nth-child(3) { grid-column: 1 / -1; } .tech-card.stat-card { min-height: 104px; } }
 .post-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
 .tech-card.post-card { padding: 1.5rem !important; display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; min-height: 132px; text-decoration: none; color: var(--text-primary); }
 .post-card-title { font-size: 1.05rem; font-weight: 600; line-height: 1.4; }
@@ -593,3 +588,161 @@ section div[style*="font-size: clamp(2rem"] {
 .site-footer-social { display: flex; gap: 4px; margin-right: -8px; }
 .site-footer-copy { margin: 1rem 0 0; font-size: 0.8125rem; color: var(--text-muted); }
 .site-footer-link:focus-visible { outline: 2px solid var(--accent-glow); outline-offset: 2px; }
+
+/* ==========================================================================
+   Responsive pass (2026-09-27): nothing wider than the viewport at 320px,
+   no text under 12px on phones, 44px buttons, anchors clear the fixed header.
+   ========================================================================== */
+
+/* Header background layer measured 1px wider than its parent; pin it to the parent's width */
+#menu-blur { left: 0 !important; right: auto !important; width: 100% !important; }
+
+/* Mobile bar (below 1024px): tighter gap between wordmark and tools */
+@media (max-width: 1023px) { .site-bar { gap: 12px; } }
+
+/* Small phones: 16px gutters; below 360px drop the wordmark avatar so search + theme + menu
+   (3 x 44px) still fit beside the name at 320px */
+@media (max-width: 399px) {
+  :root { --gutter: 16px; }
+  .site-mobile-tools { gap: 0; }
+}
+@media (max-width: 359px) { .site-brand-avatar { display: none; } }
+
+/* In-page anchors (e.g. /agencies/#call) land below the fixed header instead of under it */
+[id], :target { scroll-margin-top: calc(var(--header-h) + 16px); }
+
+/* Long URLs and words wrap instead of widening the column; wide tables and code scroll inside themselves */
+.prose, .prose * { overflow-wrap: break-word; }
+.prose a { word-break: break-word; }
+.prose pre { max-width: 100%; overflow-x: auto; }
+main, article, .prose { min-width: 0; }
+
+@media (max-width: 767px) {
+  .prose table { display: block; max-width: 100%; overflow-x: auto; }
+
+  /* CTA buttons may wrap to two lines rather than run past the edge (they are nowrap on desktop) */
+  .btn {
+    height: auto;
+    min-height: 44px;
+    max-width: 100%;
+    padding-block: 10px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.25;
+  }
+  .prose a[style*="padding:14px"], .prose a[style*="padding:12px"] { max-width: 100%; white-space: normal; min-height: 44px; }
+
+  /* 12px minimum text on phones (inline eyebrow labels, badges, the theme's "Author" label) */
+  span[style*="font-size: 0.725rem"], div[style*="font-size: 0.725rem"],
+  span[style*="font-size: 0.75rem"], div[style*="font-size: 0.75rem"],
+  .prose [style*="font-size:11px"], .prose [style*="font-size: 11px"],
+  .prose [style*="font-size:10px"], .prose [style*="font-size: 10px"],
+  .text-\[0\.6rem\] { font-size: 12px !important; line-height: 1.35; }
+
+  /* Intake form: full width, 16px text (stops iOS zooming the page on focus), 44px tall fields */
+  .prose form input, .prose form select, .prose form textarea, .prose form button {
+    width: 100% !important;
+    max-width: 100%;
+    min-height: 44px;
+    font-size: 16px !important;
+  }
+}
+
+/* Theme heading "#" anchor links sit 24px left of the heading (-start-6), past the page's
+   left edge on phones; hide them below 768px (headings keep their ids for deep links) */
+@media (max-width: 767px) {
+  :is(h1, h2, h3, h4, h5, h6) > span.not-prose.-start-6 { display: none; }
+}
+
+/* ==========================================================================
+   Wide-desktop layout (2026-09-28)
+   Blowfish renders <body class="flex flex-col h-screen m-auto max-w-7xl ...">, and the overflow-x rule on
+   html/body above turned the body into a fixed-height scroll container: the page sat in a 1200px column with
+   its own scrollbar beside the content, and window scroll listeners (header blur, scroll-to-top) never fired.
+   Here the document scrolls normally (one native scrollbar at the window edge), the body spans the viewport,
+   and only the content is held in the centred container.
+   ========================================================================== */
+html {
+  height: auto !important;
+  overflow-x: clip !important;           /* clip, not hidden: no scroll container, so the window scrolls */
+  overflow-y: visible !important;
+  background-color: var(--bg-primary) !important;
+}
+body,
+body.max-w-7xl {
+  height: auto !important;                /* undo h-screen */
+  min-height: 100vh;
+  width: 100% !important;
+  max-width: none !important;             /* undo max-w-7xl */
+  margin: 0 !important;
+  padding-inline: 0 !important;
+  overflow: visible !important;
+  overflow-x: clip !important;
+}
+
+/* Readable content stays in the same centred container the header uses */
+#main-content {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  box-sizing: border-box;
+}
+
+/* Footer: border and background span the window, its content lines up with the container */
+.site-footer {
+  padding-inline: max(var(--gutter), calc((100% - var(--container-max)) / 2 + var(--gutter)));
+}
+
+/* Homepage: the wrapper's inline overflow would clip the full-width bands */
+#main-content > div[style*="min-height: 100vh"] { overflow: visible !important; background-color: transparent !important; }  /* same colour as the page; transparent so it isn't a column-width band */
+
+/* Full-width bands: background from window edge to window edge, content still inside the container.
+   calc(50% - 50vw) pulls the band out of the container; the matching padding puts the content back. */
+#main-content > div > section:first-of-type,
+#main-content article > section:first-of-type,   /* inner pages: the first section carries the grid texture (section:first-of-type rule above) */
+.home-stats {
+  width: auto !important;
+  max-width: none !important;             /* the article section carries max-w-full */
+  margin-inline: calc(50% - 50vw) !important;
+  padding-inline: calc(50vw - 50%) !important;
+}
+
+/* ==========================================================================
+   Portfolio cards (2026-09-28): screenshot, problem, what it does, one checkable detail
+   ========================================================================== */
+.pf-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 1.5rem 0 2.5rem; }
+.pf-card { border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; background: var(--card-bg); min-width: 0; }
+.pf-wide { grid-column: 1 / -1; }
+.pf-title { font-size: 1.05rem; font-weight: 650; margin: 0.9rem 0 0.4rem; color: var(--text-primary); }
+.pf-line { font-size: 0.9rem; line-height: 1.55; margin-top: 0.4rem; color: var(--text-secondary); }
+.pf-line strong { color: var(--text-primary); }
+.pf-proof { border-left: 2px solid var(--accent-glow); padding-left: 0.6rem; }
+.pf-tag { display: inline-block; margin-left: 0.4rem; padding: 2px 8px; border-radius: 99px; font-size: 0.72rem; font-weight: 600; vertical-align: middle; color: var(--accent-text); border: 1px solid var(--accent-text); }
+.pf-thumbs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 10px; }
+.pf-shot { margin: 0 !important; }
+.prose .pf-shot img, .pf-shot img { width: auto !important; max-width: 100% !important; display: block !important; margin-inline: auto !important; height: auto !important; object-fit: contain !important; margin-block: 0 !important; border-radius: 8px !important; border: 1px solid var(--border-color); background: #1b1d22; cursor: zoom-in; }
+.pf-shot figcaption { font-style: normal !important; opacity: 0.75 !important; font-size: 0.8rem !important; }
+.pf-diagram { color: var(--text-primary); max-width: 760px; margin: 0.25rem auto 1rem; }
+.pf-diagram svg { display: block; width: 100%; height: auto; }
+@media (max-width: 767px) {
+  .pf-grid { grid-template-columns: 1fr; }
+  .pf-thumbs { grid-template-columns: 1fr; }
+  .pf-line, .pf-shot figcaption { font-size: 0.875rem !important; }
+  .pf-tag { font-size: 12px; }
+}
+.pf-diagram-tall { display: none !important; }
+@media (max-width: 767px) { .pf-diagram-wide { display: none !important; } .pf-diagram-tall { display: block !important; max-width: 360px; margin: 0 auto; } }
+/* "Click to enlarge" badge on every portfolio workflow image (opens full size in the shot-lightbox) */
+.pf-shot { position: relative; }
+.pf-shot::before {
+  content: "Click to enlarge";
+  position: absolute; top: 8px; right: 8px; z-index: 1;
+  padding: 3px 8px; border-radius: 99px;
+  font-size: 12px; font-weight: 600; line-height: 1.4;
+  color: #fff; background: rgba(0, 0, 0, 0.65); border: 1px solid rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+}
+.pf-overview { margin-top: 10px !important; }
+/* the global img { max-width: 100% !important } rule would shrink lightbox shots to the screen; they open at real size and the overlay scrolls */
+#shot-lightbox-img { max-width: none !important; max-height: none !important; width: auto !important; height: auto !important; }

@@ -1,5 +1,5 @@
 +++
-title = "Title: Google Just Handed Out Free AI-Search Real Estate. Most Sites Aren't Even Eligible."
+title = "Google Just Handed Out Free AI-Search Real Estate. Most Sites Aren't Even Eligible."
 date = '2026-08-06T11:02:09+01:00'
 draft = false
 description = "Google quietly rolled out a system where getting picked once as a trusted source gets your content automatically badged and surfaced across Top Storie"

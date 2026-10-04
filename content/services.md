@@ -1,221 +1,103 @@
 +++
 title = "Services"
 date = '2026-05-16T14:09:16+01:00'
+lastmod = '2026-09-27T12:00:00+01:00'
 draft = false
-description = "The Attention → Trust → Revenue system, done for you: content, automation, and conversion infrastructure that took one channel from 3K to 67K+ subscribers and helped raise $1.4M — without ad spend."
+description = "Services for marketing agencies: AI Ops Audit, Owner Pipeline System, Delivery Automation Sprints (client reporting, content production, review management) and a Support Retainer. Built on the right stack for your business, handed over and supported."
 +++
 
-<div style="text-align:center;margin:1rem 0 2.5rem;">
-  <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a 1-on-1 Call →</a>
-  <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
+I build AI systems for marketing agencies with 5 to 30 staff. Every engagement starts small, has a fixed scope, and is measured against one number agreed up front.
+
+<div style="text-align:center;margin:1.5rem 0 2.5rem;">
+  <a href="/agencies/#call" class="btn btn-primary">Book a 30-Minute Intro Call →</a>
 </div>
 
-## The Attention → Trust → Revenue System
-
-I help funded founders and consultants who've already built something real get found by the people who'd pay for it — without ad spend.
-
-Most founders and consultants don't have a building problem — they have an attention problem. I build the organic Attention → Trust → Revenue system — content, automation, and conversion infrastructure — that took one YouTube channel from 3,000 to 67,000+ subscribers (**2,100% growth, 10M+ organic views**) and helped a startup raise **$1.4M**, all without paid ads.
-
-## YouTube Growth — Choose Your Level
-
-YouTube is one of the strongest acquisition channels available, and it's where this system was proven. Whether you're a solopreneur filming on your phone or an org with a full team, there's an entry point built for you. Same proven framework. Different levels of done-for-you.
-
-*Related reading: [How to Get Customers From YouTube](/posts/how-to-get-customers-from-youtube/) · [How to Get Clients From YouTube (Even With a Small Channel)](/posts/how-to-get-clients-from-youtube/) · [YouTube Lead Generation for B2B](/posts/youtube-lead-generation-b2b/)*
+## The offers
 
 <div class="tech-card">
 
-### 🔍 The Growth Audit
+### 1. AI Ops Audit — from $300
 
-The fastest way to find out exactly why your channel is stuck — and the 90-day plan to fix it.
+A paid working session, not a sales call. We map three of your agency's recurring workflows, estimate the hours and cost of each, and agree which one is worth automating first.
 
-- Full teardown: positioning, packaging, titles & thumbnails
-- Retention and watch-time diagnosis
-- Funnel gap analysis (where views leak instead of convert)
-- Prioritised 90-day action plan you can run yourself
-
-**Best for:** Solopreneurs and founders who want clarity and proof before going all in.
+- Three workflows mapped, step by step
+- Hours-saved estimate for each
+- A build plan with scope, timeline and price
+- **Credited in full** against a build sprint if you go ahead
 
 </div>
 
 <div class="tech-card">
 
-### 🗺️ The Channel Blueprint
+### 2. Owner Pipeline System — from $1,500
 
-I build the strategy. You execute. Everything you need to stop guessing and start growing.
+For agency owners whose new business depends on finding time to post. A voice-trained LinkedIn engine that researches topics your buyers care about, drafts in your voice, and publishes only after your approval.
 
-- Niche & positioning lock — own a lane instead of blending in
-- Content pillars and a 30-video title-and-hook bank
-- Thumbnail templates that earn the click
-- A complete SOP so your system runs without me
-
-**Best for:** Solopreneurs and lean founders with the time to execute — once they finally know what works.
+- Voice profile built from your own writing
+- Topic research tuned to your ideal client
+- Approval step before anything goes live
+- Handover guide so you can adjust it yourself
 
 </div>
 
 <div class="tech-card">
 
-### 🤝 Done-With-You Growth Partnership
+### 3. Delivery Automation Sprint — from $1,500
 
-Your team films. I steer the growth engine every single month.
+One system that removes a recurring job from your team, built in two to three weeks inside your own accounts.
 
-- Monthly strategy and content direction
-- Hook & script review before you hit record
-- Packaging optimised on every upload
-- Monthly growth report tied to real numbers, not vanity metrics
+Built on tools that actually last — reliable, widely-used infrastructure (n8n, Cloudflare, Notion, Telegram, OpenAI) rather than a fragile stack of duct-taped plugins — plus whatever you already use.
 
-**Best for:** Funded founders, organisations with an in-house creator, and agencies who want a growth specialist behind their team — including white-label.
+- **Client reporting:** data pulled, summary written, report sent on schedule
+- **Content production pipeline:** brief → draft → your team's approval → scheduled post
+- **Review management for local clients:** feedback collected and scored, reply drafts written, the right manager alerted
+
+Every sprint ships with error alerts, a backup and a written handover.
 
 </div>
 
 <div class="tech-card">
 
-### 🚀 Done-For-You Channel Management
+### 4. Support Retainer — from $500 a month
 
-You show up and film. I run everything else.
-
-- End-to-end channel strategy and execution
-- Packaging, optimisation, and retention engineering
-- Full views-to-revenue funnel build
-- The whole growth system, handled — so you don't touch it
-
-**Best for:** Organisations and funded founders who want the results without the workload. *Limited slots — capacity is intentionally small so every channel gets the attention it needs.*
+Tools change and systems drift. The retainer covers monitoring, error alerts, fixes, and one improvement every month.
 
 </div>
+
+## How an engagement runs
+
+1. **Intro call (30 min, free).** We look at where your team's hours go.
+2. **AI Ops Audit.** Three workflows mapped, one chosen, a fixed-price plan.
+3. **Build sprint.** Two to three weeks. You approve before anything touches a client.
+4. **Handover and support.** Written docs, a walkthrough, and optional monthly support.
+
+## Frequently asked questions
+
+### Do I need any particular tools?
+
+No. I build on whatever fits: n8n, Cloudflare Workers, direct API integrations, or the tools you already use. You own everything.
+
+### Will my clients' data be safe?
+
+I build inside your own accounts wherever possible, and I keep your data out of any AI model's training set — your client work is never shared or reused. You own everything I build.
+
+### What if the system breaks after handover?
+
+Every build ships with error alerts, so a failure is flagged the moment it happens. The Support Retainer covers fixes; without it, fixes are quoted as they come.
+
+### Can you white-label this for my clients?
+
+Yes. Systems can be built under your agency's name for your own clients. We agree how that works during the audit.
+
+### What time zone do you work in?
+
+I work with clients across time zones and agree call times that suit you.
+
+## Founders and creators
+
+If you came here from my book, *Built the Product. Now Get Customers.*, the [60-minute 1:1 consultation ($249)](https://selar.com/74i4823703) is still available. See [the book](/products/) for details.
 
 <div style="text-align:center;margin:2rem 0;">
-  <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Find Your Starting Point →</a>
-  <div style="font-size:12px;opacity:0.5;margin-top:12px;">One call. We'll find the right level for where you are.</div>
+  <a href="/agencies/#call" class="btn btn-primary">Book a 30-Minute Intro Call →</a>
+  <div style="font-size:12px;opacity:0.6;margin-top:12px;">Or email <strong>hello@obedfavour.com</strong></div>
 </div>
-
-## The Rest of the System
-
-YouTube is one lever — but attention rarely lives on one platform, and it shouldn't run entirely by hand either. When you need the full Attention → Trust → Revenue system, these are the supporting systems I build.
-
-<div class="tech-card">
-
-### 📱 Social Media Growth
-
-Turn your social media into a real acquisition channel. I build content systems that grow your audience organically and convert followers into customers.
-
-- Short-form video strategy (Reels, Shorts, TikTok)
-- YouTube growth & SEO
-- Content repurposing frameworks
-- Platform-specific distribution strategy
-
-**Result:** Grew a YouTube channel from 3,000 → 67,000+ subscribers (2,100%) and Instagram from 3,000 → 28,000+ followers with zero ad spend.
-
-</div>
-
-<div class="tech-card">
-
-### 📊 Full-Funnel Content Strategy
-
-Most brands create content. Few create content that converts. I design ToFu → MoFu → BoFu content funnels that move people from discovery to decision.
-
-- Audience research & content planning
-- Hook writing & SEO-optimised copy
-- Content calendar management
-- Weekly A/B testing & performance reporting
-
-**Result:** Generated 10M+ organic views and drove 3,000+ in-person event attendees through content alone.
-
-</div>
-
-<div class="tech-card">
-
-### 💰 Paid Social (Meta Ads)
-
-Every naira and dollar of your ad budget should work hard. I run lean, high-ROI Meta Ads campaigns built for maximum reach and minimum spend.
-
-- Campaign strategy & audience targeting
-- Ad creative & copywriting
-- Budget optimisation
-- Analytics & KPI reporting
-
-**Result:** Achieved $0.01 CPC — 1M+ impressions and 100,000+ link clicks on a $1,000 budget.
-
-</div>
-
-<div class="tech-card">
-
-### 🤖 AI Automation & Systems
-
-Stop doing manually what a system can do for you. I build AI-powered workflows that save time, reduce costs, and let your business run growth on autopilot.
-
-- Marketing automation setup
-- Content workflow automation
-- AI tools integration
-- Standard Operating Procedures (SOPs)
-
-**Result:** Clients reclaim 10+ hours per week through automated systems.
-
-*Related reading: [LinkedIn AI Posting Agent — A Real Case Study, Bugs Included](/posts/linkedin-ai-posting-agent-case-study/) · [RankYak Just Launched Full SEO Autopilot](/posts/automated-seo-software-for-small-business/)*
-
-</div>
-
-<div class="tech-card">
-
-### 🌐 Community Growth
-
-Build an audience that shows up, engages, and buys. I grow and manage online communities that become your most powerful marketing asset.
-
-- Discord & Telegram community setup
-- Onboarding flows & engagement systems
-- Cross-platform community campaigns
-- Web3 & NFT community management
-
-**Result:** Helped drive a $1.4M pre-seed fundraise through community-led acquisition at Ayoken NFT Marketplace.
-
-</div>
-
-## How It Works
-
-1. **Discovery Call** — We talk about your goals, challenges, and what success looks like for you
-2. **Strategy Session** — I map out a custom plan tailored to your brand
-3. **Execution** — I get to work, keep you updated, and deliver results
-4. **Review & Scale** — We review performance and double down on what works
-
-## Frequently Asked Questions
-
-### What's the difference between growth marketing and AI automation?
-
-Growth marketing focuses on getting more of the right people to find, trust, and buy from your brand — through content, funnels, and organic acquisition. AI automation focuses on removing manual work from the systems you already run, so growth doesn't require more hours from you. Most clients benefit from both working together.
-
-### Do I need a large following before this works?
-
-No. Several of the systems in this offer — funnel design, automation, paid social — work for brands at zero or near-zero following. The starting point is your goal, not your current audience size.
-
-### How fast will I see results?
-
-Growth audits and blueprints typically deliver a clear plan within 1–2 weeks. Full growth or automation builds usually show measurable movement within 30–90 days, depending on scope.
-
-## Let's Work Together
-
-Ready to grow your brand? Book a 1-on-1 call or fill out the form below.
-
-<div style="text-align:center;margin:1.5rem 0;">
-  <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Book a 1-on-1 Call →</a>
-  <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
-</div>
-
-<form action="https://formspree.io/f/mjglnqqv" method="POST" style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; max-width: 600px;">
-    <input type="text" name="name" placeholder="Your Name" required style="display:block; width:100%; padding: 10px; margin-top: 6px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
-    <input type="email" name="email" placeholder="Your Email" required style="display:block; width:100%; padding: 10px; margin-top: 6px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
-    <select name="service" style="display:block; width:100%; padding: 10px; margin-top: 6px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;">
-      <option value="">Select a service...</option>
-      <option value="Growth Audit">Growth Audit</option>
-      <option value="Channel Blueprint">Channel Blueprint</option>
-      <option value="Done-With-You Partnership">Done-With-You Partnership</option>
-      <option value="Done-For-You Management">Done-For-You Management</option>
-      <option value="Social Media Growth">Social Media Growth</option>
-      <option value="Content Strategy">Content Strategy</option>
-      <option value="Paid Social / Meta Ads">Paid Social / Meta Ads</option>
-      <option value="AI Automation">AI Automation</option>
-      <option value="Community Growth">Community Growth</option>
-      <option value="Something else">Something else</option>
-    </select>
-    <textarea name="message" rows="5" placeholder="Tell me about your brand and goals" required style="display:block; width:100%; padding: 10px; margin-top: 6px; border-radius: 6px; border: 1px solid #444; background: #1a1a2e; color: #fff; font-size: 15px;"></textarea>
-  <button type="submit" style="padding: 12px 28px; background: #2E75B6; color: #fff; border: none; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer;">Send Message 🚀</button>
-</form>
-
-📩 Or email me directly at **hello@obedfavour.com**

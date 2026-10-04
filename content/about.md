@@ -1,102 +1,66 @@
 +++
 title = "About"
 date = '2026-05-16T14:08:45+01:00'
+lastmod = '2026-09-27T12:00:00+01:00'
 draft = false
-description = "Meet Obed Favour Chukwuemeka, Attention Strategist — the system behind 10M+ organic views, 67K+ subscribers, and a $1.4M client raise."
+description = "Obed Favour Chukwuemeka builds AI delivery systems for marketing agencies. Growth marketer first: grew Great Grace TV's YouTube channel to 67K+ subscribers and supported Ayoken's $1.4M raise. Now builds and runs n8n automations."
 +++
 
-Most founders don't have a building problem. They have an attention problem.
+I build the AI systems that let small marketing agencies deliver more client work without hiring.
 
-They've shipped something real. It's good. It works. And almost nobody knows it exists yet. The effort is there — the system that gets it seen isn't.
-
-That's exactly where I come in.
+Most agencies I talk to have the same squeeze. Rates have barely moved. Clients expect more every quarter. The team already uses AI tools, but reports are still built by hand, content still gets pushed through five tabs, and new business still depends on the owner finding time to post. I turn the repeatable parts of that work into systems your team approves instead of rebuilds.
 
 ---
 
-## The longer version
+## How I got here
 
-My name is Obed Favour Chukwuemeka. I'm an attention strategist for founders — and for the past 4+ years I've been obsessed with one question: *how do you get the right people to actually notice what you've built?*
+My name is Obed Favour Chukwuemeka. I started as a growth marketer, and that still shapes how I build.
 
-Not vanity metrics. Not numbers that look good and do nothing. Real attention that compounds into trust, and trust that compounds into revenue.
+As Social Media Growth Marketer at **Great Grace TV**, I grew the channel from 3,000 to 67,000+ subscribers, with 10M+ lifetime views and 73M+ impressions. At **Ayoken**, a Web3 NFT marketplace, I built the Discord and Telegram communities from scratch and ran the community-led acquisition that contributed to a **$1.4M pre-seed raise**.
 
-I started in the trenches of YouTube growth — writing the titles, designing the thumbnails, studying retention, testing hooks until the numbers moved. And they moved. **I grew a channel 2,100% — from 3,000 to 67K+ subscribers — and engineered over 10M views into a funnel that converts.**
+Doing that work taught me where agency time really goes: the same research, the same reports, the same approvals, every week. So I started automating my own. Today my business runs on n8n workflows I built and maintain myself: a LinkedIn posting agent that publishes Monday to Saturday behind an automated voice check, a blog pipeline with a human approval gate, research digests, and error alerts. I write up every build, bugs included.
 
-But the deeper lesson wasn't the platform. It was the system underneath: Attention → Trust → Revenue. Get seen by the right people, earn their trust with what you deliver, and the revenue follows. That pipeline is the whole game — and it's what I build now, across YouTube, content, and AI-powered systems.
-
----
-
-## Who I work with
-
-I work best with **founders and builders** who've already built something worth noticing — but the market hasn't noticed yet.
-
-If any of these sound familiar, we should talk:
-
-- You've shipped a product or service you're proud of, and it's still mostly invisible
-- You're posting, building, showing up — but it's not translating into customers
-- You're doing everything manually and it's eating your week alive
-- You want real audience and real trust built before your next raise or launch — not just followers
+That is what I now build for agencies.
 
 ---
 
-## What I believe
+## How I work
 
-The world doesn't need more products. It needs fewer good things going unseen.
-
-Attention, earned honestly, doesn't just grow a business — it grows the right business, faster, without burning cash chasing people who were never going to buy. I don't do smoke and mirrors. I don't chase trends for the sake of it. I build systems rooted in data, content that earns attention rather than demanding it, and automation that removes the busywork so the work that matters gets done.
-
-> *"The best attention doesn't feel like marketing. The best systems don't feel like work."*
-
----
-
-## Proof it works
-
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0;">
-  <div class="tech-card" style="text-align:center;">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="10M+">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Views generated through organic attention systems</div>
-  </div>
-  <div class="tech-card" style="text-align:center;">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="67K+">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Subscribers built from scratch</div>
-  </div>
-  <div class="tech-card" style="text-align:center;">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="73M+">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Impressions engineered through packaging & SEO</div>
-  </div>
-</div>
-<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.5rem 0;">
-  <div class="tech-card" style="text-align:center;">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$1.4M">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">Pre-seed raise supported through community-led growth</div>
-  </div>
-  <div class="tech-card" style="text-align:center;">
-    <div style="font-size:32px;font-weight:600;color:inherit;" data-target="$0.01">0</div>
-    <div style="font-size:12px;opacity:0.6;margin-top:6px;line-height:1.4;">CPC achieved on a $1,000 Meta Ads budget</div>
-  </div>
-</div>
-
-Beyond YouTube, I've run high-ROI Meta Ads, built communities that backed a $1.4M raise, and set up AI automation that saves clients 10+ hours a week. Different levers, same job: turning attention into systems that compound.
-
-[See the full case studies →](/portfolio)
+- **Small first.** Every engagement starts with a paid audit and a fixed-scope sprint, not a long retainer.
+- **One number.** We agree the metric a system has to move before I build it.
+- **Your accounts, your ownership.** I build inside your tools, credentials stay with you, and you own everything.
+- **Honest proof.** Real numbers only. If something is a demo or a reference build rather than client work, I say so.
+- **Nothing breaks quietly.** Every system ships with error alerts and a written handover.
 
 ---
 
-## More from the blog
+## Background
 
-- [How to Get Your First 1,000 YouTube Subscribers (When It Feels Impossible)](/posts/first-1000-youtube-subscribers/)
-- [YouTube Lead Generation for B2B: From Views to Booked Calls](/posts/youtube-lead-generation-b2b/)
+- Growth marketing: YouTube growth at Great Grace TV, community-led growth at Ayoken, lean Meta Ads campaigns
+- AI automation: n8n, Cloudflare Workers, Notion and Telegram integrations, LLM workflows, LinkedIn and content systems
+- Reference build: a Reputation and Feedback Intelligence Engine, built end to end in n8n and tested live, that scores customer feedback, drafts replies and alerts branch managers
+- TS Academy (Hajime cohort)
+- Certifications in SEO, content marketing, email marketing, Google Analytics and Google Digital Marketing Fundamentals
+
+[See the systems and case studies →](/portfolio/)
+
+---
+
+## Build notes from the blog
+
 - [LinkedIn AI Posting Agent — A Real Case Study, Bugs Included](/posts/linkedin-ai-posting-agent-case-study/)
-- [GPT-6 Astra Just Launched. Here Is What Actually Changes For Founders](/posts/gpt-6-astra-for-business/)
+- [Most Businesses Automating Right Now Are Doing It Backwards](/posts/most-businesses-automating-right-now-are-doing-it-backwards/)
+- [How LinkedIn Just Declared War on AI Content, and Why I Built an Agent That Beats It Anyway](/posts/how-linkedin-just-declared-war-on-ai-content-and-why-i-built-an-agent-that-beats/)
+- [How to Save 10 Hours a Week With AI Automation (Without a Tech Background)](/posts/ai-automation-small-business-2026/)
 
 ---
 
-## Let's build something
+## Let's talk
 
-If you're ready to stop being invisible and start turning attention into customers — get a free Attention Audit and we'll spend time on exactly what's standing between you and being seen.
+If you run an agency with 5 to 30 people and want your team's hours back, book a 30-minute intro call. We'll look at where the time goes and whether a system would pay for itself.
 
 <div style="text-align:center;margin:2rem 0;">
-  <a href="https://selar.com/74i4823703" target="_blank" style="display:inline-block;background:#2E75B6;color:#fff;padding:14px 32px;border-radius:6px;font-size:15px;font-weight:500;text-decoration:none;letter-spacing:0.02em;">Get Your Free Attention Audit →</a>
-  <div style="font-size:12px;opacity:0.5;margin-top:12px;">60 min · 1-on-1 session · limited slots</div>
+  <a href="/agencies/#call" class="btn btn-primary">Book a 30-Minute Intro Call →</a>
 </div>
 
-Or [connect with me on LinkedIn](https://linkedin.com/in/obed-favour-speaks) if you want to follow along first — no pressure.
+Or [connect with me on LinkedIn](https://linkedin.com/in/obed-favour-speaks) and follow the builds first. I also write on [Substack](https://obeethecreator.substack.com).
