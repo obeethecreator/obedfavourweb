@@ -3,6 +3,9 @@ title = "Digital Products"
 date = '2026-05-16T14:09:27+01:00'
 draft = false
 slug = "products"
+# /guide/ was the From Zero to Live landing page (deleted 2026-06-17, 5aebf9f);
+# old posts may still link to it. Redirect to the current product list.
+aliases = ["/guide/"]
 description = "Tools and systems built from real client work — starting with the AQCE guide, the system that turns YouTube attention into paying customers, no ad spend required."
 +++
 
