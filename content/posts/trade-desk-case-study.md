@@ -1,7 +1,7 @@
 +++
 title = "Trade Desk: building a private trading dashboard with n8n and a Telegram bot"
 date = 2026-11-09
-draft = true
+draft = false
 description = "How I turned a trading journal spreadsheet into a private dashboard with a prop-firm-style P&L calendar, performance metrics and a Telegram logging bot, using n8n, Python and Cloudflare Access."
 tags = ["n8n", "automation", "telegram", "cloudflare", "google-sheets"]
 categories = ["Automation"]
