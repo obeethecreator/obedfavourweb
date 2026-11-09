@@ -25,6 +25,23 @@ The same kinds of systems I build for agencies and founders: content engines, pr
 <div class="pf-grid">
 <div class="pf-card pf-wide">
 <div class="pf-thumbs">
+<figure class="pf-shot"><img src="/portfolio/trade-desk/trade-desk-overview.jpg" width="1400" height="875" alt="Trade Desk dashboard: account switcher, equity curve and key stats" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Overview</figcaption></figure>
+<figure class="pf-shot"><img src="/portfolio/trade-desk/trade-desk-calendar.jpg" width="1400" height="851" alt="Trade Desk P&L calendar showing each trading day's result" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>P&amp;L calendar</figcaption></figure>
+<figure class="pf-shot"><img src="/portfolio/trade-desk/trade-desk-performance.jpg" width="1400" height="1047" alt="Trade Desk performance metrics: expectancy, profit factor, drawdown and monthly table" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Performance metrics</figcaption></figure>
+</div>
+<div class="pf-thumbs">
+<figure class="pf-shot pf-video"><video controls muted playsinline preload="none" poster="/portfolio/trade-desk/tour-poster.jpg" width="1280" height="720" style="width:100%;height:auto;border-radius:8px;"><source src="/portfolio/trade-desk/tour.mp4" type="video/mp4"></video><figcaption>30-second tour (demo data)</figcaption></figure>
+<figure class="pf-shot pf-video"><video controls muted playsinline preload="none" poster="/portfolio/trade-desk/log-poster.jpg" width="1280" height="900" style="width:100%;height:auto;border-radius:8px;"><source src="/portfolio/trade-desk/log.mp4" type="video/mp4"></video><figcaption>Logging a trade from the form</figcaption></figure>
+</div>
+<div class="pf-title">Trade Desk: a private trading dashboard with a Telegram bot</div>
+<div class="pf-line"><strong>Problem:</strong> A prop-firm trader's results sit in a spreadsheet, and the numbers that matter (expectancy, drawdown, daily P&amp;L) are slow to see and easy to get wrong.</div>
+<div class="pf-line"><strong>What it does:</strong> n8n reads the journal Google Sheet, a publish script recomputes the stats and cross-checks them against the sheet, and a dashboard shows account balances, an FTMO-style P&amp;L calendar and hedge-fund-style metrics. Trades can be logged from the dashboard or a Telegram bot.</div>
+<div class="pf-line pf-proof"><strong>Detail:</strong> Works for any account type (demo, evaluation, funded, live, failed). It sits behind Cloudflare Access, the log endpoint verifies the login token and refuses closed accounts, and a failed cross-check blocks the publish. Screenshots and videos here use synthetic demo data, not my real results.</div>
+<div class="pf-line"><a href="/posts/trade-desk-case-study/">Read the build write-up →</a></div>
+</div>
+
+<div class="pf-card pf-wide">
+<div class="pf-thumbs">
 <figure class="pf-shot"><img src="/portfolio/automation/autopilot-late-slot-guard.jpg" width="740" height="408" alt="Autopilot late-slot guard: Start Jitter, Guard Decision and the skipped-slot notice" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Late-slot guard</figcaption></figure>
 <figure class="pf-shot"><img src="/portfolio/automation/autopilot-voice-check-loop.jpg" width="1474" height="402" alt="Autopilot voice-check loop: draft, precheck, judge and retry" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Voice-check loop</figcaption></figure>
 <figure class="pf-shot"><img src="/portfolio/automation/autopilot-approval-gate.jpg" width="667" height="408" alt="Autopilot approval gate: Telegram approval before Publish to LinkedIn" loading="lazy" decoding="async" class="nozoom" onclick="openShotLightbox(this.src,this.alt)"><figcaption>Approval gate</figcaption></figure>
