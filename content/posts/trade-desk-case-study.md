@@ -2,7 +2,7 @@
 title = "Trade Desk: building a private trading dashboard with n8n and a Telegram bot"
 date = 2026-11-09
 draft = true
-description = "How I turned a trading journal spreadsheet into a private dashboard with an FTMO-style P&L calendar, performance metrics and a Telegram logging bot, using n8n, Python and Cloudflare Access."
+description = "How I turned a trading journal spreadsheet into a private dashboard with a prop-firm-style P&L calendar, performance metrics and a Telegram logging bot, using n8n, Python and Cloudflare Access."
 tags = ["n8n", "automation", "telegram", "cloudflare", "google-sheets"]
 categories = ["Automation"]
 +++
@@ -50,7 +50,7 @@ Trades can be logged from the dashboard or from Telegram. The endpoint verifies 
 
 ## What I would do differently
 
-- Add automated tests for the metric calculations earlier. I found several rounding and empty-cell bugs by looking at screenshots.
+- Add automated tests for the metric calculations earlier. I found several rounding and empty-cell bugs through a mix of screenshot review and automated checks.
 - Keep the sheet's empty cells truly empty; a stray formula result broke the publish gate once.
 
 ## What is next

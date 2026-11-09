@@ -35,7 +35,7 @@ The same kinds of systems I build for agencies and founders: content engines, pr
 </div>
 <div class="pf-title">Trade Desk: a private trading dashboard with a Telegram bot</div>
 <div class="pf-line"><strong>Problem:</strong> A prop-firm trader's results sit in a spreadsheet, and the numbers that matter (expectancy, drawdown, daily P&amp;L) are slow to see and easy to get wrong.</div>
-<div class="pf-line"><strong>What it does:</strong> n8n reads the journal Google Sheet, a publish script recomputes the stats and cross-checks them against the sheet, and a dashboard shows account balances, an FTMO-style P&amp;L calendar and hedge-fund-style metrics. Trades can be logged from the dashboard or a Telegram bot.</div>
+<div class="pf-line"><strong>What it does:</strong> n8n reads the journal Google Sheet, a publish script recomputes the stats and cross-checks them against the sheet, and a dashboard shows account balances, a prop-firm-style P&amp;L calendar and hedge-fund-style metrics. Trades can be logged from the dashboard or a Telegram bot.</div>
 <div class="pf-line pf-proof"><strong>Detail:</strong> Works for any account type (demo, evaluation, funded, live, failed). It sits behind Cloudflare Access, the log endpoint verifies the login token and refuses closed accounts, and a failed cross-check blocks the publish. Screenshots and videos here use synthetic demo data, not my real results.</div>
 <div class="pf-line"><a href="/posts/trade-desk-case-study/">Read the build write-up →</a></div>
 </div>
