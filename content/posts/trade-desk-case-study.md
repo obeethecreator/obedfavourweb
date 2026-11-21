@@ -62,7 +62,7 @@ When I ask for something to read, or tap "Suggest something to read", it looks i
 
 <figure><img src="/portfolio/trade-desk/trade-desk-coach-telegram.jpg" width="840" height="1856" alt="The coach in Telegram: a warm reply to an invented message, then two checked research papers suggested to read, each with a link" loading="lazy" decoding="async"><figcaption>The coach in Telegram, with reading suggestions from its checked library (invented conversation)</figcaption></figure>
 
-<figure><video controls muted playsinline preload="none" poster="/portfolio/trade-desk/assistant-coach-poster.jpg" width="420" height="760" style="max-width:420px;width:100%;height:auto;border-radius:8px;"><source src="/portfolio/trade-desk/assistant-coach.webm" type="video/webm">Your browser cannot play this video. The screenshots above show the same conversations.</video><figcaption>The assistant and the coach in Telegram, 23 seconds, no sound (demo data)</figcaption></figure>
+<figure><video controls muted playsinline preload="none" poster="/portfolio/trade-desk/assistant-coach-poster.jpg" width="420" height="760" style="max-width:420px;width:100%;height:auto;border-radius:8px;"><source src="/portfolio/trade-desk/assistant-coach.webm" type="video/webm"><source src="/portfolio/trade-desk/assistant-coach.mp4" type="video/mp4">Your browser cannot play this video. The screenshots above show the same conversations.</video><figcaption>The assistant and the coach in Telegram, 23 seconds, no sound (demo data)</figcaption></figure>
 
 ### The dashboard itself
 
