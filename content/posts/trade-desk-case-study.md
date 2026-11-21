@@ -1,60 +1,102 @@
 +++
-title = "Trade Desk: building a private trading dashboard with n8n and a Telegram bot"
+title = "Trade Desk: a private trading desk that keeps me to my own rules"
 date = 2026-11-09
+lastmod = 2026-11-21
 draft = false
-description = "How I turned a trading journal spreadsheet into a private dashboard with a prop-firm-style P&L calendar, performance metrics and a Telegram logging bot, using n8n, Python and Cloudflare Access."
-tags = ["n8n", "automation", "telegram", "cloudflare", "google-sheets"]
+description = "How I built a private trading dashboard and Telegram bot with a rules checklist, a transparent market bias panel, event and news alerts, a plain English assistant and a research grounded coach, using n8n, OpenAI with guards, Google Sheets and Cloudflare Access."
+tags = ["n8n", "automation", "telegram", "openai", "cloudflare", "google-sheets"]
 categories = ["Automation"]
 +++
 
-I trade prop-firm futures, and my journal lives in a Google Sheet. It was accurate but slow to read, so I built a private dashboard on top of it. This is how it fits together and what I would do differently.
+I trade futures on prop firm accounts, and I keep a journal in a Google Sheet. The journal was accurate, but it did not stop the mistakes that cost the most: taking a trade outside my plan, being surprised by a data release, or chasing a loss. So I built a private trading desk around the journal: a dashboard and a Telegram bot that keep me to my own rules, warn me before scheduled news, answer questions from my own records and help me reset when a trade goes wrong.
 
-*All screenshots and videos in this post use synthetic demo data. My real results are not shown.*
+This is my own tool and I run it on my own trading. It does not predict prices, give signals or tell me what to buy or sell. Nothing here is a claim about trading results.
 
-![Trade Desk overview](/portfolio/trade-desk/trade-desk-overview.jpg)
+*Every screenshot and video in this post uses invented demo data. My real accounts, trades and conversations are not shown.*
+
+![Trade Desk overview with demo data](/portfolio/trade-desk/trade-desk-overview.jpg)
 
 ## The problem
 
-Prop-firm accounts change status: evaluation, funded, live, failed. A tool tied to one account breaks when that account does. The numbers I wanted (daily P&L, drawdown against the firm's limit, expectancy) were scattered across tabs.
+Most trading damage is done in a few minutes: a trade taken because it looked good, a position open when inflation data comes out, a second trade taken to win back the first one. A spreadsheet records all of that afterwards. It does nothing at the moment it matters, and the numbers I wanted (daily profit and loss, drawdown against the firm's limit, how often I follow my own rules) were scattered across tabs.
 
-## How it works
+## What it does
 
-- **n8n workflows** read the journal sheet and expose a snapshot, log new trades, and run a Telegram bot (with an error handler and a daily journal reminder).
-- **A publish script** recomputes every stat from the raw trades, cross-checks the results against the sheet, scans for leaks, and only then writes the snapshot atomically. If the cross-check fails, nothing is published.
-- **The dashboard** is one static page. Account balances, the calendar and the performance section are calculated in the page from the trade list.
-- **Cloudflare Access** puts a one-time-PIN login in front of it, restricted to me.
+### A rules checklist I complete before I trade
 
-## Account-agnostic by design
+My trading rules are written down and versioned. Before each session I record the previous day's high, low and close for each instrument, and I write my trade ideas before a fixed deadline in New York. Ideas written later are marked late, and each trade is linked to the idea it followed. The dashboard's "My rules" card shows the rules and today's checklist, and the bot answers `/checklist` with the same picture.
 
-Every trade carries an account id. Accounts have a type and status, and optional limits (max drawdown, profit target). If an account fails, it stays in the history but the log form and the API refuse new trades against it.
+![My rules card with demo rules and today's checklist](/portfolio/trade-desk/trade-desk-myrules.jpg)
 
-![Failed account banner](/portfolio/trade-desk/trade-desk-failed-account.jpg)
+### A market bias panel that shows its working
 
-## The P&L calendar
+For the Nasdaq 100 (NQ and MNQ), the Dow (YM and MYM), the US dollar index, Bitcoin and Ether, the panel gives a daily lean (bullish, bearish or mixed) built from stated technical and macro signals: trend against moving averages, momentum, the previous day's range, Treasury yields, the dollar and volatility. Every card says how many signals agree, lists each signal in plain words, keeps the 08:30 New York snapshot, and tracks how often the lean matched the session, with a small sample warning until there are enough days to mean anything. It is a transparent summary, not advice and not a signal.
 
-Each day shows what I gained or lost, in the style of prop-firm dashboards, with weekly totals.
+The data is public and keyless by design. Crypto prices are live from public exchange feeds. Index and dollar inputs are daily figures from the St. Louis Fed (FRED), and they become live quotes only when I add an optional market data key. A daily lean does not need tick data, and this keeps the tool free to run.
 
-![P&L calendar](/portfolio/trade-desk/trade-desk-calendar.jpg)
+![Market bias panel with demo data](/portfolio/trade-desk/trade-desk-bias.jpg)
 
-## Performance metrics
+### Alerts for scheduled data and breaking news
 
-Win rate, expectancy (in dollars and R), profit factor, payoff ratio, Kelly, max drawdown, recovery factor, Sharpe, Sortino, Calmar, SQN, streaks and a monthly table. Sample-size warnings show when there are too few trades to trust a number.
+The bot sends a countdown 15 and 2 minutes before high impact US releases such as inflation, jobs and Fed decisions, and a briefing of the day's events at 08:00 New York. A news watcher polls official feeds and news sources, removes duplicates, and asks a model to score each new headline for how likely it is to move the index futures. Only high scores become alerts, with hourly and daily caps, a cooldown per topic and a mute command. Every alert ends with "Heads up only. Not a trade signal."
+
+![Alerts in Telegram: a data release countdown and a breaking news alert (demo)](/portfolio/trade-desk/trade-desk-alerts-telegram.jpg)
+
+### A plain English assistant that asks before it writes
+
+I can ask the bot questions in plain English ("how did I do this week?", "what's on the calendar?") and it answers from the journal. When a message would change something, such as logging a trade, it shows what it understood and writes nothing until I confirm. Every message gets exactly one reply, and the exact commands (`/rules`, `/stats`, `/checklist` and others) work the way they always did.
+
+![The assistant in Telegram answering from the journal and asking before logging a trade (demo)](/portfolio/trade-desk/trade-desk-assistant-telegram.jpg)
+
+### A coach grounded in cited research, with a safety check first
+
+When a loss or a broken rule gets to me, I can talk it through with a trading psychology coach in Telegram or on the dashboard. A safety check runs before anything else: if a message suggests a crisis, the coach steps out of coaching, points to real help and pauses its check ins, and that message is never sent to a model or stored. Research ideas come only from a small library of checked sources, each named in the sentence, with a Sources button for the full reference. Anything the model writes that is not backed by that library or by my own journal is dropped before I see it.
+
+<figure><img src="/portfolio/trade-desk/trade-desk-coach-panel.jpg" width="1400" height="875" alt="The coach panel on the dashboard with an invented conversation about breaking a rule" loading="lazy" decoding="async"><figcaption>The coach on the dashboard (invented conversation)</figcaption></figure>
+
+<figure><video controls muted playsinline preload="none" poster="/portfolio/trade-desk/assistant-coach-poster.png" width="420" height="760" style="max-width:420px;width:100%;height:auto;border-radius:8px;"><source src="/portfolio/trade-desk/assistant-coach.webm" type="video/webm">Your browser cannot play this video. The screenshots above show the same conversations.</video><figcaption>The assistant and the coach in Telegram, 19 seconds, no sound (demo data)</figcaption></figure>
+
+### The dashboard itself
+
+The dashboard works for any account type: demo, evaluation, funded, live or failed. It shows a prop firm style profit and loss calendar and the performance figures a professional investor would ask for, with warnings when there are too few trades to trust a number.
+
+![Profit and loss calendar](/portfolio/trade-desk/trade-desk-calendar.jpg)
 
 ![Performance metrics](/portfolio/trade-desk/trade-desk-performance.jpg)
 
-## Logging safely
+## How it is built
 
-Trades can be logged from the dashboard or from Telegram. The endpoint verifies the Access token, host and origin, enforces size and rate limits, uses an idempotency key plus a duplicate guard, and refuses closed accounts.
+- **n8n workflows** run the bot, the alerts, the coach, the daily plan checks, the 22:00 journal reminder, the dashboard snapshot and trade logging. They are pinned to an exact n8n 2.x version. Upgrades are rehearsed first on a disposable copy with no real data, and every change has a written rollback.
+- **A Telegram bot** is the main interface, with buttons for confirmations and one reply per message.
+- **OpenAI models with guards.** A number guard drops any figure that is not in my message, my journal or a cited source, so the model cannot invent values. Every write waits for a confirmation step. Each assistant has a daily cost cap and an hourly limit, and every model call is logged with its cost.
+- **Google Sheets is the source of truth.** A publish script recalculates every figure from the raw trades, cross checks the results against the sheet and scans for anything private before the dashboard updates. A failed check blocks the update.
+- **Cloudflare Access** puts a login in front of the dashboard. The server checks the login token, host and origin on every request, limits request rates, blocks duplicate trades and refuses closed accounts.
+- **Tests and rollbacks.** Every deploy runs the test suites, a dry run on copies of the workflows with sending switched off, and a check that the bot's message router did not change. Each deploy keeps copies of what it replaced and a one command rollback.
 
-![Log a trade](/portfolio/trade-desk/trade-desk-log-review.jpg)
+## Results so far
+
+These are engineering numbers I can check in the code and the logs. They say nothing about trading performance.
+
+| Measure | Value |
+| --- | --- |
+| n8n workflows behind the desk and the bot | 16 |
+| Automated tests across the bot, the dashboard and the bias engine | 306 |
+| Average model cost per message (real messages) | about $0.0003 for the assistant, about $0.0004 for the coach |
+| Daily cost caps | $0.20 for the assistant, $0.30 for the coach |
+| Replies per message | exactly one, checked for commands, plain English and the coach |
+| Time from message to reply | about 7 seconds (median of 29 runs) |
+
+I have not measured how much time it saves on journaling, so I leave that out.
 
 ## What I would do differently
 
-- Add automated tests for the metric calculations earlier. I found several rounding and empty-cell bugs through a mix of screenshot review and automated checks.
-- Keep the sheet's empty cells truly empty; a stray formula result broke the publish gate once.
+- Add tests for the metric calculations earlier. I found several rounding and empty cell bugs through a mix of screenshot review and automated checks.
+- Treat the network as unreliable from day one. Most failures in the logs were short DNS and connection drops, not code bugs, and retries and clear failure notices matter more than I expected.
 
-## What is next
+## What I would build next
 
-A voice assistant that logs trades by voice and acts as a trading-psychology coach in Telegram and on the dashboard. That one is still at design stage.
+- Voice logging, so a trade can be recorded by speaking to the bot.
+- A weekly review written from the journal: what I planned, what I did, and where the rules slipped.
+- Importing fills from the broker, so logging needs less typing.
 
 *Interested in something like this for your business? [Book a call](/agencies/#call).*
