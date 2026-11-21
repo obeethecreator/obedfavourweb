@@ -40,7 +40,9 @@ The data is public and keyless by design. Crypto prices are live from public exc
 
 The bot sends a countdown 15 and 2 minutes before high impact US releases such as inflation, jobs and Fed decisions, and a briefing of the day's events at 08:00 New York. A news watcher polls official feeds and news sources, removes duplicates, and asks a model to score each new headline for how likely it is to move the index futures. Only high scores become alerts, with hourly and daily caps, a cooldown per topic and a mute command. Every alert ends with "Heads up only. Not a trade signal."
 
-![Alerts in Telegram: a data release countdown and a breaking news alert (demo)](/portfolio/trade-desk/trade-desk-alerts-telegram.jpg)
+The sources are an editable list in the settings sheet: the Financial Times, the Wall Street Journal, the BBC, CNBC, MarketWatch, Seeking Alpha, investingLive and Business Insider, the official Fed, ECB, BLS and SEC feeds, and a separate Nigeria and Africa lane with Nairametrics and BusinessDay. Headlines are filtered by keyword before any model sees them, which keeps the scoring cost down. When several outlets carry the same story, I get one alert that names all of them, and no single outlet can fill more than 40 percent of a day's alerts while others have something to say. Nigeria and Africa stories appear in the briefing, and only alert when they matter globally, such as oil output or a central bank decision.
+
+<figure><img src="/portfolio/trade-desk/trade-desk-alerts-telegram.jpg" width="840" height="1332" alt="Alerts in Telegram: a countdown before US inflation data with invented numbers, then a real headline reported by FT world and investingLive, merged into one alert" loading="lazy" decoding="async"><figcaption>An invented countdown, then a real headline from a test run on 20 November, reported by two outlets and sent once</figcaption></figure>
 
 ### A plain English assistant that asks before it writes
 
@@ -52,9 +54,15 @@ I can ask the bot questions in plain English ("how did I do this week?", "what's
 
 When a loss or a broken rule gets to me, I can talk it through with a trading psychology coach in Telegram or on the dashboard. A safety check runs before anything else: if a message suggests a crisis, the coach steps out of coaching, points to real help and pauses its check ins, and that message is never sent to a model or stored. Research ideas come only from a small library of checked sources, each named in the sentence, with a Sources button for the full reference. Anything the model writes that is not backed by that library or by my own journal is dropped before I see it.
 
-<figure><img src="/portfolio/trade-desk/trade-desk-coach-panel.jpg" width="1400" height="875" alt="The coach panel on the dashboard with an invented conversation about breaking a rule" loading="lazy" decoding="async"><figcaption>The coach on the dashboard (invented conversation)</figcaption></figure>
+The coach talks like a calm mentor. It starts by reflecting what I said, asks one question at a time, offers ideas as suggestions rather than orders, and only cites research when a source clearly fits. In an emotional moment it cites nothing at all, and if I ask whether I should quit, it never tells me to quit or to stay. It just helps me see what is behind the question and reminds me that sleeping on it is allowed.
 
-<figure><video controls muted playsinline preload="none" poster="/portfolio/trade-desk/assistant-coach-poster.png" width="420" height="760" style="max-width:420px;width:100%;height:auto;border-radius:8px;"><source src="/portfolio/trade-desk/assistant-coach.webm" type="video/webm">Your browser cannot play this video. The screenshots above show the same conversations.</video><figcaption>The assistant and the coach in Telegram, 19 seconds, no sound (demo data)</figcaption></figure>
+When I ask for something to read, or tap "Suggest something to read", it looks in its own checked library first, then in scholarly papers and well known books. Every link is opened and checked against its title and author before I see it, and nothing is suggested if nothing passes.
+
+<figure><img src="/portfolio/trade-desk/trade-desk-coach-panel.jpg" width="1400" height="875" alt="The coach panel on the dashboard: a warm reply to an invented message about breaking a rule, with one question at the end" loading="lazy" decoding="async"><figcaption>The coach on the dashboard (invented conversation)</figcaption></figure>
+
+<figure><img src="/portfolio/trade-desk/trade-desk-coach-telegram.jpg" width="840" height="1856" alt="The coach in Telegram: a warm reply to an invented message, then two checked research papers suggested to read, each with a link" loading="lazy" decoding="async"><figcaption>The coach in Telegram, with reading suggestions from its checked library (invented conversation)</figcaption></figure>
+
+<figure><video controls muted playsinline preload="none" poster="/portfolio/trade-desk/assistant-coach-poster.jpg" width="420" height="760" style="max-width:420px;width:100%;height:auto;border-radius:8px;"><source src="/portfolio/trade-desk/assistant-coach.webm" type="video/webm">Your browser cannot play this video. The screenshots above show the same conversations.</video><figcaption>The assistant and the coach in Telegram, 23 seconds, no sound (demo data)</figcaption></figure>
 
 ### The dashboard itself
 
@@ -80,7 +88,7 @@ These are engineering numbers I can check in the code and the logs. They say not
 | Measure | Value |
 | --- | --- |
 | n8n workflows behind the desk and the bot | 16 |
-| Automated tests across the bot, the dashboard and the bias engine | 306 |
+| Automated tests across the bot, the dashboard and the bias engine | 340 |
 | Average model cost per message (real messages) | about $0.0003 for the assistant, about $0.0004 for the coach |
 | Daily cost caps | $0.20 for the assistant, $0.30 for the coach |
 | Replies per message | exactly one, checked for commands, plain English and the coach |
